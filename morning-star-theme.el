@@ -298,6 +298,11 @@
    ;; `(company-tooltip-mouse ((,class (:inherit highlight))))
    ;; `(company-tooltip-selection ((,class (:background ,bg3 :foreground ,fg3))))
    ;; `(company-template-field ((,class (:inherit region))))
+
+   ;; Git
+   `(git-gutter-fr:added ((,class (:foreground ,green1))))
+   `(git-gutter-fr:deleted ((,class (:foreground ,red1))))
+   `(git-gutter-fr:modified ((,class (:foreground ,blue2))))
    ;; `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
    ;; `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
    ;; `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
