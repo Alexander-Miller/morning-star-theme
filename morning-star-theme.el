@@ -69,46 +69,25 @@
    `(font-lock-warning-face       ((,class (:foreground ,green1 :underline (:style wave)))))
 
    ;; Mode Line
-   `(mode-line         ((,class (:background ,blue1 :foreground ,black1))))
-   `(powerline-active1 ((,class (:background ,red1 :foreground ,yellow2))))
-   `(powerline-active2 ((,class (:background ,blue1 :foreground ,black1))))
-   `(sml/vc            ((,class (:background ,red1 :foreground ,yellow2))))
-   `(sml/vc-edited     ((,class (:background ,red1 :foreground ,yellow2))))
-   `(sml/filename      ((,class (:foreground ,black2 :bold t))))
-   `(sml/time          ((,class (:background ,yellow2 :foreground ,black1))))
-   ;;   `(sml/global              ((,class (:background ,black1 :foreground ,blue1))))
-   ;;   `(sml/line-number         ((,class (:background ,black1 :foreground ,orange1))))
-   ;;   `(sml/numbers-separator   ((,class (:background ,black1 :foreground ,green1))))
-   ;;   `(sml/col-number          ((,class (:background ,black1 :foreground ,orange1))))
-   ;;   `(sml/modified            ((,class (:background ,black1 :foreground ,red2))))
-   ;;   `(sml/outside/modified    ((,class (:background ,black1 :foreground ,red2))))
-   ;;   `(sml/not-modified        ((,class (:background ,black1))))
-   ;;   `(sml/prefix              ((,class (:background ,bg2 :foreground ,blue1))))
-   ;;   `(sml/folder              ((,class (:background ,bg2 :foreground ,blue1))))
-   ;;   `(sml/filename            ((,class (:background ,bg2 :foreground ,purple1 :bold t))))
-   ;;   `(sml/position-percentage ((,class (:background ,bg2 :foreground ,green1))))
-   ;;   `(sml/name-filling        ((,class (:background ,bg2))))
-   ;;   `(sml/modes               ((,class (:background ,red2 :foreground ,yellow1))))
-   ;;   `(sml/minor-modes         ((,class (:background ,red2 :foreground ,yellow1));;))
+   `(mode-line           ((,class (:background ,blue1   :foreground ,black1))))
+   `(mode-line-inactive  ((,class (:background ,blue1   :foreground ,black1))))
+   `(powerline-active1   ((,class (:background ,red1    :foreground ,yellow2))))
+   `(powerline-active2   ((,class (:background ,blue1   :foreground ,black1))))
+   `(powerline-inactive1 ((,class (:background ,red1    :foreground ,yellow2))))
+   `(powerline-inactive2 ((,class (:background ,blue1   :foreground ,black1))))
+   `(sml/vc              ((,class (:background ,red1    :foreground ,yellow2))))
+   `(sml/prefix          ((,class (:background ,blue1   :foreground ,black1))))
+   `(sml/folder          ((,class (:background ,blue1   :foreground ,black1))))
+   `(sml/vc-edited       ((,class (:background ,red1    :foreground ,yellow2))))
+   `(sml/filename        ((,class (:foreground ,black2  :bold t))))
+   `(sml/time            ((,class (:background ,yellow2 :foreground ,black1))))
+   `(sml/global          ((,class (:background ,blue1 :foreground ,black1))))
 
-   ;;   `(sml/charging     ((,class (:background "#00ffff"))))
-   ;;   `(sml/discharging     ((,class (:background "#00ffff"))))
-   ;;  `(sml/git               ((,class (:background ,purple1))))
    ;;   `(sml/client              ((,class (:background ,orange1))))
    ;; `(sml/mule   ((,class (:background ,purple1))))
    ;; `(sml/process   ((,class (:background ,purple1))))
    ;; `(sml/read-only   ((,class (:background ,purple1))))
-   ;;`(sml/vc   ((,class (:background ,purple1))))
-
-   ;;Show Sml/Remote face: [sample]
-   ;;
    ;;Show Sml/Sudo face: [sample]
-   ;;
-   ;;Show Sml/Time face: [sample]
-   ;;
-   ;;Show Sml/Vc face: [sample]
-   ;;
-   ;;Show Sml/Vc Edited face: [sample]
 
    ;; Standard UI Items
    ;; `(region ((,class (:background ,fg1 :foreground ,bg1))))
