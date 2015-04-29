@@ -146,12 +146,13 @@
    ;; `(org-document-info-keyword ((,class (:foreground ,func))))
 
    ;; LaTeX
-   `(font-latex-bold-face ((,class (:foreground ,orange1 :bold t))))
-   `(font-latex-italic-face ((,class (:foreground ,orange1 :italic t))))
-   `(font-latex-string-face ((,class (:foreground ,green1))))
-   `(font-latex-math-face ((,class (:foreground ,aqua1))))
+   `(font-latex-bold-face     ((,class (:foreground ,orange1 :bold t))))
+   `(font-latex-italic-face   ((,class (:foreground ,orange1 :italic t))))
+   `(font-latex-string-face   ((,class (:foreground ,green1))))
+   `(font-latex-math-face     ((,class (:foreground ,aqua1))))
    `(font-latex-verbatim-face ((,class (:foreground ,orange2))))
-   `(font-latex-warning-face ((,class (:foreground ,red2))))
+   `(font-latex-warning-face  ((,class (:foreground ,red2))))
+   `(font-latex-sedate-face   ((,class (:foreground ,blue1))))
 
    `(font-latex-documentation-face ((,class (:background ,black1))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,black1 :height 2.0))))
