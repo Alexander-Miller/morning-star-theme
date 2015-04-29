@@ -90,22 +90,21 @@
    ;;Show Sml/Sudo face: [sample]
 
    ;; Standard UI Items
-   ;; `(region ((,class (:background ,fg1 :foreground ,bg1))))
-   ;; `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
+   `(region ((,class (:background ,black2))))
+   `(highlight ((,class (:box nil))))
    ;; `(hl-line ((,class (:background  ,bg2))))
-   ;; `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
-   ;; `(cursor ((,class (:background ,bg3))))
-   ;; `(show-paren-match-face ((,class (:background ,warning))))
-   ;; `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
-   ;; `(mode-line ((,class (:box (:line-width 1 :color nil) :bold t :foreground ,fg4 :background ,bg2))))
-   ;; `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,key3 :background ,bg1 :weight normal))))
+   `(fringe                ((,class (:background ,black2))))
+   `(linum                 ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 1.0))))
+   `(cursor                ((,class (:background ,green2))))
+   `(show-paren-match-face ((,class (:background ,blue1 :foreground ,black2))))
+   `(isearch               ((,class (:background ,red1 :foreground ,yellow2))))
+   `(link                  ((,class (:background ,bg2   :foreground ,blue1 :box t))))
+   `(minibuffer-prompt     ((,class (:foreground ,purple1))))
+   `(default-italic        ((,class (:italic t))))
    ;; `(mode-line-buffer-id ((,class (:bold t :foreground ,func :background nil))))
    ;; `(mode-line-highlight ((,class (:foreground ,keyword :box nil :weight bold))))
    ;; `(mode-line-emphasis ((,class (:foreground ,fg1))))
    ;; `(vertical-border ((,class (:foreground ,fg3))))
-   ;; `(minibuffer-prompt ((,class (:bold t :foreground ,keyword))))
-   ;; `(default-italic ((,class (:italic t))))
-   ;; `(link ((,class (:foreground ,const :underline t))))
 
    ;; Rainbow Delimiters
    `(rainbow-delimiters-depth-1-face    ((,class :foreground ,green1  :bold t)))
