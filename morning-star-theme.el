@@ -71,6 +71,8 @@
 
    ;; Mode Line
    `(mode-line           ((,class (:background ,blue1   :foreground ,black1))))
+   `(mode-line-highlight ((,class (:underline t))))
+   `(mode-line-emphasis  ((,class (:bolt t))))
    `(mode-line-inactive  ((,class (:background ,blue1   :foreground ,black1))))
    `(powerline-active1   ((,class (:background ,red1    :foreground ,yellow2))))
    `(powerline-active2   ((,class (:background ,blue1   :foreground ,black1))))
@@ -82,13 +84,7 @@
    `(sml/vc-edited       ((,class (:background ,red1    :foreground ,yellow2))))
    `(sml/filename        ((,class (:foreground ,black2  :bold t))))
    `(sml/time            ((,class (:background ,yellow2 :foreground ,black1))))
-   `(sml/global          ((,class (:background ,blue1 :foreground ,black1))))
-
-   ;;   `(sml/client              ((,class (:background ,orange1))))
-   ;; `(sml/mule   ((,class (:background ,purple1))))
-   ;; `(sml/process   ((,class (:background ,purple1))))
-   ;; `(sml/read-only   ((,class (:background ,purple1))))
-   ;;Show Sml/Sudo face: [sample]
+   `(sml/global          ((,class (:background ,blue1   :foreground ,black1))))
 
    ;; Standard UI Items
    `(region ((,class (:background ,black2))))
