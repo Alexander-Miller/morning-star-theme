@@ -113,6 +113,10 @@
    `(rainbow-delimiters-mismatched-face ((,class :foreground ,black1  :bold t)))
    `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1  :bold t)))
 
+   ;; Ace
+   `(ace-jump-face-foreground ((,class (:foreground ,yellow2 :background ,red1))))
+   `(aw-leading-char-face     ((,class (:foreground ,yellow2 :background ,red1))))
+
    ;; `(org-code ((,class (:foreground ,fg2))))
    ;; `(org-hide ((,class (:foreground ,fg4))))
    ;; `(org-level-1 ((,class (:bold t :foreground ,fg2 :height 1.1))))
