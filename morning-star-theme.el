@@ -102,16 +102,16 @@
    `(vertical-border       ((,class (:foreground ,bg))))
 
    ;; Rainbow Delimiters
-   `(rainbow-delimiters-depth-1-face    ((,class :foreground ,green1  :bold t)))
-   `(rainbow-delimiters-depth-2-face    ((,class :foreground ,red1    :bold t)))
-   `(rainbow-delimiters-depth-3-face    ((,class :foreground ,orange1 :bold t)))
-   `(rainbow-delimiters-depth-4-face    ((,class :foreground ,blue1   :bold t)))
-   `(rainbow-delimiters-depth-5-face    ((,class :foreground ,purple1 :bold t)))
-   `(rainbow-delimiters-depth-6-face    ((,class :foreground ,yellow2 :bold t)))
-   `(rainbow-delimiters-depth-7-face    ((,class :foreground ,aqua1   :bold t)))
-   `(rainbow-delimiters-depth-8-face    ((,class :foreground ,yellow1 :bold t)))
-   `(rainbow-delimiters-mismatched-face ((,class :foreground ,black1  :bold t)))
-   `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1  :bold t)))
+   `(rainbow-delimiters-depth-1-face    ((,class :foreground ,green1)))
+   `(rainbow-delimiters-depth-2-face    ((,class :foreground ,red1)))
+   `(rainbow-delimiters-depth-3-face    ((,class :foreground ,purple1)))
+   `(rainbow-delimiters-depth-4-face    ((,class :foreground ,blue1)))
+   `(rainbow-delimiters-depth-5-face    ((,class :foreground ,orange1 )))
+   `(rainbow-delimiters-depth-6-face    ((,class :foreground ,aqua1)))
+   `(rainbow-delimiters-depth-7-face    ((,class :foreground ,orange2)))
+   `(rainbow-delimiters-depth-8-face    ((,class :foreground ,yellow1)))
+   `(rainbow-delimiters-mismatched-face ((,class :foreground ,black1)))
+   `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1)))
 
    ;; Ace
    `(ace-jump-face-foreground ((,class (:foreground ,yellow2 :background ,red1))))
