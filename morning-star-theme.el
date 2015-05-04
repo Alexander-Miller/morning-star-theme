@@ -79,7 +79,7 @@
    `(powerline-inactive1 ((,class (:background ,red1    :foreground ,yellow2))))
    `(powerline-inactive2 ((,class (:background ,blue1   :foreground ,black1))))
    `(sml/vc              ((,class (:background ,red1    :foreground ,yellow2))))
-   `(sml/prefix          ((,class (:background ,blue1   :foreground ,black1))))
+   `(sml/prefix          ((,class (:background ,blue1   :foreground ,black1 :bold nil))))
    `(sml/folder          ((,class (:background ,blue1   :foreground ,black1))))
    `(sml/vc-edited       ((,class (:background ,red1    :foreground ,yellow2))))
    `(sml/filename        ((,class (:foreground ,black2  :bold t))))
