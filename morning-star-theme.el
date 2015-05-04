@@ -153,7 +153,8 @@
    `(font-latex-verbatim-face ((,class (:foreground ,orange2))))
    `(font-latex-warning-face  ((,class (:foreground ,red2))))
    `(font-latex-sedate-face   ((,class (:foreground ,blue1))))
-
+   `(preview-reference-face   ((,class (:foreground ,white1 :height 1.1))))
+   ;; LaTeX TODO
    `(font-latex-documentation-face ((,class (:background ,black1))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,black1 :height 2.0))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,black1))))
