@@ -233,16 +233,17 @@
    ;; `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
    ;; `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
    ;; `(trailing-whitespace ((,class :foreground nil :background ,warning)))
-   ;; `(term ((,class (:foreground ,fg1 :background ,bg1))))
-   ;; `(term-color-black ((,class (:foreground ,bg3 :background ,bg3))))
-   ;; `(term-color-blue ((,class (:foreground ,func :background ,func))))
-   ;; `(term-color-red ((,class (:foreground ,keyword :background ,bg3))))
-   ;; `(term-color-green ((,class (:foreground ,type :background ,bg3))))
-   ;; `(term-color-yellow ((,class (:foreground ,var :background ,var))))
-   ;; `(term-color-magenta ((,class (:foreground ,builtin :background ,builtin))))
-   ;; `(term-color-cyan ((,class (:foreground ,str :background ,str))))
-   ;; `(term-color-white ((,class (:foreground ,fg2 :background ,fg2))))
 
+   ;; Terminal
+   `(term               ((,class (:foreground ,orange2))))
+   `(term-color-black   ((,class (:foreground ,black1))))
+   `(term-color-blue    ((,class (:foreground ,blue1))))
+   `(term-color-red     ((,class (:foreground ,red1))))
+   `(term-color-green   ((,class (:foreground ,green1))))
+   `(term-color-yellow  ((,class (:foreground ,yellow1))))
+   `(term-color-magenta ((,class (:foreground ,purple1))))
+   `(term-color-cyan    ((,class (:foreground ,aqua1))))
+   `(term-color-white   ((,class (:foreground ,fg))))
 
    ;; Helm
    `(helm-ff-directory       ((,class (:foreground ,blue1))))
