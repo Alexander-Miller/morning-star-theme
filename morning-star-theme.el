@@ -300,8 +300,8 @@
    ;; `(magit-diff-file-header       ((,class (:foreground ,fg2 :background ,bg3))))
 
    ;; Company
-   `(company-tooltip-common-selection ((,class (:foreground ,black1 :background ,blue1))))
-   `(company-tooltip-selection        ((,class (:background ,blue1))))
+   `(company-tooltip-common-selection ((,class (:foreground ,black1 :background ,blue2))))
+   `(company-tooltip-selection        ((,class (:background ,blue2 :foreground ,fg))))
    `(company-scrollbar-bg             ((,class (:background ,bg2))))
    `(company-scrollbar-fg             ((,class (:background ,red1))))
    `(company-tooltip                  ((,class (:background ,grey2))))
