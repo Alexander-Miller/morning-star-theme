@@ -249,6 +249,7 @@
    `(helm-ff-directory       ((,class (:foreground ,blue1))))
    `(helm-ff-file            ((,class (:foreground ,fg))))
    `(helm-ff-executable      ((,class (:foreground ,red1))))
+   `(helm-ff-prefix          ((,class (:foreground ,purple1))))
    `(helm-ff-symlink         ((,class (:foreground ,aqua1))))
    `(helm-ff-invalid-symlink ((,class (:foreground ,aqua1 :underline (:style wave :color ,red2)))))
    `(helm-selection          ((,class (:background ,bg2 :box ,red1 :bold nil))))
@@ -262,7 +263,6 @@
    `(helm-buffer-process     ((,class (:foreground ,orange1))))
    `(helm-grep-file          ((,class (:foreground ,purple1))))
    ;; Helm TODO
-   `(helm-ff-prefix          ((,class (:height 1.5))))
    `(helm-header             ((,class (:height 1.5 :background ,black2))))
    `(helm-buffer-saved-out   ((,class (:background ,red2))))
    `(helm-buffer-not-saved   ((,class (:background ,green1))))
