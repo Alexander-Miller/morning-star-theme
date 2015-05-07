@@ -37,6 +37,7 @@
       (aqua1   "#339999")
       (red1    "#ab3737")
       (red2    "#cc6666")
+      (red3    "#991111")
       (grey1   "#5d6a68")
       (blue1   "#446688")
       (blue2   "#27408b")
@@ -67,7 +68,7 @@
    `(font-lock-string-face        ((,class (:foreground ,green1))))
    `(font-lock-type-face          ((,class (:foreground ,yellow1))))
    `(font-lock-variable-name-face ((,class (:foreground ,orange1))))
-   `(font-lock-warning-face       ((,class (:foreground ,green1 :underline (:style wave)))))
+   `(font-lock-warning-face       ((,class (:foreground ,red3 :underline (:style wave)))))
 
    ;; Mode Line
    `(mode-line           ((,class (:background ,blue1   :foreground ,black1))))
@@ -91,12 +92,12 @@
    `(isearch               ((,class (:background ,red1   :foreground ,yellow2))))
    `(lazy-highlight        ((,class (:background ,red2   :foreground ,black1))))
    `(link                  ((,class (:background ,bg2    :foreground ,blue1 :box t))))
-   `(linum                 ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 1.0))))
+   `(linum                 ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 125))))
    `(region                ((,class (:background ,grey1))))
    `(highlight             ((,class (:inherit link :box 2))))
    `(hl-line               ((,class (:background ,grey1))))
    `(fringe                ((,class (:background ,black2))))
-   `(cursor                ((,class (:background ,green2))))
+   `(cursor                ((,class (:background ,red1))))
    `(minibuffer-prompt     ((,class (:foreground ,purple1))))
    `(default-italic        ((,class (:italic t))))
    `(vertical-border       ((,class (:foreground ,bg))))
@@ -237,6 +238,8 @@
 
    ;; Terminal
    `(term               ((,class (:foreground ,orange2))))
+   `(term-bold          ((,class (:bold t))))
+   `(term-underline     ((,class (:underline t))))
    `(term-color-black   ((,class (:foreground ,black1))))
    `(term-color-blue    ((,class (:foreground ,blue1))))
    `(term-color-red     ((,class (:foreground ,red1))))
