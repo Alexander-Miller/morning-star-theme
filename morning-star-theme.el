@@ -229,12 +229,15 @@
    ;; `(info-quoted-name ((,class (:foreground ,builtin))))
    ;; `(info-string ((,class (:foreground ,str))))
    ;; `(icompletep-determined ((,class :foreground ,builtin)))
-   ;; `(undo-tree-visualizer-current-face ((,class :foreground ,builtin)))
-   ;; `(undo-tree-visualizer-default-face ((,class :foreground ,fg2)))
-   ;; `(undo-tree-visualizer-unmodified-face ((,class :foreground ,var)))
-   ;; `(undo-tree-visualizer-register-face ((,class :foreground ,type)))
    ;; `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
    ;; `(trailing-whitespace ((,class :foreground nil :background ,warning)))
+
+   ;; Undo Tree
+   `(undo-tree-visualizer-current-face        ((,class (:foreground ,blue1 :background ,black1 :box t))))
+   `(undo-tree-visualizer-default-face        ((,class (:foreground ,fg))))
+   `(undo-tree-visualizer-active-branchk-face ((,class (:foreground ,purple2))))
+   `(undo-tree-visualizer-register-face       ((,class (:foreground ,yellow1))))
+   `(undo-tree-visualizer-unmodified-face     ((,class (:foreground ,green2))))
 
    ;; Terminal
    `(term               ((,class (:foreground ,orange2))))
