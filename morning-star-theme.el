@@ -32,12 +32,12 @@
 (let ((class '((class color) (min-colors 89)))
       (fg      "#a3a3a3")
       (bg      "#282828")
-      (bg2     "#1f1f1f")
+      (bg2     "#222222")
       (purple1 "#a374a8")
+      (purple2 "#664466")
       (aqua1   "#339999")
       (red1    "#ab3737")
       (red2    "#cc6666")
-      (red3    "#991111")
       (grey1   "#5d6a68")
       (blue1   "#446688")
       (blue2   "#27408b")
@@ -68,7 +68,7 @@
    `(font-lock-string-face        ((,class (:foreground ,green1))))
    `(font-lock-type-face          ((,class (:foreground ,yellow1))))
    `(font-lock-variable-name-face ((,class (:foreground ,orange1))))
-   `(font-lock-warning-face       ((,class (:foreground ,red3 :underline (:style wave)))))
+   `(font-lock-warning-face       ((,class (:foreground ,red1 :underline (:style wave)))))
 
    ;; Mode Line
    `(mode-line           ((,class (:background ,blue1   :foreground ,black1))))
