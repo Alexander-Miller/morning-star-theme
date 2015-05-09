@@ -240,10 +240,10 @@
    ;; `(trailing-whitespace ((,class :foreground nil :background ,warning)))
 
    ;; Undo Tree
-   `(undo-tree-visualizer-current-face        ((,class (:foreground ,blue1 :background ,black1 :box t))))
+   `(undo-tree-visualizer-current-face        ((,class (:foreground ,yellow2 :bold t))))
    `(undo-tree-visualizer-default-face        ((,class (:foreground ,fg))))
-   `(undo-tree-visualizer-active-branchk-face ((,class (:foreground ,purple2))))
-   `(undo-tree-visualizer-register-face       ((,class (:foreground ,yellow1))))
+   `(undo-tree-visualizer-active-branch-face  ((,class (:foreground ,red1))))
+   `(undo-tree-visualizer-register-face       ((,class (:foreground ,purple2))))
    `(undo-tree-visualizer-unmodified-face     ((,class (:foreground ,green2))))
 
    ;; Terminal
