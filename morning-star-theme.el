@@ -149,6 +149,23 @@
    `(rainbow-delimiters-mismatched-face ((,class :foreground ,black1)))
    `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1)))
 
+   ;; Mardown
+   `(markdown-comment-face          ((,class (:foreground ,grey2))))
+   `(markdown-footnote-face         ((,class (:foreground ,purple1))))
+   `(markdown-blockquote-face       ((,class (:foreground ,orange2))))
+   `(markdown-italic-face           ((,class (:foreground ,orange1 :italic t))))
+   `(markdown-bold-face             ((,class (:foreground ,orange1 :bold t))))
+   `(markdown-inline-code-face      ((,class (:foreground ,red2    :box ,grey2))))
+   `(markdown-header-delimiter-face ((,class (:foreground ,blue1   :bold t))))
+   `(markdown-header-rule-face      ((,class (:foreground ,blue1   :bold t))))
+   `(markdown-header-face           ((,class (:foreground ,blue1   :bold t))))
+   `(markdown-header-face-1         ((,class (:inherit org-level-1))))
+   `(markdown-header-face-2         ((,class (:inherit org-level-2))))
+   `(markdown-header-face-3         ((,class (:inherit org-level-3))))
+   `(markdown-header-face-4         ((,class (:inherit org-level-4))))
+   `(markdown-header-face-5         ((,class (:inherit org-level-5))))
+   `(markdown-header-face-6         ((,class (:inherit org-level-6))))
+
    ;; Ace
    `(ace-jump-face-foreground ((,class (:foreground ,yellow2 :background ,red1))))
    `(aw-leading-char-face     ((,class (:foreground ,yellow2 :background ,red1))))
