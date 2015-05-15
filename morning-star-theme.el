@@ -292,7 +292,7 @@
    ;; `(trailing-whitespace ((,class :foreground nil :background ,warning)))
 
    ;; Undo Tree
-   `(undo-tree-visualizer-current-face        ((,class (:foreground ,yellow2 :bold t))))
+   `(undo-tree-visualizer-current-face        ((,class (:foreground ,blue1 :bold t))))
    `(undo-tree-visualizer-default-face        ((,class (:foreground ,fg))))
    `(undo-tree-visualizer-active-branch-face  ((,class (:foreground ,red1))))
    `(undo-tree-visualizer-register-face       ((,class (:foreground ,purple2))))
