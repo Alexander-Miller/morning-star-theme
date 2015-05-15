@@ -171,11 +171,11 @@
    `(aw-leading-char-face     ((,class (:foreground ,yellow2 :background ,red1))))
 
    ;; Org-Mode
-   `(org-level-1          ((,class (:foreground ,blue1   :underline t :height 1.2))))
+   `(org-level-1          ((,class (:foreground ,blue1 :height 1.2))))
    `(org-level-2          ((,class (:foreground ,orange1 :height 1.1))))
    `(org-level-3          ((,class (:foreground ,purple1 :height 1.05))))
-   `(org-level-4          ((,class (:foreground ,orange2))))
-   `(org-level-5          ((,class (:foreground ,green2))))
+   `(org-level-4          ((,class (:foreground ,green1))))
+   `(org-level-5          ((,class (:foreground ,orange2))))
    `(org-level-6          ((,class (:foreground ,red2))))
    `(org-level-7          ((,class (:foreground ,aqua1))))
    `(org-level-8          ((,class (:foreground ,yellow2))))
