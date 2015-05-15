@@ -170,6 +170,10 @@
    `(ace-jump-face-foreground ((,class (:foreground ,yellow2 :background ,red1))))
    `(aw-leading-char-face     ((,class (:foreground ,yellow2 :background ,red1))))
 
+   ;; Avy
+   `(avy-background-face ((,class (:background ,grey1))))
+   `(avy-lead-face       ((,class (:background ,red1 :foreground ,yellow2))))
+
    ;; Org-Mode
    `(org-level-1          ((,class (:foreground ,blue1 :height 1.2))))
    `(org-level-2          ((,class (:foreground ,orange1 :height 1.1))))
