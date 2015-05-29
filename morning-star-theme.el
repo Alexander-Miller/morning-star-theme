@@ -194,7 +194,8 @@
 
    ;; Avy
    `(avy-background-face ((,class (:background ,grey1))))
-   `(avy-lead-face       ((,class (:background ,red1 :foreground ,yellow2))))
+   `(avy-lead-face       ((,class (:background ,blue2 :foreground ,white1))))
+   `(avy-lead-face-0     ((,class (:background ,red1  :foreground ,yellow2))))
 
    ;; Org-Mode
    `(org-level-1          ((,class (:foreground ,blue1 :height 1.2))))
