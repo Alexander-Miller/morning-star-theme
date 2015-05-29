@@ -39,7 +39,6 @@
       (red1    "#ab3737")
       (red2    "#cc6666")
       (red3    "#660000")
-      (grey1   "#5d6a68")
       (blue1   "#446688")
       (blue2   "#27408b")
       (green1  "#66aa66")
@@ -57,10 +56,10 @@
    'morning-star
 
    ;; Syntax highlghting
-   `(default                      ((,class (:foreground ,fg :background ,bg))))
+   `(default                      ((,class (:foreground ,fg))))
    `(font-lock-builtin-face       ((,class (:foreground ,aqua1))))
-   `(font-lock-negation-char-face ((,class ())))
    `(font-lock-comment-face       ((,class (:foreground ,grey2))))
+   `(font-lock-negation-char-face ((,class (:foreground ,red2))))
    `(font-lock-reference-face     ((,class (:foreground "#ffffff"))))
    `(font-lock-constant-face      ((,class (:foreground ,red2))))
    `(font-lock-doc-face           ((,class (:foreground ,orange2))))
@@ -83,7 +82,7 @@
 
    ;; Smart Mode Line
    `(sml/global              ((,class (:background ,blue1   :foreground ,black1))))
-   `(sml/vc                  ((,class (:inherit sml/global))))
+   `(sml/vc                  ((,class (:background ,red1))))
    `(sml/folder              ((,class (:inherit sml/global))))
    `(sml/process             ((,class (:inherit sml/global))))
    `(sml/modes               ((,class (:inherit sml/global))))
@@ -110,19 +109,21 @@
    `(sml/read-only        ((,class (:background ,purple2 :foreground ,fg :height 2.0))))
 
    ;; Standard UI Items
-   `(show-paren-match-face ((,class (:background ,blue1  :foreground ,black2))))
-   `(isearch               ((,class (:background ,red1   :foreground ,yellow2))))
-   `(lazy-highlight        ((,class (:background ,red2   :foreground ,black1))))
-   `(link                  ((,class (:background ,bg2    :foreground ,blue1 :box t))))
-   `(linum                 ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 125))))
-   `(region                ((,class (:background ,grey1))))
-   `(highlight             ((,class (:inherit link :box 2))))
-   `(hl-line               ((,class (:background ,grey1))))
-   `(fringe                ((,class (:background ,black2))))
-   `(cursor                ((,class (:background ,red1))))
-   `(minibuffer-prompt     ((,class (:foreground ,purple1))))
-   `(default-italic        ((,class (:italic t))))
-   `(vertical-border       ((,class (:foreground ,bg))))
+   `(show-paren-match-face      ((,class (:background ,blue1  :foreground ,black2))))
+   `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
+   `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
+   `(link                       ((,class (:background ,bg2    :foreground ,blue1 :box t))))
+   `(button                     ((,class (:background ,bg2    :foreground ,blue1 :box t))))
+   `(linum                      ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 140))))
+   `(region                     ((,class (:background ,grey1))))
+   `(highlight                  ((,class (:inherit link))))
+   `(hl-line                    ((,class (:background ,bg2))))
+   `(highlight-indentation-face ((,class (:background ,grey1))))
+   `(fringe                     ((,class (:background ,black2))))
+   `(cursor                     ((,class (:background ,red1))))
+   `(minibuffer-prompt          ((,class (:foreground ,purple1))))
+   `(default-italic             ((,class (:italic t))))
+   `(vertical-border            ((,class (:foreground ,bg))))
 
    ;; Dired
    `(dired-header                  ((,class (:foreground ,purple1 :underline t          :height 1.2))))
