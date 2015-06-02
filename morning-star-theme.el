@@ -41,6 +41,7 @@
       (red3    "#660000")
       (blue1   "#446688")
       (blue2   "#27408b")
+      (blue3   "#557799")
       (green1  "#66aa66")
       (green2  "#33aa33")
       (yellow1 "#f0c674")
@@ -124,6 +125,24 @@
    `(minibuffer-prompt          ((,class (:foreground ,purple1))))
    `(default-italic             ((,class (:italic t))))
    `(vertical-border            ((,class (:foreground ,bg))))
+
+   ;; Group Customization
+   `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
+   `(custom-group-subtitle      ((,class (:foreground ,purple1 :bold t :underline t))))
+   `(custom-group-tag           ((,class (:foreground ,aqua1   :bold t :underline nil :height 1.25))))
+   `(custom-group-tag-1         ((,class (:foreground ,aqua1   :bold t :underline t   :height 1.5))))
+   `(custom-button              ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
+   `(custom-button-pressed      ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style pressed-button)))))
+   `(custom-button-mouse        ((,class (:background ,blue3  :inherit custom-button))))
+   `(custom-comment             ((,class (:inherit font-lock-comment-face))))
+   `(custom-comment-tag         ((,class (:inherit font-lock-comment-face))))
+   `(custom-documentation       ((,class (:foreground ,fg))))
+   `(custom-state               ((,class (:foreground ,green2))))
+
+   ;; Man Pages
+   `(Man-overstrike ((,class (:foreground ,purple1 :bold t))))
+   `(Man-underline  ((,class (:foreground ,green1   :underline t))))
+   `(Man-reverse    ((,class (:foreground ,aqua1))))
 
    ;; Dired
    `(dired-header                  ((,class (:foreground ,purple1 :underline t          :height 1.2))))
