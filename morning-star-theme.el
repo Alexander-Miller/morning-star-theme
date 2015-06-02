@@ -118,8 +118,8 @@
    `(button                     ((,class (:background ,bg2    :foreground ,blue1 :box t))))
    `(linum                      ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 140))))
    `(region                     ((,class (:background ,grey1))))
-   `(highlight                  ((,class (:inherit link))))
-   `(hl-line                    ((,class (:background ,bg2))))
+   `(highlight                  ((,class (:inherit button :box 2))))
+   `(hl-line                    ((,class (:background ,grey1))))
    `(highlight-indentation-face ((,class (:background ,grey1))))
    `(fringe                     ((,class (:background ,black2))))
    `(cursor                     ((,class (:background ,red1))))
@@ -192,7 +192,7 @@
    `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1)))
 
    ;; Mardown
-   `(markdown-comment-face          ((,class (:foreground ,grey2))))
+   `(markdown-comment-face          ((,class (:inherit font-lock-comment-face))))
    `(markdown-footnote-face         ((,class (:foreground ,purple1))))
    `(markdown-blockquote-face       ((,class (:foreground ,orange2))))
    `(markdown-italic-face           ((,class (:foreground ,orange1 :italic t))))
@@ -215,6 +215,7 @@
    ;; Avy
    `(avy-background-face ((,class (:background ,grey1))))
    `(avy-lead-face       ((,class (:background ,blue2 :foreground ,white1))))
+   `(avy-lead-face-1     ((,class (:background ,blue2 :foreground ,white1))))
    `(avy-lead-face-0     ((,class (:background ,red1  :foreground ,yellow2))))
 
    ;; Org-Mode
@@ -228,8 +229,8 @@
    `(org-level-8          ((,class (:foreground ,yellow2))))
    `(org-todo             ((,class (:background ,red2    :foreground ,bg2 :bold t :box (:color ,grey2 :line-width 2)))))
    `(org-done             ((,class (:background ,green1  :foreground ,bg2 :bold t :box (:color ,grey2 :line-width 2)))))
-   `(org-link             ((,class (:background ,bg2     :foreground ,blue1 :box t))))
-   `(org-table            ((,class (:foreground ,blue1   :background "#2d2d2d"))))
+   `(org-link             ((,class (:inherit link))))
+   `(org-table            ((,class (:foreground ,blue1   :background ,bg2))))
    `(org-block-begin-line ((,class (:background ,bg2     :foreground ,purple2 :bold t))))
    `(org-block-end-line   ((,class (:background ,bg2     :foreground ,purple2 :bold t))))
    `(org-block            ((,class (:background ,grey1))))
