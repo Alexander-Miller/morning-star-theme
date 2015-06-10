@@ -140,6 +140,12 @@
    `(custom-documentation       ((,class (:foreground ,fg))))
    `(custom-state               ((,class (:foreground ,green2))))
 
+   ;; Flycheck
+   `(flycheck-warning ((,class (:underline (:color ,red1 :style wave)))))
+
+   ;; Flyspell
+   `(flyspell-incorrect ((,class (:underline (:color ,orange1 :style wave)))))
+
    ;; Man Pages
    `(Man-overstrike ((,class (:foreground ,purple1 :bold t))))
    `(Man-underline  ((,class (:foreground ,green1   :underline t))))
