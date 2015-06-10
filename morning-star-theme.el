@@ -58,19 +58,20 @@
    'morning-star
 
    ;; Syntax highlghting
-   `(default                      ((,class (:foreground ,fg))))
-   `(font-lock-builtin-face       ((,class (:foreground ,aqua1))))
-   `(font-lock-comment-face       ((,class (:foreground ,grey2))))
-   `(font-lock-negation-char-face ((,class (:foreground ,red2))))
-   `(font-lock-reference-face     ((,class (:foreground "#ffffff"))))
-   `(font-lock-constant-face      ((,class (:foreground ,red2))))
-   `(font-lock-doc-face           ((,class (:foreground ,orange2))))
-   `(font-lock-function-name-face ((,class (:foreground ,blue1))))
-   `(font-lock-keyword-face       ((,class (:foreground ,purple1))))
-   `(font-lock-string-face        ((,class (:foreground ,green1))))
-   `(font-lock-type-face          ((,class (:foreground ,yellow1))))
-   `(font-lock-variable-name-face ((,class (:foreground ,orange1))))
-   `(font-lock-warning-face       ((,class (:foreground ,red1 :underline (:style wave)))))
+   `(default                          ((,class (:foreground ,fg))))
+   `(font-lock-builtin-face           ((,class (:foreground ,aqua1))))
+   `(font-lock-comment-face           ((,class (:foreground ,grey2))))
+   `(font-lock-comment-delimiter-face ((,class (:foreground ,grey2))))
+   `(font-lock-negation-char-face     ((,class (:foreground ,red2))))
+   `(font-lock-reference-face         ((,class (:foreground "#ffffff"))))
+   `(font-lock-constant-face          ((,class (:foreground ,red2))))
+   `(font-lock-doc-face               ((,class (:foreground ,orange2))))
+   `(font-lock-function-name-face     ((,class (:foreground ,blue1))))
+   `(font-lock-keyword-face           ((,class (:foreground ,purple1))))
+   `(font-lock-string-face            ((,class (:foreground ,green1))))
+   `(font-lock-type-face              ((,class (:foreground ,yellow1))))
+   `(font-lock-variable-name-face     ((,class (:foreground ,orange1))))
+   `(font-lock-warning-face           ((,class (:foreground ,red1 :underline (:style wave)))))
 
    ;; Mode Line
    `(mode-line           ((,class (:background ,blue1   :foreground ,black1))))
