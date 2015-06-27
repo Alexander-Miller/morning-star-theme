@@ -147,6 +147,10 @@
    ;; Flyspell
    `(flyspell-incorrect ((,class (:underline (:color ,orange1 :style wave)))))
 
+
+   ;; Smart-Parens
+   `(sp-pair-overlay-face ((,class (:background ,black2))))
+
    ;; Man Pages
    `(Man-overstrike ((,class (:foreground ,purple1 :bold t))))
    `(Man-underline  ((,class (:foreground ,green1   :underline t))))
@@ -221,12 +225,13 @@
 
    ;; Avy
    `(avy-background-face ((,class (:background ,grey1))))
-   `(avy-lead-face       ((,class (:background ,blue2 :foreground ,white1))))
-   `(avy-lead-face-1     ((,class (:background ,blue2 :foreground ,white1))))
-   `(avy-lead-face-0     ((,class (:background ,red1  :foreground ,yellow2))))
+   `(avy-lead-face       ((,class (:background ,red1   :foreground ,yellow2))))
+   `(avy-lead-face-0     ((,class (:background ,blue1  :foreground ,black1))))
+   `(avy-lead-face-1     ((,class (:background ,red1   :foreground ,yellow2))))
+   `(avy-lead-face-2     ((,class (:background ,blue1  :foreground ,black1))))
 
    ;; Org-Mode
-   `(org-level-1          ((,class (:foreground ,blue1 :height 1.2))))
+   `(org-level-1          ((,class (:foreground ,blue1   :height 1.2))))
    `(org-level-2          ((,class (:foreground ,orange1 :height 1.1))))
    `(org-level-3          ((,class (:foreground ,purple1 :height 1.05))))
    `(org-level-4          ((,class (:foreground ,green1))))
