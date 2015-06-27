@@ -58,7 +58,7 @@
    'morning-star
 
    ;; Syntax highlghting
-   `(default                          ((,class (:foreground ,fg))))
+   `(default                          ((,class (:foreground ,fg :background ,bg))))
    `(font-lock-builtin-face           ((,class (:foreground ,aqua1))))
    `(font-lock-comment-face           ((,class (:foreground ,grey2))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,grey2))))
