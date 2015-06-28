@@ -51,6 +51,7 @@
       (orange2 "#ccb18b")
       (grey1   "#333339")
       (grey2   "#555555")
+      (grey3   "#2f2f2f")
       (white1  "#ffffff")
       (black1  "#000000")
       (black2  "#1a1a1a"))
@@ -120,7 +121,7 @@
    `(linum                      ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 140))))
    `(region                     ((,class (:background ,grey1))))
    `(highlight                  ((,class (:inherit button :background ,blue3))))
-   `(hl-line                    ((,class (:background ,grey1))))
+   `(hl-line                    ((,class (:background ,grey3))))
    `(highlight-indentation-face ((,class (:background ,grey1))))
    `(fringe                     ((,class (:background ,black2))))
    `(cursor                     ((,class (:background ,red1))))
@@ -142,14 +143,18 @@
    `(custom-state               ((,class (:foreground ,green2))))
 
    ;; Flycheck
-   `(flycheck-warning ((,class (:underline (:color ,red1 :style wave)))))
+   `(flycheck-warning ((,class (:underline (:color ,orange1 :style wave)))))
 
    ;; Flyspell
    `(flyspell-incorrect ((,class (:underline (:color ,orange1 :style wave)))))
 
 
    ;; Smart-Parens
-   `(sp-pair-overlay-face ((,class (:background ,black2))))
+   `(sp-pair-overlay-face    ((,class (:background ,black2))))
+   `(sp-show-pair-match-face ((,class (:background ,blue1  :foreground ,black2))))
+
+   ;; Highlight symbol
+   `(highlight-symbol-face ((,class (:background ,grey1))))
 
    ;; Man Pages
    `(Man-overstrike ((,class (:foreground ,purple1 :bold t))))
@@ -206,6 +211,7 @@
    `(markdown-comment-face          ((,class (:inherit font-lock-comment-face))))
    `(markdown-footnote-face         ((,class (:foreground ,purple1))))
    `(markdown-blockquote-face       ((,class (:foreground ,orange2))))
+   `(markdown-link-face             ((,class (:inherit link))))
    `(markdown-italic-face           ((,class (:foreground ,orange1 :italic t))))
    `(markdown-bold-face             ((,class (:foreground ,orange1 :bold t))))
    `(markdown-inline-code-face      ((,class (:foreground ,red2    :box ,grey2))))
@@ -246,6 +252,7 @@
    `(org-block-begin-line ((,class (:background ,purple2 :foreground ,black1 :bold nil :box (:color ,black2 :style released-button :line-width 2)))))
    `(org-block-end-line   ((,class (:inherit org-block-begin-line))))
    `(org-block            ((,class (:background ,grey1))))
+   `(org-checkbox         ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
    ;; `(org-code             ((,class (:foreground ,aqua1))))
    ;; `(org-hide ((,class (:foreground ,fg4))))
    ;; `(org-date ((,class (:underline t :foreground ,var) )))
