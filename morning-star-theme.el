@@ -144,14 +144,19 @@
 
    ;; Flycheck
    `(flycheck-warning ((,class (:underline (:color ,orange1 :style wave)))))
+   `(flycheck-error   ((,class (:underline (:color ,red1    :style wave)))))
 
    ;; Flyspell
    `(flyspell-incorrect ((,class (:underline (:color ,orange1 :style wave)))))
 
-
    ;; Smart-Parens
    `(sp-pair-overlay-face    ((,class (:background ,black2))))
-   `(sp-show-pair-match-face ((,class (:background ,blue1  :foreground ,black2))))
+   `(sp-show-pair-match-face ((,class (:background ,red1 :foreground ,black1))))
+
+   ;; Anzu
+   `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,red1 :box ,yellow2))))
+   `(anzu-replace-highlight ((,class (:foreground ,yellow2 :background ,red1))))
+   `(anzu-replace-to        ((,class (:foreground ,black1  :background ,blue1))))
 
    ;; Highlight symbol
    `(highlight-symbol-face ((,class (:background ,grey1))))
