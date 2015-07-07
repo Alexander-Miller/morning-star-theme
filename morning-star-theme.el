@@ -106,11 +106,11 @@
    `(sml/charging            ((,class (:background ,blue1   :foreground ,red3))))
    `(sml/discharging         ((,class (:background ,blue1   :foreground ,red3))))
    `(sml/not-modified        ((,class (:background ,blue1))))
+   `(sml/read-only           ((,class (:foreground ,red3 :bold t))))
    ;; SML TODO
    `(sml/client           ((,class (:background ,red3 :foreground ,fg :height 2.0))))
    `(sml/outside-modified ((,class (:background ,green2 :foreground ,fg :height 2.0))))
    `(sml/sudo             ((,class (:background ,yellow2 :foreground ,fg :height 2.0))))
-   `(sml/read-only        ((,class (:background ,purple2 :foreground ,fg :height 2.0))))
 
    ;; Standard UI Items
    `(show-paren-match-face      ((,class (:background ,blue1  :foreground ,black2))))
@@ -493,6 +493,7 @@
    `(company-template-field           ((,class (:height 2.0 :foreground ,grey2))))
    `(company-preview-search           ((,class (:background ,red1 :foreground ,yellow2 :height 2.0))))
 
+   `(haskell-interactive-face-compile-error ((,class (:foreground ,red2))))
    ;; `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
    ;; `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
    ;; `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
