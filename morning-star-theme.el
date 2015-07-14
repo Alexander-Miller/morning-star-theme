@@ -154,7 +154,7 @@
    `(sp-show-pair-match-face ((,class (:background ,red1 :foreground ,black1))))
 
    ;; Anzu
-   `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,red1 :box ,yellow2))))
+   `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,red1))))
    `(anzu-replace-highlight ((,class (:foreground ,yellow2 :background ,red1))))
    `(anzu-replace-to        ((,class (:foreground ,black1  :background ,blue1))))
 
