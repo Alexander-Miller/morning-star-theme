@@ -30,9 +30,9 @@
 
 (deftheme morning-star)
 (let ((class '((class color) (min-colors 89)))
-      (fg      "#a3a3a3")
-      (bg      "#282828")
-      (bg2     "#222222")
+      (fg      "#bbbbbb")
+      (bg      "#2d2d33")
+      (bg2     "#25252a")
       (purple1 "#a374a8")
       (purple2 "#664466")
       (aqua1   "#339999")
@@ -45,16 +45,17 @@
       (blue3   "#557799")
       (green1  "#66aa66")
       (green2  "#33aa33")
-      (yellow1 "#f0c674")
+      (yellow1 "#f7ca88")
       (yellow2 "#ffdb1a")
       (orange1 "#c97449")
       (orange2 "#ccb18b")
       (grey1   "#333339")
-      (grey2   "#555555")
+      (grey2   "#666666")
       (grey3   "#2f2f2f")
       (white1  "#ffffff")
       (black1  "#000000")
       (black2  "#1a1a1a"))
+
   (custom-theme-set-faces
    'morning-star
 
