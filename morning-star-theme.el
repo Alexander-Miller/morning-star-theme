@@ -31,7 +31,7 @@
 (deftheme morning-star)
 (let ((class '((class color) (min-colors 89)))
       (fg      "#bbbbbb")
-      (bg      "#2d2d33")
+      (bg      "#2d2d31")
       (bg2     "#25252a")
       (purple1 "#a374a8")
       (purple2 "#664466")
@@ -40,7 +40,7 @@
       (red1    "#ab3737")
       (red2    "#cc6666")
       (red3    "#660000")
-      (blue1   "#446688")
+      (blue1   "#446677")
       (blue2   "#27408b")
       (blue3   "#557799")
       (green1  "#66aa66")
@@ -49,9 +49,9 @@
       (yellow2 "#ffdb1a")
       (orange1 "#c97449")
       (orange2 "#ccb18b")
-      (grey1   "#333339")
+      (grey1   "#383844")
       (grey2   "#666666")
-      (grey3   "#2f2f2f")
+      (grey3   "#2f2f39")
       (white1  "#ffffff")
       (black1  "#000000")
       (black2  "#1a1a1a"))
@@ -164,7 +164,7 @@
 
    ;; Man Pages
    `(Man-overstrike ((,class (:foreground ,purple1 :bold t))))
-   `(Man-underline  ((,class (:foreground ,green1   :underline t))))
+   `(Man-underline  ((,class (:foreground ,green1  :underline t))))
    `(Man-reverse    ((,class (:foreground ,aqua1))))
 
    ;; Dired
