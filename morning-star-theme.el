@@ -66,7 +66,7 @@
    `(font-lock-comment-delimiter-face ((,class (:foreground ,grey2))))
    `(font-lock-negation-char-face     ((,class (:foreground ,red2))))
    `(font-lock-reference-face         ((,class (:foreground "#ffffff"))))
-   `(font-lock-constant-face          ((,class (:foreground ,red2 :bold t))))
+   `(font-lock-constant-face          ((,class (:foreground ,red2))))
    `(font-lock-doc-face               ((,class (:foreground ,orange2))))
    `(font-lock-function-name-face     ((,class (:foreground ,blue1))))
    `(font-lock-keyword-face           ((,class (:foreground ,purple1))))
@@ -87,7 +87,7 @@
    `(spaceline-evil-normal      ((,class (:background ,red1    :foreground ,black1))))
    `(spaceline-evil-insert      ((,class (:background ,green2  :foreground ,black1))))
    `(spaceline-evil-visual      ((,class (:background ,purple2 :foreground ,black1))))
-   `(spaceline-evil-emacs       ((,class (:background ,grey2   :foreground ,black1))))
+   `(spaceline-evil-emacs       ((,class (:background ,aqua2   :foreground ,black1))))
    `(spaceline-evil-motion      ((,class (:background ,orange1 :foreground ,black1))))
    `(spaceline-evil-replace     ((,class (:background ,aqua2   :foreground ,black1))))
    `(spaceline-flycheck-error   ((,class (:foreground ,red1))))
@@ -100,7 +100,7 @@
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
    `(link                       ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
    `(button                     ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
-   `(linum                      ((,class (:background ,black2 :foreground ,red1 :bold nil :box nil :underline nil :italic nil :height 140))))
+   `(linum                      ((,class (:background ,black2 :foreground ,red1  :bold nil :box nil :underline nil :italic nil))))
    `(region                     ((,class (:background ,grey1))))
    `(highlight                  ((,class (:inherit button :background ,blue3))))
    `(hl-line                    ((,class (:background ,grey3))))
@@ -123,6 +123,11 @@
    `(custom-comment-tag         ((,class (:inherit font-lock-comment-face))))
    `(custom-documentation       ((,class (:foreground ,fg))))
    `(custom-state               ((,class (:foreground ,green2))))
+
+   ;; Folding
+   `(vimish-fold-fringe     ((,class (:foreground ,blue2))))
+   `(vimish-fold-overlay    ((,class (:background ,grey1 :box (:color ,black2)))))
+   `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
    ;; Flycheck
    `(flycheck-warning ((,class (:underline (:color ,orange1 :style wave)))))
