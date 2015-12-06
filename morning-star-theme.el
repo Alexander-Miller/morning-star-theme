@@ -448,7 +448,7 @@
    `(magit-diff-context-highlight      ((,class (:inherit magit-diff-context-highlight :background ,bg2))))
    `(magit-diff-file-heading           ((,class (:foreground ,fg))))
    `(magit-diff-file-heading-highlight ((,class (:inherit magit-diff-file-heading :background ,bg2))))
-   `(magit-diff-file-heading-selection ((,class (:background ,green2))))
+   `(magit-diff-file-heading-selection ((,class (:inherit magit-diff-file-heading :background ,bg2))))
    `(magit-diff-hunk-heading           ((,class (:foreground ,blue1 :bold t))))
    `(magit-diff-hunk-heading-highlight ((,class (:inherit magit-diff-hunk-heading :background ,bg2))))
    `(magit-diff-hunk-heading-selection ((,class (:foreground ,green1 :background ,bg2))))
