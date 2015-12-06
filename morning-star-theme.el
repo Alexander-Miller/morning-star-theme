@@ -471,6 +471,7 @@
    ;; `(magit-log-author                  ((,class (:foreground ,red1))))
    ;; `(magit-log-date                    ((,class (:foreground ,red1))))
    ;; `(magit-log-graph                   ((,class (:foreground ,red1))))
+   `(magit-popup-argument              ((,class (:foreground ,green2))))
    ;; `(magit-process-ng                  ((,class (:foreground ,red1))))
    ;; `(magit-process-ok                  ((,class (:foreground ,red1))))
    ;; `(magit-reflog-ok                   ((,class (:foreground ,red1))))
