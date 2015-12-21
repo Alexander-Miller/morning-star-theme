@@ -544,6 +544,12 @@
    ;; `(magit-hash                   ((,class (:foreground ,fg2))))
    ;; `(magit-diff-file-header       ((,class (:foreground ,fg2 :background ,bg3))))
 
+   ;; Compilation
+   `(compilation-info          ((,class (:foreground ,green1))))
+   `(compilation-error         ((,class (:foreground ,red2))))
+   `(compilation-line-number   ((,class ())))
+   `(compilation-column-number ((,class ())))
+
    ;; Company
    `(company-tooltip-common-selection ((,class (:foreground ,black1 :background ,blue2))))
    `(company-tooltip-selection        ((,class (:background ,blue2 :foreground ,fg))))
