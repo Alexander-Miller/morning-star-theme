@@ -112,6 +112,7 @@
    `(vertical-border            ((,class (:foreground ,bg))))
    `(error                      ((,class (:foreground ,red2))))
    `(success                    ((,class (:foreground ,green2))))
+   `(warning                    ((,class (:foreground ,yellow2))))
 
    ;; Group Customization
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
