@@ -1,8 +1,8 @@
 ;;; morning-star-theme.el --- Emacs 24 theme with a dark background.
 
-;; Copyright (C) 2014 , a
+;; Copyright (C) 2014 , Alexander Miller
 
-;; Author: a
+;; Author: Alexander Miller
 ;;
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
@@ -133,8 +133,20 @@
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
    ;; Flycheck
-   `(flycheck-warning ((,class (:underline (:color ,orange1 :style wave)))))
-   `(flycheck-error   ((,class (:underline (:color ,red1    :style wave)))))
+   `(flycheck-info                     ((,class (:underline (:color ,green2  :style wave)))))
+   `(flycheck-warning                  ((,class (:underline (:color ,orange1 :style wave)))))
+   `(flycheck-error                    ((,class (:underline (:color ,red1    :style wave)))))
+   `(flycheck-fringe-info              ((,class (:foreground ,green2))))
+   `(flycheck-fringe-warning           ((,class (:foreground ,yellow2))))
+   `(flycheck-fringe-error             ((,class (:foreground ,red2))))
+   `(flycheck-error-list-info          ((,class (:foreground ,green2))))
+   `(flycheck-error-list-warning       ((,class (:foreground ,yellow2))))
+   `(flycheck-error-list-error         ((,class (:foreground ,red2))))
+   `(flycheck-error-list-id            ((,class (:foreground ,yellow1))))
+   `(flycheck-error-list-checker-name  ((,class (:foreground ,blue1))))
+   `(flycheck-error-list-column-number ((,class (:foreground ,aqua1))))
+   `(flycheck-error-list-line-number   ((,class (:foreground ,aqua1))))
+   `(flycheck-error-list-highlight     ((,class (:background ,grey1))))
 
    ;; Flyspell
    `(flyspell-incorrect ((,class (:underline (:color ,orange1 :style wave)))))
