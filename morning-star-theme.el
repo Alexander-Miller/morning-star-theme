@@ -98,7 +98,7 @@
    `(show-paren-match-face      ((,class (:background ,blue1  :foreground ,black2))))
    `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
-   `(link                       ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
+   `(link                       ((,class (:foreground ,blue1  :underline  (:color ,aqua2)))))
    `(button                     ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
    `(linum                      ((,class (:background ,black2 :foreground ,red1  :bold nil :box nil :underline nil :italic nil))))
    `(region                     ((,class (:background ,grey1))))
