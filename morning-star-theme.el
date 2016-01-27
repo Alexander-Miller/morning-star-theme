@@ -134,6 +134,16 @@
    `(vimish-fold-overlay    ((,class (:background ,grey1 :box (:color ,black2)))))
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
+   ;; Which Key
+   `(which-key-key-face                   ((,class (:foreground ,orange1))))
+   `(which-key-note-face                  ((,class (:foreground ,yellow1))))
+   `(which-key-separator-face             ((,class (:foreground ,aqua1))))
+   `(which-key-special-key-face           ((,class (:foreground ,orange1))))
+   `(which-key-group-description-face     ((,class (:foreground ,purple1))))
+   `(which-key-command-description-face   ((,class (:foreground ,green1))))
+   `(which-key-highlighted-command-face   ((,class (:foreground ,red2 :bold t))))
+   `(which-key-local-map-description-face ((,class (:foreground ,blue3))))
+
    ;; Flycheck
    `(flycheck-info                     ((,class (:underline (:color ,green2  :style wave)))))
    `(flycheck-warning                  ((,class (:underline (:color ,orange1 :style wave)))))
