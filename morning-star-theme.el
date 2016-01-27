@@ -585,11 +585,11 @@
    `(company-tooltop-annotation       ((,class (:foreground ,green1))))
    `(company-tooltip-common           ((,class (:foreground ,black1 :background ,grey2))))
    `(company-preview-common           ((,class (:foreground ,grey2))))
+   `(company-preview                  ((,class (:foreground ,grey2))))
    `(company-tooltip-mouse            ((,class (:background ,blue1))))
+   `(company-echo-common              ((,class (:background ,blue1 :foreground ,black1))))
    `(company-template-field           ((,class (:inherit yas-field-highlight-face))))
    ;; Company TODO
-   `(company-echo-common              ((,class (:background ,green1 :height 1.5 :foreground ,black1))))
-   `(company-preview                  ((,class (:foreground ,grey2 :height 1.5 :background ,green1))))
    `(company-preview-search           ((,class (:background ,red1 :foreground ,yellow2 :height 2.0))))
 
    `(haskell-interactive-face-compile-error ((,class (:foreground ,red2))))
