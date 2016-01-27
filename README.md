@@ -1,6 +1,8 @@
 # Morning Star Theme
 
-My own private Emacs color theme, mostly based on Tomorrow Night Eighties.
+My own private Emacs color theme, mostly based on Tomorrow Night Eighties:
+
+![](screenshot.png)
 
 It's a perpetual work in progress, but so far manages to cover all of my own
 use cases. Other than the obligatory builtin bits the folloing modes/packages
@@ -17,7 +19,7 @@ to run into them in my day-to-day):
  * company-mode
  * dired & dired+
  * rainbow deliiters
- * markdown-mode
+ * markdown-mode (partially)
  * ace-window
  * avy
  * org-mode (partially)
