@@ -116,6 +116,16 @@
    `(success                    ((,class (:foreground ,green2))))
    `(warning                    ((,class (:foreground ,yellow2))))
 
+   ;; Ido
+   `(ido-first-match           ((,class (:bold t))))
+   `(ido-incomplete-regexp     ((,class (:inherit error))))
+   `(ido-indicator             ((,class (:background ,red1 :foreground ,yellow2))))
+   `(ido-only-match            ((,class (:foreground ,green1))))
+   `(ido-subdir                ((,class (:foreground ,blue1))))
+   `(ido-virtual               ((,class (:foreground ,aqua1))))
+   `(ido-vertical-first-match  ((,class (:inherit ido-first-match))))
+   `(ido-vertical-only-match   ((,class (:inherit ido-only-match))))
+
    ;; Group Customization
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
    `(custom-group-subtitle      ((,class (:foreground ,purple1 :bold t :underline t))))

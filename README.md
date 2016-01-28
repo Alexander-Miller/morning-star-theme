@@ -9,6 +9,7 @@ use cases. Other than the obligatory builtin bits the folloing modes/packages
 are defined (partially meaning some faces are not defined yet because I've yet
 to run into them in my day-to-day):
 
+ * ido & ido vertical
  * powerline & spaceline
  * vimish-fold
  * flycheck
