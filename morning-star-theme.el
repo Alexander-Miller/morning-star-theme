@@ -199,7 +199,7 @@
    `(dired-directory               ((,class (:foreground ,blue1))))
    `(dired-perm-write              ((,class (:foreground ,red2))))
    `(dired-warning                 ((,class (:underline  ,red3))))
-   `(dired-mark                    ((,class (:inherit    ,diredp-flag-mark-line))))
+   `(dired-mark                    ((,class (:inherit    diredp-flag-mark-line))))
 
    ;; Dired+
    `(diredp-dir-name               ((,class (:inherit dired-directory))))
