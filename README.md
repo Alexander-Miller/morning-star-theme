@@ -37,4 +37,5 @@ to run into them in my day-to-day):
  * compilation-mode
  * highlight-symbol
  * imenu-list
+ * whitespace (partially)
  * which-key

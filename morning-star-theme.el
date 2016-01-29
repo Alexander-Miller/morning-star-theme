@@ -444,6 +444,20 @@
    `(term-color-cyan    ((,class (:foreground ,aqua1))))
    `(term-color-white   ((,class (:foreground ,fg))))
 
+   ;; Whitespace
+   `(whitespace-big-indent       ((,class (:foreground ,grey2 :height 2.0))))
+   `(whitespace-empty            ((,class (:background ,bg2))))
+   `(whitespace-trailing         ((,class (:foreground ,red1))))
+   `(whitespace-hspace           ((,class (:background ,red1 :height 2.0))))
+   `(whitespace-indentation      ((,class (:background ,red1))))
+   `(whitespace-line             ((,class (:foreground ,red1))))
+   `(whitespace-newline          ((,class (:foreground ,grey2))))
+   `(whitespace-space            ((,class (:foreground ,grey2))))
+   `(whitespace-space-after-tab  ((,class (:foreground ,grey2))))
+   `(whitespace-space-before-tab ((,class (:foreground ,grey2))))
+   `(whitespace-tab              ((,class (:foreground ,grey2))))
+   `(whitespace-trailing         ((,class (:foreground ,grey2))))
+
    ;; Helm
    `(helm-ff-directory                 ((,class (:foreground ,blue1))))
    `(helm-ff-file                      ((,class (:foreground ,fg))))
