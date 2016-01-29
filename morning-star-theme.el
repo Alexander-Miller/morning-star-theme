@@ -260,7 +260,7 @@
    `(markdown-language-keyword-face ((,class (:foreground ,red1 :bold t :underline t))))
    `(markdown-line-break-face       ((,class (:inherit link :height 2.0))))
    `(markdown-list-face             ((,class (:foreground ,green2 :bold t))))
-   `(markdown-link-face             ((,class (:inherit link))))
+   `(markdown-link-face             ((,class (:inherit link :underline nil))))
    `(markdown-link-title-face       ((,class (:foreground ,blue3))))
    `(markdown-markup-face           ((,class (:foreground ,yellow1))))
    `(markdown-math-face             ((,class (:inherit markdown-inline-code-face))))
@@ -292,7 +292,6 @@
    `(imenu-list-entry-face-1 ((,class (:foreground ,blue1))))
    `(imenu-list-entry-face-2 ((,class (:foreground ,aqua1))))
    `(imenu-list-entry-face-3 ((,class (:foreground ,blue1))))
-
 
    ;; Org-Mode
    `(org-level-1          ((,class (:foreground ,blue1   :height 1.2))))
