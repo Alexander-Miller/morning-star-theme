@@ -36,4 +36,5 @@ to run into them in my day-to-day):
  * diff-hl
  * compilation-mode
  * highlight-symbol
+ * imenu-list
  * which-key

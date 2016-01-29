@@ -278,10 +278,21 @@
 
    ;; Avy
    `(avy-background-face ((,class (:background ,grey1))))
-   `(avy-lead-face       ((,class (:background ,red1   :foreground ,yellow2))))
-   `(avy-lead-face-0     ((,class (:background ,blue1  :foreground ,black1))))
-   `(avy-lead-face-1     ((,class (:background ,red1   :foreground ,yellow2))))
-   `(avy-lead-face-2     ((,class (:background ,blue1  :foreground ,black1))))
+   `(avy-lead-face       ((,class (:background ,red1  :foreground ,yellow2))))
+   `(avy-lead-face-0     ((,class (:background ,blue1 :foreground ,black1))))
+   `(avy-lead-face-1     ((,class (:background ,red1  :foreground ,yellow2))))
+   `(avy-lead-face-2     ((,class (:background ,blue1 :foreground ,black1))))
+
+   ;; imenu list
+   `(imenu-list-entry-subalist-face-0 ((,class (:foreground ,green1))))
+   `(imenu-list-entry-subalist-face-1 ((,class (:foreground ,yellow1))))
+   `(imenu-list-entry-subalist-face-2 ((,class (:foreground ,green1))))
+   `(imenu-list-entry-subalist-face-3 ((,class (:foreground ,blue1))))
+   `(imenu-list-entry-face-0 ((,class (:foreground ,blue1))))
+   `(imenu-list-entry-face-1 ((,class (:foreground ,blue1))))
+   `(imenu-list-entry-face-2 ((,class (:foreground ,aqua1))))
+   `(imenu-list-entry-face-3 ((,class (:foreground ,blue1))))
+
 
    ;; Org-Mode
    `(org-level-1          ((,class (:foreground ,blue1   :height 1.2))))
