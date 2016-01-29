@@ -259,7 +259,7 @@
    `(markdown-italic-face           ((,class (:foreground ,orange1 :italic t))))
    `(markdown-language-keyword-face ((,class (:foreground ,red1 :bold t :underline t))))
    `(markdown-line-break-face       ((,class (:inherit link :height 2.0))))
-   `(markdown-list-face             ((,class (:foreground ,green2 :bold t))))
+   `(markdown-list-face             ((,class (:foreground ,green1 :bold t))))
    `(markdown-link-face             ((,class (:inherit link :underline nil))))
    `(markdown-link-title-face       ((,class (:foreground ,blue3))))
    `(markdown-markup-face           ((,class (:foreground ,yellow1))))
