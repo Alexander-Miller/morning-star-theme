@@ -175,7 +175,7 @@
 
    ;; Smart-Parens
    `(sp-pair-overlay-face    ((,class (:background ,black2))))
-   `(sp-show-pair-match-face ((,class (:background ,black2))))
+   `(sp-show-pair-match-face ((,class (:underline ,aqua2 :bold t))))
 
    ;; Anzu
    `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,bg2))))
