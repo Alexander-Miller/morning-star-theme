@@ -155,9 +155,9 @@
    `(which-key-local-map-description-face ((,class (:foreground ,blue3))))
 
    ;; Flycheck
-   `(flycheck-info                     ((,class (:underline (:color ,green2  :style wave)))))
-   `(flycheck-warning                  ((,class (:underline (:color ,orange1 :style wave)))))
-   `(flycheck-error                    ((,class (:underline (:color ,red1    :style wave)))))
+   `(flycheck-info                     ((,class (:underline  ,green2))))
+   `(flycheck-warning                  ((,class (:underline  ,orange1))))
+   `(flycheck-error                    ((,class (:underline  ,red1))))
    `(flycheck-fringe-info              ((,class (:foreground ,green2))))
    `(flycheck-fringe-warning           ((,class (:foreground ,yellow2))))
    `(flycheck-fringe-error             ((,class (:foreground ,red2))))
