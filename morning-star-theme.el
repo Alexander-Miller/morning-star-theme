@@ -156,7 +156,7 @@
 
    ;; Flycheck
    `(flycheck-info                     ((,class (:underline  ,green2))))
-   `(flycheck-warning                  ((,class (:underline  ,orange1))))
+   `(flycheck-warning                  ((,class (:underline  ,yellow2))))
    `(flycheck-error                    ((,class (:underline  ,red1))))
    `(flycheck-fringe-info              ((,class (:foreground ,green2))))
    `(flycheck-fringe-warning           ((,class (:foreground ,yellow2))))
