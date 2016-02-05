@@ -96,7 +96,7 @@
    `(spaceline-flycheck-info    ((,class (:box (:color ,black1 :line-width 1) :foreground ,green2))))
 
    ;; Standard UI Items
-   `(show-paren-match-face      ((,class (:background ,blue1  :foreground ,black2))))
+   `(show-paren-match-face      ((,class (:underline ,aqua2 :bold t))))
    `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua2)))))
@@ -175,7 +175,7 @@
 
    ;; Smart-Parens
    `(sp-pair-overlay-face    ((,class (:background ,black2))))
-   `(sp-show-pair-match-face ((,class (:underline ,aqua2 :bold t))))
+   `(sp-show-pair-match-face ((,class (:inherit show-paren-match-face))))
 
    ;; Anzu
    `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,bg2))))
