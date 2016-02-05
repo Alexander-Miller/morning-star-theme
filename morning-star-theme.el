@@ -66,7 +66,6 @@
    `(font-lock-comment-face           ((,class (:foreground ,grey2))))
    `(font-lock-comment-delimiter-face ((,class (:foreground ,grey2))))
    `(font-lock-negation-char-face     ((,class (:foreground ,red2))))
-   `(font-lock-reference-face         ((,class (:foreground "#ffffff"))))
    `(font-lock-constant-face          ((,class (:foreground ,red2))))
    `(font-lock-doc-face               ((,class (:foreground ,orange2))))
    `(font-lock-function-name-face     ((,class (:foreground ,blue1))))
