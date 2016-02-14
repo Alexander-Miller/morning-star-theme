@@ -212,7 +212,7 @@
    `(diredp-compressed-file-suffix ((,class (:foreground ,purple1))))
    `(diredp-deletion-file-name     ((,class (:inherit helm-visible-mark :background ,red1))))
    `(diredp-deletion               ((,class (:inherit diredp-deletion-file-name))))
-   `(diredp-flag-mark-line         ((,class (:inherit helm-visible-mark))))
+   `(diredp-flag-mark-line         ((,class (:inherit helm-visible-mark :background ,blue1))))
    `(diredp-flag-mark              ((,class (:inherit diredp-flag-mark-line))))
    `(diredp-mode-line-marked       ((,class (:foreground ,purple1 :bold t))))
    `(diredp-mode-line-flagged      ((,class (:foreground ,red1    :bold t))))
