@@ -104,7 +104,7 @@
    `(linum                      ((,class (:background ,black2 :foreground ,red1  :bold nil :box nil :underline nil :italic nil))))
    `(region                     ((,class (:background ,grey1))))
    `(secondary-selection        ((,class (:inherit region))))
-   `(highlight                  ((,class (:inherit button :background ,blue3))))
+   `(highlight                  ((,class (:background ,black2 :foreground ,fg))))
    `(hl-line                    ((,class (:background ,grey3))))
    `(highlight-indentation-face ((,class (:background ,grey1))))
    `(fringe                     ((,class (:background ,bg2))))
