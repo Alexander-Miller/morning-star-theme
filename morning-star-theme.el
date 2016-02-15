@@ -294,24 +294,28 @@
    `(imenu-list-entry-face-3 ((,class (:foreground ,blue1))))
 
    ;; Org-Mode
-   `(org-level-1          ((,class (:foreground ,blue1   :height 1.2))))
-   `(org-level-2          ((,class (:foreground ,orange1 :height 1.1))))
-   `(org-level-3          ((,class (:foreground ,purple1 :height 1.05))))
-   `(org-level-4          ((,class (:foreground ,green1))))
-   `(org-level-5          ((,class (:foreground ,orange2))))
-   `(org-level-6          ((,class (:foreground ,red2))))
-   `(org-level-7          ((,class (:foreground ,aqua1))))
-   `(org-level-8          ((,class (:foreground ,yellow2))))
-   `(org-todo             ((,class (:foreground ,red2   :bold t :box (:color ,black2 :line-width 2 :style released-button)))))
-   `(org-done             ((,class (:foreground ,green1 :bold t :box (:color ,black2 :line-width 2 :style released-button)))))
-   `(org-link             ((,class (:inherit link))))
-   `(org-table            ((,class (:foreground ,blue1   :background ,bg2))))
-   `(org-block-begin-line ((,class (:background ,purple2 :foreground ,black1 :bold nil :box (:color ,black2 :style released-button :line-width 2)))))
-   `(org-block-end-line   ((,class (:inherit org-block-begin-line))))
-   `(org-block            ((,class (:background ,grey1))))
-   `(org-checkbox         ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
+   `(org-level-1               ((,class (:foreground ,blue1   :height 1.2))))
+   `(org-level-2               ((,class (:foreground ,orange1 :height 1.1))))
+   `(org-level-3               ((,class (:foreground ,purple1 :height 1.05))))
+   `(org-level-4               ((,class (:foreground ,green1))))
+   `(org-level-5               ((,class (:foreground ,orange2))))
+   `(org-level-6               ((,class (:foreground ,red2))))
+   `(org-level-7               ((,class (:foreground ,aqua1))))
+   `(org-level-8               ((,class (:foreground ,yellow2))))
+   `(org-todo                  ((,class (:foreground ,red2   :bold t :box (:color ,black2 :line-width 2 :style released-button)))))
+   `(org-done                  ((,class (:foreground ,green1 :bold t :box (:color ,black2 :line-width 2 :style released-button)))))
+   `(org-link                  ((,class (:inherit link))))
+   `(org-table                 ((,class (:foreground ,blue1   :background ,bg2))))
+   `(org-block-begin-line      ((,class (:background ,purple2 :foreground ,black1 :bold nil :box (:color ,black2 :style released-button :line-width 2)))))
+   `(org-block-end-line        ((,class (:inherit org-block-begin-line))))
+   `(org-block                 ((,class (:background ,grey1))))
+   `(org-checkbox              ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
    ;; `(org-code             ((,class (:foreground ,aqua1))))
-   `(org-checkbox         ((,class (:inherit org-todo))))
+   `(org-checkbox              ((,class (:inherit org-todo))))
+   `(org-document-title        ((,class (:foreground ,red2 :bold t :height 1.3))))
+   `(org-document-info         ((,class (:foreground ,red2))))
+   `(org-document-info-keyword ((,class (:foreground ,green1))))
+   `(org-meta-line             ((,class (:foreground ,green1))))
    ;; `(org-hide ((,class (:foreground ,fg4))))
    ;; `(org-date ((,class (:underline t :foreground ,var) )))
    ;; `(org-footnote  ((,class (:underline t :foreground ,fg4))))
@@ -351,7 +355,6 @@
    `(font-latex-documentation-face ((,class (:background ,black1))))
    `(font-latex-match-reference-keywords ((,class (:foreground ,black1 :height 2.0))))
    `(font-latex-match-variable-keywords ((,class (:foreground ,black1))))
-
 
    ;;Show Font Latex Doctex Preprocessor Face:[sample]
    ;;Face used to highlight preprocessor directives in docTeX mode.
@@ -496,14 +499,6 @@
    ;; `(helm-moccur-buffer ((,class (:foreground ,func :background ,bg1))))
    ;; `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
    ;; `(helm-bookmark-w3m ((,class (:foreground ,type))))
-
-   ;; Git
-   ;; `(magit-diff-added-highlight        ((,class (:foreground ,green1))))
-   ;; `(magit-diff-removed-highlight      ((,class (:foreground ,red2))))
-   ;; `(magit-diff-context-highlight      ((,class (:background ,bg2))))
-   ;; `(magit-diff-hunk-heading-highlight ((,class (:foreground ,blue1 :background ,bg))))
-   ;; `(magit-section-heading             ((,class (:foreground ,purple1 :underline t :height 1.2))))
-
 
    ;; Magit
    ;; `(magit-bisect-bad                  ((,class (:foreground ,black1 :background ,red2   :box ,grey2))))
