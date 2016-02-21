@@ -309,7 +309,7 @@
    `(org-table                 ((,class (:foreground ,blue1   :background ,bg2))))
    `(org-block-begin-line      ((,class (:background ,purple2 :foreground ,black1 :bold nil :box (:color ,black2 :style released-button :line-width 2)))))
    `(org-block-end-line        ((,class (:inherit org-block-begin-line))))
-   `(org-block                 ((,class (:background ,grey1))))
+   `(org-block                 ((,class (:background ,bg))))
    `(org-checkbox              ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
    ;; `(org-code             ((,class (:foreground ,aqua1))))
    `(org-checkbox              ((,class (:inherit org-todo))))
