@@ -81,6 +81,7 @@
    `(mode-line-highlight        ((,class (:box (:color ,black1 :line-width 1) :underline t))))
    `(mode-line-emphasis         ((,class (:box (:color ,black1 :line-width 1) :bolt t))))
    `(mode-line-inactive         ((,class (:box (:color ,black1 :line-width 1) :background ,bg2     :foreground ,green1))))
+   `(mode-line-buffer-id        ((,class (:box (:color ,black1 :line-width 1) :foreground ,orange1 :bold t))))
    `(powerline-active1          ((,class (:box (:color ,black1 :line-width 1) :background ,grey1   :foreground ,purple1))))
    `(powerline-active2          ((,class (:box (:color ,black1 :line-width 1) :background ,bg2     :foreground ,black1))))
    `(powerline-inactive1        ((,class (:box (:color ,black1 :line-width 1) :background ,grey1   :foreground ,purple1))))
