@@ -142,7 +142,7 @@
 
    ;; Folding
    `(vimish-fold-fringe     ((,class (:foreground ,blue2))))
-   `(vimish-fold-overlay    ((,class (:foreground ,green1 :background ,grey1 :box (:color ,black2) :underline nil :bold nil))))
+   `(vimish-fold-overlay    ((,class (:foreground ,black2 :background ,grey2 :box (:color ,black2) :underline nil :bold nil))))
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
    ;; Which Key
