@@ -1,6 +1,6 @@
 ;;; morning-star-theme.el --- Emacs 24 theme with a dark background.
 
-;; Copyright (C) 2014 , Alexander Miller
+;; Copyright (C) 2016, Alexander Miller
 
 ;; Author: Alexander Miller
 ;;
