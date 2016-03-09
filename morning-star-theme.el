@@ -97,7 +97,7 @@
    `(spaceline-flycheck-info    ((,class (:box (:color ,black1 :line-width 1) :foreground ,green2))))
 
    ;; Standard UI Items
-   `(show-paren-match-face      ((,class (:underline ,aqua2 :bold t))))
+   `(show-paren-match           ((,class (:underline ,aqua2 :bold t))))
    `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua2)))))
