@@ -228,6 +228,14 @@
    `(diredp-rare-priv              ((,class (:foreground ,yellow2 :bold t))))
    `(diredp-other-priv             ((,class (:foreground ,yellow2 :bold t))))
 
+   ;; NeoTree
+   `(neo-root-dir-face   ((,class (:foreground ,purple1 :bold t :underline t))))
+   `(neo-banner-face     ((,class (:foreground ,red2 :bold t :underline t :height 1.4))))
+   `(neo-dir-link-face   ((,class (:foreground ,blue3))))
+   `(neo-expand-btn-face ((,class (:foreground ,green2 :bold t))))
+   `(neo-file-link-face  ((,class (:foreground ,orange2))))
+   `(neo-header-face     ((,class (:foreground ,orange2))))
+
    ;; Rainbow Delimiters
    `(rainbow-delimiters-depth-1-face    ((,class :foreground ,green1)))
    `(rainbow-delimiters-depth-2-face    ((,class :foreground ,red1)))

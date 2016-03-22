@@ -11,6 +11,7 @@ to run into them in my day-to-day):
 
  * ido & ido vertical
  * powerline & spaceline
+ * neotree (partially)
  * vimish-fold
  * flycheck
  * smartparens (partially)
