@@ -315,7 +315,7 @@
    `(org-done                  ((,class (:foreground ,green1 :bold t :box (:color ,black2 :line-width 2 :style released-button)))))
    `(org-link                  ((,class (:inherit link))))
    `(org-table                 ((,class (:foreground ,blue1   :background ,bg2))))
-   `(org-block-begin-line      ((,class (:background ,purple2 :foreground ,black1 :bold nil :box (:color ,black2 :style released-button :line-width 2)))))
+   `(org-block-begin-line      ((,class (:background ,purple2 :foreground ,black1 :bold nil))))
    `(org-block-end-line        ((,class (:inherit org-block-begin-line))))
    `(org-block                 ((,class (:background ,bg))))
    `(org-checkbox              ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
