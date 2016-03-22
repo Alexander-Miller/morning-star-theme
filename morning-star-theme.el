@@ -320,7 +320,6 @@
    `(org-block                 ((,class (:background ,bg))))
    `(org-checkbox              ((,class (:background ,bg2 :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
    ;; `(org-code             ((,class (:foreground ,aqua1))))
-   `(org-checkbox              ((,class (:inherit org-todo))))
    `(org-document-title        ((,class (:foreground ,purple1 :bold t :height 1.8))))
    `(org-document-info         ((,class (:foreground ,red2    :bold t))))
    `(org-document-info-keyword ((,class (:foreground ,green1  :bold t))))
