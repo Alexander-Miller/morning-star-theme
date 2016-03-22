@@ -106,7 +106,7 @@
    `(region                     ((,class (:background ,grey1  :foreground ,fg))))
    `(secondary-selection        ((,class (:inherit region))))
    `(highlight                  ((,class (:background ,black2 :foreground ,fg))))
-   `(hl-line                    ((,class (:background ,grey3))))
+   `(hl-line                    ((,class (:background ,grey1))))
    `(highlight-indentation-face ((,class (:background ,grey1))))
    `(fringe                     ((,class (:background ,black2))))
    `(cursor                     ((,class (:background ,red1))))
