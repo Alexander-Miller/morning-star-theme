@@ -641,8 +641,8 @@
    `(compilation-column-number ((,class ())))
 
    ;; Company
-   `(company-tooltip-common-selection     ((,class (:foreground ,black1 :background ,blue2))))
-   `(company-tooltip-selection            ((,class (:background ,blue2 :foreground ,fg))))
+   `(company-tooltip-common-selection     ((,class (:foreground ,black1 :background ,purple2))))
+   `(company-tooltip-selection            ((,class (:background ,purple2 :foreground ,white1))))
    `(company-scrollbar-bg                 ((,class (:background ,bg2))))
    `(company-scrollbar-fg                 ((,class (:background ,red1))))
    `(company-tooltip                      ((,class (:background ,grey2))))
@@ -651,8 +651,8 @@
    `(company-tooltip-common               ((,class (:foreground ,black1 :background ,grey2))))
    `(company-preview-common               ((,class (:foreground ,grey2))))
    `(company-preview                      ((,class (:foreground ,grey2))))
-   `(company-tooltip-mouse                ((,class (:background ,blue3))))
-   `(company-echo-common                  ((,class (:background ,blue3 :foreground ,black1))))
+   `(company-tooltip-mouse                ((,class (:background ,blue2))))
+   `(company-echo-common                  ((,class (:background ,blue1 :foreground ,black1))))
    `(company-template-field               ((,class (:inherit yas-field-highlight-face))))
    ;; Company TODO
    `(company-preview-search           ((,class (:background ,red1 :foreground ,yellow2 :height 2.0))))
