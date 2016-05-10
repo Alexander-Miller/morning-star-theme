@@ -101,7 +101,7 @@
    `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
    `(link                       ((,class (:foreground ,blue1  :underline  (:color ,blue1)))))
-   `(button                     ((,class (:foreground ,black1 :background ,blue3 :box (:line-width 2 :color ,black2 :style released-button)))))
+   `(button                     ((,class (:foreground ,blue3  :background ,bg :bold t :box (:line-width 2 :color ,black2 :style released-button)))))
    `(linum                      ((,class (:background ,bg     :foreground ,grey2 :bold nil :box nil :overline nil :underline nil :italic nil))))
    `(region                     ((,class (:background ,grey1  :foreground ,fg))))
    `(secondary-selection        ((,class (:inherit region))))
