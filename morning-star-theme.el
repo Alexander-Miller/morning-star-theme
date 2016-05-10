@@ -479,7 +479,7 @@
    `(helm-ff-symlink                   ((,class (:foreground ,aqua1))))
    `(helm-ff-invalid-symlink           ((,class (:foreground ,aqua1   :underline (:style wave :color ,red2)))))
    `(helm-visible-mark                 ((,class (:foreground ,white1  :bold t))))
-   `(helm-source-header                ((,class (:background ,aqua2   :foreground ,black1  :box (:color ,black2 :style released-button :line-width 2)))))
+   `(helm-source-header                ((,class (:background ,aqua2   :foreground ,black1  :underline t))))
    `(helm-candidate-number             ((,class (:background ,yellow2 :foreground ,black1))))
    `(helm-selection                    ((,class (:background ,black2))))
    `(helm-selection-line               ((,class (:background ,grey1))))
