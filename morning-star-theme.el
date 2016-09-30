@@ -34,14 +34,16 @@
       (bg      "#2f2f33")
       (bg2     "#25252a")
       (purple1 "#a374a8")
-      (purple2 "#664466")
-      (aqua1   "#339999")
+      (purple2 "#775577")
+      (purple3 "#662966")
+      (aqua1   "#449999")
       (aqua2   "#1e7f7f")
-      (red1    "#ab3737")
+      (red1    "#ff4444")
       (red2    "#cc6666")
-      (red3    "#660000")
-      (blue1   "#557799")
-      (blue2   "#27408b")
+      (red3    "#ab3737")
+      (blue1   "#5577aa")
+      (blue2   "#5588bb")
+      (blue3   "#111155")
       (green1  "#66aa66")
       (green2  "#33aa33")
       (green3  "#004200")
@@ -52,6 +54,7 @@
       (grey1   "#383844")
       (grey2   "#666666")
       (grey3   "#323237")
+      (brown1  "#b37a63")
       (white1  "#ffffff")
       (black1  "#000000")
       (black2  "#1a1a1a"))
@@ -78,28 +81,28 @@
    `(font-lock-warning-face           ((,class (:foreground ,red1 :underline (:style wave)))))
 
    ;; Mode Line
-   `(mode-line                  ((,class (:box (:color ,black1 :line-width 1) :background ,bg2 :foreground ,green1))))
-   `(mode-line-highlight        ((,class (:box (:color ,black1 :line-width 1) :underline t))))
-   `(mode-line-emphasis         ((,class (:box (:color ,black1 :line-width 1) :bolt t))))
-   `(mode-line-inactive         ((,class (:box (:color ,black1 :line-width 1) :background ,bg2     :foreground ,green1))))
-   `(mode-line-buffer-id        ((,class (:box (:color ,black1 :line-width 1) :foreground ,orange1 :bold t))))
-   `(powerline-active1          ((,class (:box (:color ,black1 :line-width 1) :background ,grey1   :foreground ,purple1))))
-   `(powerline-active2          ((,class (:box (:color ,black1 :line-width 1) :background ,bg2     :foreground ,black1))))
-   `(powerline-inactive1        ((,class (:box (:color ,black1 :line-width 1) :background ,grey1   :foreground ,purple1))))
-   `(powerline-inactive2        ((,class (:box (:color ,black1 :line-width 1) :background ,bg2     :foreground ,purple1))))
-   `(spaceline-evil-normal      ((,class (:box (:color ,black1 :line-width 1) :background ,red1    :foreground ,black1))))
-   `(spaceline-evil-insert      ((,class (:box (:color ,black1 :line-width 1) :background ,green2  :foreground ,black1))))
-   `(spaceline-evil-visual      ((,class (:box (:color ,black1 :line-width 1) :background ,purple2 :foreground ,black1))))
-   `(spaceline-evil-emacs       ((,class (:box (:color ,black1 :line-width 1) :background ,aqua2   :foreground ,black1))))
-   `(spaceline-evil-motion      ((,class (:box (:color ,black1 :line-width 1) :background ,orange1 :foreground ,black1))))
-   `(spaceline-evil-replace     ((,class (:box (:color ,black1 :line-width 1) :background ,aqua2   :foreground ,black1))))
-   `(spaceline-flycheck-error   ((,class (:box (:color ,black1 :line-width 1) :foreground ,red1))))
-   `(spaceline-flycheck-warning ((,class (:box (:color ,black1 :line-width 1) :foreground ,yellow2))))
-   `(spaceline-flycheck-info    ((,class (:box (:color ,black1 :line-width 1) :foreground ,green2))))
+   `(mode-line                  ((,class (:box (:color ,black1) :background ,bg2 :foreground ,green1))))
+   `(mode-line-highlight        ((,class (:box (:color ,black1) :underline t))))
+   `(mode-line-emphasis         ((,class (:box (:color ,black1) :bolt t))))
+   `(mode-line-inactive         ((,class (:box (:color ,black1) :background ,bg2     :foreground ,green1))))
+   `(mode-line-buffer-id        ((,class (:box (:color ,black1) :foreground ,orange1 :bold t))))
+   `(powerline-active1          ((,class (:box (:color ,black1) :background ,grey1   :foreground ,purple1))))
+   `(powerline-active2          ((,class (:box (:color ,black1) :background ,bg2     :foreground ,black1))))
+   `(powerline-inactive1        ((,class (:box (:color ,black1) :background ,grey1   :foreground ,purple1))))
+   `(powerline-inactive2        ((,class (:box (:color ,black1) :background ,bg2     :foreground ,purple1))))
+   `(spaceline-evil-normal      ((,class (:box (:color ,black1) :background ,red3    :foreground ,black1))))
+   `(spaceline-evil-insert      ((,class (:box (:color ,black1) :background ,green2  :foreground ,black1))))
+   `(spaceline-evil-visual      ((,class (:box (:color ,black1) :background ,purple2 :foreground ,black1))))
+   `(spaceline-evil-emacs       ((,class (:box (:color ,black1) :background ,aqua2   :foreground ,black1))))
+   `(spaceline-evil-motion      ((,class (:box (:color ,black1) :background ,orange1 :foreground ,black1))))
+   `(spaceline-evil-replace     ((,class (:box (:color ,black1) :background ,aqua2   :foreground ,black1))))
+   `(spaceline-flycheck-error   ((,class (:box (:color ,black1) :foreground ,red3))))
+   `(spaceline-flycheck-warning ((,class (:box (:color ,black1) :foreground ,yellow2))))
+   `(spaceline-flycheck-info    ((,class (:box (:color ,black1) :foreground ,green2))))
 
    ;; Standard UI Items
    `(show-paren-match           ((,class (:underline ,aqua2 :bold t))))
-   `(isearch                    ((,class (:background ,red1   :foreground ,yellow2))))
+   `(isearch                    ((,class (:background ,red3   :foreground ,yellow2))))
    `(lazy-highlight             ((,class (:background ,red2   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua1)))))
    `(link-visited               ((,class (:foreground ,aqua2  :underline  (:color ,aqua2)))))
@@ -117,9 +120,9 @@
    `(error                      ((,class (:foreground ,red2))))
    `(success                    ((,class (:foreground ,green1))))
    `(warning                    ((,class (:foreground ,yellow2))))
-   `(eval-sexp-fu-flash         ((,class (:background ,green2 :foreground ,black1))))
+   `(eval-sexp-fu-flash         ((,class (:background ,green1 :foreground ,black1))))
    `(eval-sexp-fu-flash-error   ((,class (:background ,red3   :foreground ,fg))))
-   `(secondary-selection        ((,class (:inherit region))))
+   `(secondary-selection        ((,class (nil))))
    `(match                      ((,class (:background ,red3 :foreground ,white1))))
 
    ;; Evil
@@ -128,7 +131,7 @@
    `(evil-ex-substitute-replacement               ((,class (:inherit anzu-replace-to))))
 
    ;; Ido
-   `(ido-first-match           ((,class (:bold t))))
+   `(ido-first-match           ((,class (:foreground ,green1 :bold t))))
    `(ido-incomplete-regexp     ((,class (:inherit error))))
    `(ido-indicator             ((,class (:background ,red1 :foreground ,yellow2))))
    `(ido-only-match            ((,class (:foreground ,green1))))
@@ -138,19 +141,19 @@
    `(ido-vertical-only-match   ((,class (:inherit ido-only-match))))
 
    ;; Group Customization
-   `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
+   `(custom-button              ((,class (:foreground ,black1  :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
+   `(custom-button-mouse        ((,class (:background ,blue1   :inherit custom-button))))
+   `(custom-button-pressed      ((,class (:foreground ,black1  :background ,blue1 :box (:line-width 2 :color ,black2 :style pressed-button)))))
+   `(custom-comment             ((,class (:inherit    font-lock-comment-face))))
+   `(custom-comment-tag         ((,class (:inherit    font-lock-comment-face))))
+   `(custom-documentation       ((,class (:foreground ,fg))))
    `(custom-group-subtitle      ((,class (:foreground ,purple1 :bold t :underline t))))
    `(custom-group-tag           ((,class (:foreground ,aqua1   :bold t :underline nil :height 1.25))))
    `(custom-group-tag-1         ((,class (:foreground ,aqua1   :bold t :underline t   :height 1.5))))
-   `(custom-button              ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style released-button)))))
-   `(custom-button-pressed      ((,class (:foreground ,black1 :background ,blue1 :box (:line-width 2 :color ,black2 :style pressed-button)))))
-   `(custom-button-mouse        ((,class (:background ,blue1  :inherit custom-button))))
-   `(custom-comment             ((,class (:inherit font-lock-comment-face))))
-   `(custom-comment-tag         ((,class (:inherit font-lock-comment-face))))
-   `(custom-documentation       ((,class (:foreground ,fg))))
    `(custom-state               ((,class (:foreground ,green2))))
+   `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
 
-   ;; Folding
+   ;; Vimish
    `(vimish-fold-fringe     ((,class (:foreground ,blue2))))
    `(vimish-fold-overlay    ((,class (:foreground ,black2 :background ,grey2 :box (:color ,black2) :underline nil :bold nil))))
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
@@ -186,7 +189,7 @@
 
    ;; Smart-Parens
    `(sp-pair-overlay-face    ((,class (:background ,black2))))
-   `(sp-show-pair-match-face ((,class (:inherit show-paren-match-face))))
+   `(sp-show-pair-match-face ((,class (:inherit show-paren-match))))
 
    ;; Anzu
    `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,bg2))))
@@ -239,16 +242,16 @@
    `(diredp-other-priv             ((,class (:foreground ,yellow2 :bold t))))
 
    ;; NeoTree
-   `(neo-root-dir-face   ((,class (:foreground ,purple1 :bold t :underline t))))
-   `(neo-banner-face     ((,class (:foreground ,red2 :bold t :underline t :height 1.4))))
+   `(neo-banner-face     ((,class (:foreground ,red2    :bold t :underline t :height 1.4))))
    `(neo-dir-link-face   ((,class (:foreground ,blue1))))
-   `(neo-expand-btn-face ((,class (:foreground ,green2 :bold t))))
+   `(neo-expand-btn-face ((,class (:foreground ,green2  :bold t))))
    `(neo-file-link-face  ((,class (:foreground ,orange2))))
    `(neo-header-face     ((,class (:foreground ,orange2))))
+   `(neo-root-dir-face   ((,class (:foreground ,purple1 :bold t :underline t))))
 
    ;; Rainbow Delimiters
    `(rainbow-delimiters-depth-1-face    ((,class :foreground ,green1)))
-   `(rainbow-delimiters-depth-2-face    ((,class :foreground ,red1)))
+   `(rainbow-delimiters-depth-2-face    ((,class :foreground ,red3)))
    `(rainbow-delimiters-depth-3-face    ((,class :foreground ,purple1)))
    `(rainbow-delimiters-depth-4-face    ((,class :foreground ,blue1)))
    `(rainbow-delimiters-depth-5-face    ((,class :foreground ,orange1 )))
@@ -263,7 +266,7 @@
    `(markdown-bold-face             ((,class (:foreground ,orange1 :bold t))))
    `(markdown-comment-face          ((,class (:inherit    font-lock-comment-face))))
    `(markdown-footnote-face         ((,class (:foreground ,red2    :bold t))))
-   `(markdown-gfm-checkbox-face     ((,class (:foreground ,purple1 :bold t :height 2.0)))) ;;TODO
+   `(markdown-gfm-checkbox-face     ((,class (:foreground ,red1    :background ,bg2 :box (:color ,grey1 :style released-button) :bold t))))
    `(markdown-header-delimiter-face ((,class (:foreground ,blue1   :bold t))))
    `(markdown-header-rule-face      ((,class (:foreground ,blue1   :bold t))))
    `(markdown-header-face           ((,class (:foreground ,purple1 :height 1.3))))
@@ -289,7 +292,7 @@
    `(markdown-pre-face              ((,class (:inherit    markdown-blockquote-face))))
    `(markdown-reference-face        ((,class (:foreground ,purple1))))
    `(markdown-strike-through-face   ((,class (:foreground ,orange1 :strike-through t))))
-   `(markdown-url-face              ((,class (:foreground ,green1))))
+   `(markdown-url-face              ((,class (:inherit    link))))
 
    ;; Ace
    `(ace-jump-face-foreground ((,class (:foreground ,yellow2 :background ,red1))))
@@ -300,9 +303,9 @@
 
    ;; Avy
    `(avy-background-face ((,class (:background ,grey1))))
-   `(avy-lead-face       ((,class (:background ,red1  :foreground ,yellow2))))
+   `(avy-lead-face       ((,class (:background ,red3  :foreground ,yellow2))))
    `(avy-lead-face-0     ((,class (:background ,blue1 :foreground ,black1))))
-   `(avy-lead-face-1     ((,class (:background ,red1  :foreground ,yellow2))))
+   `(avy-lead-face-1     ((,class (:background ,red3  :foreground ,yellow2))))
    `(avy-lead-face-2     ((,class (:background ,blue1 :foreground ,black1))))
 
    ;; imenu list
@@ -321,108 +324,84 @@
    `(org-agenda-clocking           ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-agenda-date               ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-agenda-date-today         ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-agenda-date-weekend       ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-agenda-date               ((,class (:foreground ,orange2 :height 1.2))))
+   `(org-agenda-date-today         ((,class (:inherit org-agenda-date :bold t))))
+   `(org-agenda-date-weekend       ((,class (:foreground ,grey2 :height 1.2))))
    `(org-agenda-diary              ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-dimmed-todo-face   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-agenda-done               ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-agenda-done               ((,class (:foreground ,green1))))
    `(org-agenda-filter-category    ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-filter-regexp      ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-filter-tags        ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-agenda-restriction-lock   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-agenda-structure          ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t))))
    `(org-archived                  ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-block                     ((,class (:background ,bg))))
-   `(org-block-begin-line          ((,class (:background ,purple2 :foreground ,black1))))
-   `(org-block-end-line            ((,class (:background ,purple2 :foreground ,black1))))
+   `(org-block-begin-line          ((,class (:background ,bg2 :foreground ,grey2 :bold t))))
+   `(org-block-end-line            ((,class (:background ,bg2 :foreground ,grey2 :bold t))))
    `(org-checkbox                  ((,class (:background ,bg2  :foreground ,red1 :box (:color ,grey1 :style released-button) :bold t))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black2 :box (:style released-button :color ,black1 :line-width 2) :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black2 :box (:style released-button :color ,black1 :line-width 2) :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-code                      ((,class (:foreground ,aqua1 :bold t))))
-   `(org-column                    ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-column-title              ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-date                      ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-date-selected             ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-default                   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-column                    ((,class (:background ,bg      :foreground ,red2))))
+   `(org-column-title              ((,class (:background ,bg      :foreground ,purple1 :bold t :underline t))))
+   `(org-date                      ((,class (:foreground ,orange2 :bold nil))))
+   `(org-date-selected             ((,class (:inherit    org-date :bold t))))
+   `(org-default                   ((,class (:foreground ,green1  :background ,fg))))  ;; TODO
+   `(org-done                      ((,class (:background ,black2 :foreground ,green2 :bold t :box (:color ,black1 :line-width 1)))))
    `(org-document-info             ((,class (:foreground ,red2    :bold t :height 1.4))))
-   `(org-document-info-keyword     ((,class (:foreground ,green1  :bold t :height 1.4))))
-   `(org-document-title            ((,class (:foreground ,purple1 :bold t :height 1.4))))
-   `(org-done                      ((,class (:foreground ,black2 :background ,green1 :bold t :box (:color ,black2 :line-width 1)))))
-   `(org-drawer                    ((,class (:foreground ,green3 :background ,fg))))
-   `(org-ellipsis                  ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-footnote                  ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-formula                   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-alert-face          ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-alert-future-face   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-clear-face          ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-clear-future-face   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-overdue-face        ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-overdue-future-face ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-ready-face          ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-habit-ready-future-face   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-headline-done             ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-document-info-keyword     ((,class (:foreground ,purple1 :bold t :height 1.4))))
+   `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
+   `(org-drawer                    ((,class (:foreground ,green3  :background ,fg))))
+   `(org-ellipsis                  ((,class (:foreground ,green3  :background ,fg))))  ;; TODO
+   `(org-footnote                  ((,class (:foreground ,purple2 :bold t))))
+   `(org-formula                   ((,class (:foreground ,green1 :background ,bg2))))
+   `(org-habit-alert-face          ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-alert-future-face   ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-clear-face          ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-clear-future-face   ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-overdue-face        ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-overdue-future-face ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-ready-face          ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-habit-ready-future-face   ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-headline-done             ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
    `(org-hide                      ((,class (:foreground ,bg   :background ,bg))))
    `(org-indent                    ((,class (:foreground ,bg   :background ,bg))))
    `(org-kbd                       ((,class (:foreground ,red3 :background ,fg :bold t :box (:style released-button)))))
-   `(org-latex-and-related         ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-level-1                   ((,class (:foreground ,blue1   :height 1.2))))
-   `(org-level-2                   ((,class (:foreground ,orange1 :height 1.1))))
-   `(org-level-3                   ((,class (:foreground ,purple1 :height 1.05))))
-   `(org-level-4                   ((,class (:foreground ,green1))))
-   `(org-level-5                   ((,class (:foreground ,orange2))))
-   `(org-level-6                   ((,class (:foreground ,red2))))
+   `(org-latex-and-related         ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-level-1                   ((,class (:foreground ,blue1))))
+   `(org-level-2                   ((,class (:foreground ,brown1))))
+   `(org-level-3                   ((,class (:foreground ,aqua1))))
+   `(org-level-4                   ((,class (:foreground ,orange2))))
+   `(org-level-5                   ((,class (:foreground ,blue1))))
+   `(org-level-6                   ((,class (:foreground ,orange1))))
    `(org-level-7                   ((,class (:foreground ,aqua1))))
-   `(org-level-8                   ((,class (:foreground ,yellow2))))
+   `(org-level-8                   ((,class (:foreground ,brown1))))
    `(org-link                      ((,class (:foreground ,aqua1 :bold t :underline t))))
-   `(org-list-dt                   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-macro                     ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-meta-line                 ((,class (:foreground ,green1   :bold t))))
+   `(org-list-dt                   ((,class (:foreground ,purple1 :bold t :italic t))))
+   `(org-macro                     ((,class (:foreground ,red2 :background ,fg))))  ;; TODO
+   `(org-meta-line                 ((,class (:foreground ,purple1   :bold t))))
    `(org-mode-line-clock           ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-mode-line-clock-overrun   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-priority                  ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-property-value            ((,class (:foreground ,red2 :bold t))))
+   `(org-priority                  ((,class (:foreground ,aqua1 :background ,bg :bold t))))
+   `(org-property-value            ((,class (:foreground ,red2 :bold t)))) ;; TODO
    `(org-quote                     ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-scheduled                 ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-scheduled-previously      ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-scheduled-today           ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
+   `(org-scheduled                 ((,class (:foreground ,purple1))))
+   `(org-scheduled-previously      ((,class (:inherit org-scheduled :underline (:style wave :color ,red1)))))
+   `(org-scheduled-today           ((,class (:foreground ,purple1))))
    `(org-sexp-date                 ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-special-keyword           ((,class (:foreground ,orange2 :underline t :bold t))))
-   `(org-table                     ((,class (:foreground ,blue1 :background ,bg2))))
-   `(org-tag                       ((,class (:foreground ,grey2 :bold t))))
+   `(org-special-keyword           ((,class (:foreground ,purple1 :underline t :bold t))))
+   `(org-table                     ((,class (:foreground ,orange2 :background ,bg2))))
+   `(org-tag                       ((,class (:foreground ,grey2   :bold t))))
    `(org-tag-group                 ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-target                    ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
    `(org-time-grid                 ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-todo                      ((,class (:foreground ,black2 :background ,red2   :bold t :box (:color ,black2 :line-width 1)))))
-   `(org-upcoming-deadline         ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-   `(org-verbatim                  ((,class (:foreground ,purple1 :bold t))))  ;; TODO
-   `(org-warning                   ((,class (:foreground ,red3 :background ,fg))))  ;; TODO
-
-   ;; `(org-link                  ((,class (:inherit link))))
-   ;; `(org-table                 ((,class (:foreground ,blue1   :background ,bg2))))
-   ;; `(org-block-begin-line      ((,class (:background ,purple2 :foreground ,black1 :bold nil))))
-   ;; `(org-block-end-line        ((,class (:inherit org-block-begin-line))))
-   ;; `(org-block                 ((,class (:background ,bg))))
-   ;; ;; `(org-code             ((,class (:foreground ,aqua1))))
-   ;; `(org-tag                   ((,class (:foreground ,aqua2   :bold t))))
-   ;; ;; `(org-hide ((,class (:foreground ,fg4))))
-   ;; ;; `(org-date ((,class (:underline t :foreground ,var) )))
-   ;; ;; `(org-footnote  ((,class (:underline t :foreground ,fg4))))
-   ;; ;; `(org-special-keyword ((,class (:foreground ,func))))
-   ;; ;; `(org-quote ((,class (:inherit org-block :slant italic))))
-   ;; ;; `(org-verse ((,class (:inherit org-block :slant italic))))
-   ;; ;; `(org-warning ((,class (:underline t :foreground ,warning))))
-   ;; ;; `(org-agenda-structure ((,class (:weight bold :foreground ,fg3 :box (:color ,fg4) :background ,bg3))))
-   ;; ;; `(org-agenda-date ((,class (:foreground ,var :height 1.1 ))))
-   ;; ;; `(org-agenda-date-weekend ((,class (:weight normal :foreground ,fg4))))
-   ;; ;; `(org-agenda-date-today ((,class (:weight bold :foreground ,keyword :height 1.4))))
-   ;; ;; `(org-agenda-done ((,class (:foreground ,bg4))))
-   ;; ;; `(org-scheduled ((,class (:foreground ,type))))
-   ;; ;; `(org-scheduled-today ((,class (:foreground ,func :weight bold :height 1.2))))
-   ;; ;; `(org-ellipsis ((,class (:foreground ,builtin))))
-   ;; ;; `(org-verbatim ((,class (:foreground ,fg4))))
-   ;; ;; `(org-document-info-keyword ((,class (:foreground ,func))))
+   `(org-todo                      ((,class (:foreground ,black2  :background ,red2   :bold t))))
+   `(org-todo                      ((,class (:background ,black2 :foreground ,red3 :bold t :box (:color ,black1 :line-width 1)))))
+   `(org-upcoming-deadline         ((,class (:foreground ,orange1))))
+   `(org-verbatim                  ((,class (:foreground ,green1 :italic t))))
+   `(org-warning                   ((,class (:foreground ,red2))))
 
    ;; LaTeX
    `(font-latex-bold-face           ((,class (:foreground ,orange1 :bold t))))
@@ -441,81 +420,6 @@
    `(preview-reference-face         ((,class (:foreground ,white1 :height 1.1))))
    `(TeX-error-description-error    ((,class (:foreground ,red1   :bold t))))
    `(TeX-error-description-tex-said ((,class (:foreground ,purple1))))
-   ;; LaTeX TODO
-   `(font-latex-documentation-face ((,class (:background ,black1))))
-   `(font-latex-match-reference-keywords ((,class (:foreground ,black1 :height 2.0))))
-   `(font-latex-match-variable-keywords ((,class (:foreground ,black1))))
-
-   ;;Show Font Latex Doctex Preprocessor Face:[sample]
-   ;;Face used to highlight preprocessor directives in docTeX mode.
-   ;;
-   ;;Show Font Latex Sectioning 0 Face:[sample]
-   ;;Face for sectioning commands at level 0. More
-   ;;
-   ;;Show Font Latex Sectioning 1 Face:[sample]
-   ;;Face for sectioning commands at level 1. More
-   ;;
-   ;;Show Font Latex Sectioning 2 Face:[sample]
-   ;;Face for sectioning commands at level 2. More
-   ;;
-   ;;Show Font Latex Sectioning 3 Face:[sample]
-   ;;Face for sectioning commands at level 3. More
-   ;;
-   ;;Show Font Latex Sectioning 4 Face:[sample]
-   ;;Face for sectioning commands at level 4. More
-   ;;
-   ;;Show Font Latex Sectioning 5 Face:[sample]
-   ;;Face for sectioning commands at level 5.
-   ;;
-   ;;Show Font Latex Sedate Face:[sample]
-   ;;Face used to highlight sedate stuff.
-   ;;
-   ;;Show Font Latex Slide Title Face:[sample]
-   ;;Face for slide titles.
-   ;;
-   ;;
-   ;;Show Font Latex Subscript Face:[sample]
-   ;;Face used for subscripts.
-   ;;
-   ;;Show Font Latex Superscript Face:[sample]
-   ;;Face used for superscripts.
-   ;;
-   ;;
-   ;;Show Font Latex Warning Face:[sample]
-   ;;Face for important keywords.
-
-   ;; `(ido-only-match ((,class (:foreground ,warning))))
-   ;; `(org-sexp-date ((,class (:foreground ,fg4))))
-   ;; `(ido-first-match ((,class (:foreground ,keyword :bold t))))
-   ;; `(gnus-header-content ((,class (:foreground ,keyword))))
-   ;; `(gnus-header-from ((,class (:foreground ,var))))
-   ;; `(gnus-header-name ((,class (:foreground ,type))))
-   ;; `(gnus-header-subject ((,class (:foreground ,func :bold t))))
-   ;; `(mu4e-view-url-number-face ((,class (:foreground ,type))))
-   ;; `(mu4e-cited-1-face ((,class (:foreground ,fg2))))
-   ;; `(mu4e-cited-7-face ((,class (:foreground ,fg3))))
-   ;; `(mu4e-header-marks-face ((,class (:foreground ,type))))
-   ;; `(ffap ((,class (:foreground ,fg4))))
-   ;; `(js2-private-function-call ((,class (:foreground ,const))))
-   ;; `(js2-jsdoc-html-tag-delimiter ((,class (:foreground ,str))))
-   ;; `(js2-jsdoc-html-tag-name ((,class (:foreground ,key2))))
-   ;; `(js2-external-variable ((,class (:foreground ,type  ))))
-   ;; `(js2-function-param ((,class (:foreground ,const))))
-   ;; `(js2-jsdoc-value ((,class (:foreground ,str))))
-   ;; `(js2-private-member ((,class (:foreground ,fg3))))
-   ;; `(js3-warning-face ((,class (:underline ,keyword))))
-   ;; `(js3-error-face ((,class (:underline ,warning))))
-   ;; `(js3-external-variable-face ((,class (:foreground ,var))))
-   ;; `(js3-function-param-face ((,class (:foreground ,key3))))
-   ;; `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
-   ;; `(js3-instance-member-face ((,class (:foreground ,const))))
-   ;; `(warning ((,class (:foreground ,warning))))
-   ;; `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
-   ;; `(info-quoted-name ((,class (:foreground ,builtin))))
-   ;; `(info-string ((,class (:foreground ,str))))
-   ;; `(icompletep-determined ((,class :foreground ,builtin)))
-   ;; `(slime-repl-inputed-output-face ((,class (:foreground ,type))))
-   ;; `(trailing-whitespace ((,class :foreground nil :background ,warning)))
 
    ;; Undo Tree
    `(undo-tree-visualizer-current-face        ((,class (:foreground ,blue1 :bold t))))
@@ -538,12 +442,12 @@
    `(term-color-white   ((,class (:foreground ,fg))))
 
    ;; Whitespace
-   `(whitespace-big-indent       ((,class (:foreground ,grey2 :height 2.0))))
-   `(whitespace-empty            ((,class (:background ,bg2))))
-   `(whitespace-trailing         ((,class (:foreground ,red1))))
-   `(whitespace-hspace           ((,class (:background ,red1 :height 2.0))))
-   `(whitespace-indentation      ((,class (:background ,red1))))
-   `(whitespace-line             ((,class (:foreground ,red1))))
+   `(whitespace-big-indent       ((,class (:foreground ,grey2))))
+   `(whitespace-empty            ((,class (:background ,grey2))))
+   `(whitespace-trailing         ((,class (:foreground ,grey2))))
+   `(whitespace-hspace           ((,class (:background ,grey2))))
+   `(whitespace-indentation      ((,class (:background ,grey2))))
+   `(whitespace-line             ((,class (:foreground ,grey2))))
    `(whitespace-newline          ((,class (:foreground ,grey2))))
    `(whitespace-space            ((,class (:foreground ,grey2))))
    `(whitespace-space-after-tab  ((,class (:foreground ,grey2))))
@@ -552,229 +456,156 @@
    `(whitespace-trailing         ((,class (:foreground ,grey2))))
 
    ;; Helm
-   `(helm-ff-directory                 ((,class (:foreground ,blue1))))
-   `(helm-ff-file                      ((,class (:foreground ,fg))))
-   `(helm-ff-executable                ((,class (:foreground ,red1))))
-   `(helm-ff-prefix                    ((,class (:foreground ,purple1))))
-   `(helm-ff-dotted-directory          ((,class (:foreground ,orange1))))
-   `(helm-ff-dotted-symlink-directory  ((,class (:foreground ,orange1))))
-   `(helm-ff-symlink                   ((,class (:foreground ,aqua1))))
-   `(helm-ff-invalid-symlink           ((,class (:foreground ,aqua1   :underline (:style wave :color ,red2)))))
-   `(helm-visible-mark                 ((,class (:foreground ,white1  :bold t))))
-   `(helm-source-header                ((,class (:background ,aqua2   :foreground ,black1  :underline t))))
-   `(helm-candidate-number             ((,class (:background ,yellow2 :foreground ,black1))))
-   `(helm-selection                    ((,class (:background ,black2))))
-   `(helm-selection-line               ((,class (:background ,grey1))))
-   `(helm-separator                    ((,class (:foreground ,blue1))))
-   `(helm-buffer-file                  ((,class (:foreground ,fg))))
-   `(helm-buffer-size                  ((,class (:foreground ,green1))))
-   `(helm-buffer-directory             ((,class (:foreground ,blue1))))
-   `(helm-buffer-process               ((,class (:foreground ,orange1))))
-   `(helm-buffer-saved-out             ((,class (:foreground ,fg :underline (:style wave :color ,red1)))))
-   `(helm-buffer-not-saved             ((,class (:foreground ,fg :underline (:style wave :color, green2)))))
-   `(helm-match                        ((,class (:foreground ,yellow2 :background ,red1))))
-   `(helm-grep-file                    ((,class (:foreground ,blue1))))
-   `(helm-moccur-buffer                ((,class (:inherit helm-grep-file))))
-   `(helm-grep-match                   ((,class (:foreground ,yellow2 :background ,red1))))
-   `(helm-grep-lineno                  ((,class (:foreground ,green1))))
-   `(helm-swoop-line-number-face       ((,class (:inherit helm-grep-lineno))))
-   `(helm-swoop-target-line-block-face ((,class (:background ,bg2))))
-   `(helm-swoop-target-line-face       ((,class (:background ,bg2))))
-   `(helm-swoop-target-word-face       ((,class (:foreground ,yellow2 :background ,red1))))
-   ;; Helm TODO
-   `(helm-header             ((,class (:height 1.5 :background ,black2))))
-   `(helm-time-zone-current  ((,class (:background ,purple1))))
-   `(helm-time-zone-home     ((,class (:background ,blue1))))
-   `(helm-grep-cmd-line ((,class (:height 2.0 :background ,red2))))
-   `(helm-grep-running ((,class (:height 2.0 :foreground ,green1 :height 2.0))))
-   ;; `(helm-grep-finish ((,class (:foreground ,fg2 :background ,bg1))))
-   ;; `(helm-grep-lineno ((,class (:foreground ,fg1 :background ,bg1))))
-   ;; `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
-   ;; `(helm-bookmark-w3m ((,class (:foreground ,type))))
+   `(helm-action                      ((,class (:foreground ,red2))))
+   `(helm-bookmark-addressbook        ((,class (:foreground ,purple1))))
+   `(helm-bookmark-directory          ((,class (:foreground ,blue1))))
+   `(helm-bookmark-file               ((,class (:foreground ,orange2))))
+   `(helm-bookmark-gnus               ((,class (:foreground ,aqua1))))
+   `(helm-bookmark-info               ((,class (:foreground ,green1))))
+   `(helm-bookmark-man                ((,class (:foreground ,yellow1))))
+   `(helm-bookmark-w3m                ((,class (:foreground ,red2))))
+   `(helm-buffer-directory            ((,class (:foreground ,blue1))))
+   `(helm-buffer-file                 ((,class (:foreground ,fg))))
+   `(helm-buffer-not-saved            ((,class (:foreground ,fg :underline (:style wave :color, green2)))))
+   `(helm-buffer-process              ((,class (:foreground ,orange1))))
+   `(helm-buffer-saved-out            ((,class (:foreground ,fg :underline (:style wave :color ,red1)))))
+   `(helm-buffer-size                 ((,class (:foreground ,green1))))
+   `(helm-candidate-number            ((,class (:background ,yellow2 :foreground ,black1))))
+   `(helm-etags-file                  ((,class (:height 2.0 :background ,fg :foreground ,green1)))) ;; TODO
+   `(helm-ff-directory                ((,class (:foreground ,blue1))))
+   `(helm-ff-dirs                     ((,class (:height 2.0 :background ,fg :foreground ,aqua2)))) ;; TODO
+   `(helm-ff-dotted-directory         ((,class (:foreground ,orange1))))
+   `(helm-ff-dotted-symlink-directory ((,class (:foreground ,orange1))))
+   `(helm-ff-executable               ((,class (:foreground ,red1))))
+   `(helm-ff-file                     ((,class (:foreground ,orange2))))
+   `(helm-ff-invalid-symlink          ((,class (:foreground ,aqua1   :underline (:style wave :color ,red2)))))
+   `(helm-ff-prefix                   ((,class (:foreground ,purple1))))
+   `(helm-ff-symlink                  ((,class (:foreground ,aqua1))))
+   `(helm-grep-cmd-line               ((,class (:height 2.0 :background ,fg :foreground ,black1)))) ;; TODO
+   `(helm-grep-file                   ((,class (:foreground ,blue1))))
+   `(helm-grep-finish                 ((,class (:foreground ,yellow2 :background ,bg2 :box (:color ,black1) :bold t))))
+   `(helm-grep-lineno                 ((,class (:foreground ,green1))))
+   `(helm-grep-match                  ((,class (:foreground ,yellow2 :background ,red3))))
+   `(helm-history-deleted             ((,class (:height 2.0 :background ,fg :foreground ,red1)))) ;; TODO
+   `(helm-history-remote              ((,class (:height 2.0 :background ,fg :foreground ,green1)))) ;; TODO
+   `(helm-header                      ((,class (:foreground ,grey2))))
+   `(helm-header-line-left-margin     ((,class (:height 2.0 :background ,fg :foreground ,black1)))) ;; TODO
+   `(helm-lisp-completion-info        ((,class (:height 2.0 :background ,fg :foreground ,purple2)))) ;; TODO
+   `(helm-lisp-show-completion        ((,class (:height 2.0 :background ,fg :foreground ,blue2)))) ;; TODO
+   `(helm-match                       ((,class (:foreground ,yellow2 :background ,red3))))
+   `(helm-match-item                  ((,class (:height 2.0 :background ,fg :foreground ,black2)))) ;; TODO
+   `(helm-moccur-buffer               ((,class (:inherit helm-grep-file))))
+   `(helm-M-x-key                     ((,class (:foreground ,yellow1 :bold t))))
+   `(helm-prefarg                     ((,class (:foreground ,red2    :bold t))))
+   `(helm-resume-need-update          ((,class (:height 2.0 :background ,fg :foreground ,aqua2)))) ;; TODO
+   `(helm-selection                   ((,class (:background ,black2))))
+   `(helm-selection-line              ((,class (:background ,grey1))))
+   `(helm-separator                   ((,class (:foreground ,green1 :bold t))))
+   `(helm-source-header               ((,class (:background ,aqua2  :foreground ,black1 :underline t))))
+   `(helm-visible-mark                ((,class (:background ,blue1  :foreground ,white1 :bold t))))
 
    ;; Magit
-   `(magit-bisect-bad                  ((,class (:foreground ,red1    :background ,red3)))) ;; TODO
-   `(magit-bisect-good                 ((,class (:foreground ,red1    :background ,green2)))) ;; TODO
-   `(magit-bisect-skip                 ((,class (:foreground ,red1    :background ,blue2)))) ;; TODO
-   `(magit-blame-date                  ((,class (:foreground ,red1    :background ,yellow1)))) ;; TODO
-   `(magit-blame-hash                  ((,class (:foreground ,red1    :background ,purple1)))) ;; TODO
-   `(magit-blame-heading               ((,class (:foreground ,red1    :background ,purple2)))) ;; TODO
-   `(magit-blame-name                  ((,class (:foreground ,red1    :background ,green1)))) ;; TODO
-   `(magit-blame-summary               ((,class (:foreground ,red1    :background ,white1)))) ;; TODO
-   `(magit-branch-current              ((,class (:background ,bg      :foreground ,blue1   :bold t))))
-   `(magit-branch-local                ((,class (:background ,bg      :foreground ,orange1 :bold t))))
-   `(magit-branch-remote               ((,class (:background ,bg      :foreground ,green1  :bold t))))
-   `(magit-cherry-equivalent           ((,class (:foreground ,red3    :background ,black1)))) ;; TODO
-   `(magit-cherry-unmatched            ((,class (:foreground ,aqua2    :background ,black1)))) ;; TODO
+   `(magit-bisect-bad                  ((,class (:height 2.0 :foreground ,red1    :background ,red3)))) ;; TODO
+   `(magit-bisect-good                 ((,class (:height 2.0 :foreground ,red1    :background ,green2)))) ;; TODO
+   `(magit-bisect-skip                 ((,class (:height 2.0 :foreground ,red1    :background ,blue2)))) ;; TODO
+   `(magit-blame-date                  ((,class (:background ,bg2   :foreground ,green1  :bold t))))
+   `(magit-blame-hash                  ((,class (:background ,bg2   :foreground ,orange2 :bold t))))
+   `(magit-blame-heading               ((,class (:background ,bg2   :bold t))))
+   `(magit-blame-name                  ((,class (:background ,bg2   :foreground ,blue1   :bold t))))
+   `(magit-blame-summary               ((,class (:background ,bg2   :foreground ,orange2 :bold t))))
+   `(magit-branch-current              ((,class (:background ,bg    :foreground ,blue1   :bold t))))
+   `(magit-branch-local                ((,class (:background ,bg    :foreground ,orange1 :bold t))))
+   `(magit-branch-remote               ((,class (:background ,bg    :foreground ,green1  :bold t))))
+   `(magit-cherry-equivalent           ((,class (:foreground ,blue1))))
+   `(magit-cherry-unmatched            ((,class (:foreground ,red2))))
    `(magit-diff-added                  ((,class (:foreground ,green1))))
-   `(magit-diff-added-highlight        ((,class (:background ,bg2     :inherit magit-diff-added))))
-   `(magit-diff-base                   ((,class (:foreground ,red3    :background ,aqua2))))
-   `(magit-diff-base-highlight         ((,class (:foreground ,red3    :background ,green2))))
-   `(magit-diff-conflict-heading       ((,class (:foreground ,red3    :background ,blue2))))
+   `(magit-diff-added-highlight        ((,class (:background ,bg2   :inherit magit-diff-added))))
+   `(magit-diff-base                   ((,class (:foreground ,red3  :background ,aqua2))))  ;; TODO
+   `(magit-diff-base-highlight         ((,class (:foreground ,red3  :background ,green2)))) ;; TODO
+   `(magit-diff-conflict-heading       ((,class (:foreground ,red3  :background ,blue2))))  ;; TODO
    `(magit-diff-context                ((,class (:foreground ,fg))))
    `(magit-diff-context-highlight      ((,class (:background ,bg2))))
    `(magit-diff-file-heading           ((,class (:foreground ,fg))))
    `(magit-diff-file-heading-highlight ((,class (:background ,bg2))))
-   `(magit-diff-file-heading-selection ((,class (:foreground ,red3    :background ,green3))))
-   `(magit-diff-hunk-heading           ((,class (:foreground ,blue1   :bold t))))
-   `(magit-diff-hunk-heading-highlight ((,class (:background ,bg2  :inherit magit-diff-hunk-heading))))
-   `(magit-diff-lines-boundary         ((,class (:box (:color ,black1) :background ,bg))))
+   `(magit-diff-file-heading-selection ((,class (:foreground ,red3  :background ,green3))))
+   `(magit-diff-hunk-heading           ((,class (:foreground ,blue1 :bold t))))
+   `(magit-diff-hunk-heading-highlight ((,class (:background ,bg2   :inherit magit-diff-hunk-heading))))
+   `(magit-diff-lines-boundary         ((,class (:background ,yellow2))))
    `(magit-diff-lines-heading          ((,class (nil))))
-   `(magit-diff-our                    ((,class (:foreground ,blue2    :background ,black1))))
-   `(magit-diff-our-highlight          ((,class (:foreground ,yellow2    :background ,black1))))
+   `(magit-diff-our                    ((,class (:foreground ,blue2   :background ,black1))))
+   `(magit-diff-our-highlight          ((,class (:foreground ,yellow2 :background ,black1))))
    `(magit-diff-removed                ((,class (:foreground ,red2))))
    `(magit-diff-removed-highlight      ((,class (:background ,bg2     :inherit magit-diff-removed))))
-   `(magit-diff-their                  ((,class (:foreground ,green2    :background ,black1))))
-   `(magit-diff-their-highlight        ((,class (:foreground ,green1    :background ,black1))))
-   `(magit-diff-whitespace-warning     ((,class (:foreground ,red3    :background ,purple2)))) ;; TODO
+   `(magit-diff-their                  ((,class (:foreground ,green2  :background ,black1))))
+   `(magit-diff-their-highlight        ((,class (:foreground ,green1  :background ,black1))))
+   `(magit-whitespace-warning-face     ((,class (:foreground ,red1))))
    `(magit-diffstat-added              ((,class (:foreground ,green1))))
    `(magit-diffstat-removed            ((,class (:foreground ,red1))))
-   `(magit-dimmed                      ((,class (:foreground ,orange1    :background ,black1)))) ;; TODO
+   `(magit-dimmed                      ((,class (:inherit font-lock-comment-face))))
    `(magit-filename                    ((,class (:foreground ,fg))))
    `(magit-hash                        ((,class (:foreground ,orange1))))
-   `(magit-head                        ((,class (:foreground ,red1    :background ,black1))))
+   `(magit-head                        ((,class (:foreground ,purple1 :bold t))))
    `(magit-header-line                 ((,class (:inherit magit-section-heading))))
-   `(magit-log-author                  ((,class (:foreground ,orange2))))
-   `(magit-log-date                    ((,class (:foreground ,blue1))))
-   `(magit-log-graph                   ((,class (:foreground ,green1    :background ,black1)))) ;; TODO
-   `(magit-process-ng                  ((,class (:foreground ,blue1    :background ,green2)))) ;; TODO
-   `(magit-process-ok                  ((,class (:foreground ,red1    :background ,red1)))) ;; TODO
-   `(magit-reflog-amend                ((,class (:foreground ,red3    :background ,yellow1)))) ;; TODO
-   `(magit-reflog-checkout             ((,class (:foreground ,aqua1    :background ,orange1)))) ;; TODO
-   `(magit-reflog-cherry-pick          ((,class (:foreground ,orange1    :background ,black1)))) ;; TODO
-   `(magit-reflog-commit               ((,class (:foreground ,yellow1    :background ,black1)))) ;; TODO
-   `(magit-reflog-merge                ((,class (:foreground ,yellow2    :background ,black1)))) ;; TODO
-   `(magit-reflog-other                ((,class (:foreground ,orange1    :background ,black1)))) ;; TODO
-   `(magit-reflog-rebase               ((,class (:foreground ,red1    :background ,black1)))) ;; TODO
-   `(magit-reflog-remote               ((,class (:foreground ,blue2    :background ,black1)))) ;; TODO
-   `(magit-reflog-reset                ((,class (:foreground ,green2    :background ,black1)))) ;; TODO
-   `(magit-refname                     ((,class (:foreground ,purple2    :background ,black1)))) ;; TODO
-   `(magit-refname-stash               ((,class (:foreground ,red1    :background ,black1)))) ;; TODO
-   `(magit-refname-wip                 ((,class (:foreground ,red1    :background ,black1)))) ;; TODO
+   `(magit-log-graph                   ((,class (:foreground ,orange2))))
+   `(magit-log-author                  ((,class (:foreground ,blue1))))
+   `(magit-log-date                    ((,class (:foreground ,green1))))
+   `(magit-process-ng                  ((,class (:inherit error))))
+   `(magit-process-ok                  ((,class (:inherit success))))
+   `(magit-reflog-amend                ((,class (:foreground ,orange2 :bold t))))
+   `(magit-reflog-checkout             ((,class (:foreground ,blue1   :bold t))))
+   `(magit-reflog-cherry-pick          ((,class (:foreground ,yellow1 :bold t))))
+   `(magit-reflog-commit               ((,class (:foreground ,green1  :bold t))))
+   `(magit-reflog-merge                ((,class (:foreground ,aqua1   :bold t))))
+   `(magit-reflog-other                ((,class (:foreground ,fg      :bold t))))
+   `(magit-reflog-rebase               ((,class (:foreground ,orange1 :bold t))))
+   `(magit-reflog-remote               ((,class (:foreground ,purple1 :bold t))))
+   `(magit-reflog-reset                ((,class (:foreground ,red1    :bold t))))
+   `(magit-refname                     ((,class (:height 2.0 :foreground ,purple2 :background ,black1)))) ;; TODO
+   `(magit-refname-stash               ((,class (:height 2.0 :foreground ,red1    :background ,black1)))) ;; TODO
+   `(magit-refname-wip                 ((,class (:height 2.0 :foreground ,red1    :background ,black1)))) ;; TODO
    `(magit-section-heading             ((,class (:foreground ,purple1 :underline t :height 1.2))))
-   `(magit-section-heading-selection   ((,class (:foreground ,green1    :background ,black1))))
+   `(magit-section-heading-selection   ((,class (:foreground ,green1  :background ,black1))))
    `(magit-section-highlight           ((,class (:background ,bg2))))
    `(magit-section-secondary-heading   ((,class (:foreground ,purple1))))
-   `(magit-sequence-done               ((,class (:foreground ,red3    :background ,black1)))) ;; TODO
-   `(magit-sequence-drop               ((,class (:foreground ,blue1    :background ,black1)))) ;; TODO
-   `(magit-sequence-head               ((,class (:foreground ,orange2    :background ,black1)))) ;; TODO
-   `(magit-sequence-onto               ((,class (:foreground ,yellow1    :background ,black1)))) ;; TODO
-   `(magit-sequence-part               ((,class (:foreground ,aqua1    :background ,black1)))) ;; TODO
-   `(magit-sequence-pick               ((,class (:foreground ,green1    :background ,black1)))) ;; TODO
-   `(magit-sequence-stop               ((,class (:foreground ,blue1    :background ,black1)))) ;; TODO
-   `(magit-signature-bad               ((,class (:foreground ,orange1    :background ,black1)))) ;; TODO
-   `(magit-signature-good              ((,class (:foreground ,yellow1    :background ,black1)))) ;; TODO
-   `(magit-signature-untrusted         ((,class (:foreground ,red1    :background ,black1)))) ;; TODO
-   `(magit-tag                         ((,class (:foreground ,green2    :background ,black1)))) ;; TODO
+   `(magit-sequence-done               ((,class (:foreground ,grey2))))
+   `(magit-sequence-drop               ((,class (:foreground ,orange1 :bold t))))
+   `(magit-sequence-head               ((,class (:foreground ,purple1 :bold t))))
+   `(magit-sequence-onto               ((,class (:foreground ,purple1 :bold t))))
+   `(magit-sequence-part               ((,class (:foreground ,blue1   :bold t))))
+   `(magit-sequence-pick               ((,class (:foreground ,green1  :bold t))))
+   `(magit-sequence-stop               ((,class (:foreground ,red2    :bold t))))
+   `(magit-signature-bad               ((,class (:foreground ,yellow1 :italic t :underline (:style wave)))))
+   `(magit-signature-good              ((,class (:foreground ,green1  :italic t :underline t))))
+   `(magit-signature-untrusted         ((,class (:foreground ,red1    :italic t :underline (:style wave)))))
+   `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
 
    ;; Magit Popup
-   `(magit-popup-argument          ((,class (:foreground ,aqua2 :bold t))))
-   `(magit-popup-disabled-argument ((,class (:foreground ,grey2 :bold t))))
+   `(magit-popup-argument          ((,class (:foreground ,aqua1   :bold t))))
+   `(magit-popup-disabled-argument ((,class (:foreground ,grey2   :bold t))))
    `(magit-popup-heading           ((,class (:foreground ,purple1 :bold t))))
-   `(magit-popup-key               ((,class (:foreground ,blue1 :bold t))))
-   `(magit-popup-option-value      ((,class (:foreground ,aqua2 :bold t))))
+   `(magit-popup-key               ((,class (:foreground ,blue1   :bold t))))
+   `(magit-popup-option-value      ((,class (:foreground ,aqua2   :bold t))))
 
-   ;; Git Commit
-   ;; `(git-commit-note                 ((,class (:foreground ,red3 :background ,fg))));; TODO
+   ;; Git
+   `(git-commit-note                 ((,class (:foreground ,orange2))))
    `(git-commit-comment-action       ((,class (:foreground ,orange1))))
    `(git-commit-comment-branch       ((,class (:foreground ,blue1 :bold t))))
-   ;; `(git-commit-comment-detached     ((,class (:foreground ,red3 :background ,fg))));; TODO
-   `(git-commit-comment-file         ((,class (:foreground ,green1))));; TODO
-   `(git-commit-comment-heading      ((,class (:foreground ,purple1 :underline t))));; TODO
-   ;; `(git-commit-known-pseudo-header  ((,class (:foreground ,red3 :background ,fg))));; TODO
-   ;; `(git-commit-nonempty-second-line ((,class (:foreground ,red3 :background ,fg))));; TODO
+   `(git-commit-comment-detached     ((,class (:foreground ,aqua1))))
+   `(git-commit-comment-file         ((,class (:foreground ,green1))))
+   `(git-commit-comment-heading      ((,class (:foreground ,purple1 :underline t))))
+   `(git-commit-known-pseudo-header  ((,class (:inherit git-commit-pseudo-header))))
+   `(git-commit-nonempty-second-line ((,class (:foreground ,red2 :underline t))))
    `(git-commit-overlong-summary     ((,class (:foreground ,red2))))
-   ;; `(git-commit-pseudo-header        ((,class (:foreground ,red3 :background ,fg))));; TODO
+   `(git-commit-pseudo-header        ((,class (:foreground ,purple1 :underline t :height 1.3))))
    `(git-commit-summary              ((,class (:foreground ,yellow1))))
+   `(git-rebase-hash                 ((,class (:inherit magit-hash))))
+   `(git-rebase-description          ((,class (:foreground ,fg))))
+   `(git-rebase-killed-action        ((,class (:foreground ,red2))))
 
    ;; Git Rebase
-   `(git-rebase-description   ((,class (:foreground ,green3 :background ,fg))));; TODO
-   `(git-rebase-hash          ((,class (:foreground ,green3 :background ,fg))));; TODO
-   `(git-rebase-killed-action ((,class (:foreground ,green3 :background ,fg))));; TODO
-
-   ;; `(magit-bisect-bad                  ((,class (:foreground ,black1 :background ,red2   :box ,grey2))))
-   ;; `(magit-bisect-good                 ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; `(magit-blame-date                  ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; `(magit-blame-hash                  ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; `(magit-blame-heading               ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; `(magit-blame-name                  ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; `(magit-blame-summary               ((,class (:foreground ,black1 :background ,blue1  :box ,grey2))))
-   ;; ;; `(magit-diff-base                   ((,class (:foreground ,green1))))
-   ;; ;; `(magit-diff-base-highlight         ((,class (:foreground ,green1 :background ,bg2))))
-   ;; ;; `(magit-diff-conflict-heading       ((,class (:foreground ,green1))))
-   ;; `(magit-diff-context                ((,class (:foreground ,fg))))
-   ;; `(magit-diff-file-heading-selection ((,class (:inherit magit-diff-file-heading :background ,bg2))))
-   ;; `(magit-diff-hunk-heading-selection ((,class (:foreground ,green1 :background ,bg2))))
-   ;; `(magit-diff-lines-boundary         ((,class (:background ,yellow2))))
-   ;; `(magit-diff-lines-heading          ((,class (:inherit magit-diff-hunk-heading :background ,bg2))))
-   ;; ;; `(magit-diff-our                    ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diff-our-highlight          ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diff-their                  ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diff-their-highlight        ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diff-whitespace-warning     ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diffstat-added              ((,class (:foreground ,red1))))
-   ;; ;; `(magit-diffstat-removed            ((,class (:foreground ,red1))))
-   ;; ;; `(magit-dimmed                      ((,class (:foreground ,red1))))
-   ;; ;; `(magit-filename                    ((,class (:foreground ,red1))))
-   ;; ;; `(magit-head                        ((,class (:foreground ,red1))))
-   ;; ;; `(magit-header-line                 ((,class (:foreground ,red1))))
-   ;; ;; `(magit-log-author                  ((,class (:foreground ,red1))))
-   ;; ;; `(magit-log-date                    ((,class (:foreground ,red1))))
-   ;; ;; `(magit-log-graph                   ((,class (:foreground ,red1))))
-   ;; `(magit-popup-argument              ((,class (:foreground ,green2))))
-   ;; ;; `(magit-process-ng                  ((,class (:foreground ,red1))))
-   ;; ;; `(magit-process-ok                  ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-ok                   ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-checkout             ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-cherry-pick          ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-commit               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-merge                ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-other                ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-rebase               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-remote               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-reflog-reset                ((,class (:foreground ,red1))))
-   ;; ;; `(magit-refname                     ((,class (:foreground ,red1))))
-   ;; ;; `(magit-refname-stash               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-refname-wip                 ((,class (:foreground ,red1))))
-   ;; ;; `(magit-section-heading-selection   ((,class (:foreground ,red1))))
-   ;; ;; `(magit-section-secondary-heading   ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-done               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-drop               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-head               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-onto               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-part               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-pick               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-sequence-stop               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-signature-bad               ((,class (:foreground ,red1))))
-   ;; ;; `(magit-signature-good              ((,class (:foreground ,red1))))
-   ;; ;; `(magit-signature-untrusted         ((,class (:foreground ,red1))))
-   ;; ;; `(magit-tag                         ((,class (:foreground ,red1))))
-
-   ;; `(git-commit-comment-action-face   ((,class (:foreground ,orange1))))
-   ;; `(git-commit-comment-file-face     ((,class (:foreground ,green1))))
-   ;; `(git-commit-summary-face          ((,class (:foreground ,yellow1))))
-   ;; `(git-commit-overlong-summary-face ((,class (:foreground ,red1))))
-   ;; `(git-commit-comment-heading-face  ((,class (:foreground ,purple1 :underline t :height 1.1))))
-   ;; `(magit-item-mark                  ((,class (:background ,black2 :box (:color ,grey2 :line-width 1)))))
-   ;; `(magit-hunk-heading               ((,class (:background ,red1 :foreground ,red1))))
-   ;; `(magit-diff-none                  ((,class (:foreground ,fg))))
-   ;; `(magit-tag                        ((,class (:foreground ,blue1 :bold t))))
-   ;; `(magit-cherry-equivalent          ((,class (:foreground ,purple1))))
-   ;; `(magit-cherry-unmatched           ((,class (:foreground ,aqua1))))
-   ;; `(magit-key-mode-button-face       ((,class (:foreground ,aqua2))))
-   ;; `(magit-key-mode-switch-face       ((,class (:foreground ,red2))))
-   ;; `(magit-key-mode-args-face         ((,class (:foreground ,orange1))))
-   ;; `(magit-whitespace-warning-face    ((,class (:foreground ,red1))))
-   ;; Git TODO
-   ;; `(magit-log-graph                  ((,class (:foreground ,green2 :box t :height 1.5))))
-   ;; `(magit-section-highlight      ((,class (:background ,bg2))))
-   ;; `(magit-hunk-heading-highlight ((,class (:background ,bg3))))
-   ;; `(magit-diff-context-highlight ((,class (:background ,bg3 :foreground ,fg3))))
-   ;; `(magit-process-ok             ((,class (:foreground ,func :weight bold))))
-   ;; `(magit-process-ng             ((,class (:foreground ,warning :weight bold))))
-   ;; `(magit-branch                 ((,class (:foreground ,const :weight bold))))
-   ;; `(magit-hash                   ((,class (:foreground ,fg2))))
-   ;; `(magit-diff-file-header       ((,class (:foreground ,fg2 :background ,bg3))))
+   `(git-rebase-description   ((,class (:foreground ,fg))))
+   `(git-rebase-hash          ((,class (:foreground ,orange1))))
+   `(git-rebase-killed-action ((,class (:foreground ,grey2 :strike-through t))))
 
    ;; Git gutter
    `(git-gutter:added                 ((,class (:foreground ,green1))))
@@ -791,45 +622,48 @@
    `(git-gutter-fr+modified           ((,class (:inherit    git-gutter:modified))))
 
    ;; Diff hl
-   `(diff-hl-change                   ((,class (:background ,blue2  :foreground ,black1))))
-   `(diff-hl-delete                   ((,class (:background ,red1   :foreground ,black1))))
-   `(diff-hl-insert                   ((,class (:background ,green3 :foreground ,black1))))
+   `(diff-hl-change ((,class (:background ,blue2  :foreground ,black1))))
+   `(diff-hl-delete ((,class (:background ,red1   :foreground ,black1))))
+   `(diff-hl-insert ((,class (:background ,green3 :foreground ,black1))))
 
    ;; Compilation
-   `(compilation-info          ((,class (:foreground ,green1))))
+   `(compilation-info          ((,class (:foreground ,orange2))))
    `(compilation-error         ((,class (:foreground ,red2))))
-   `(compilation-line-number   ((,class ())))
-   `(compilation-column-number ((,class ())))
+   `(compilation-line-number   ((,class (:foreground ,green1))))
+   `(compilation-column-number ((,class (:foreground ,green1))))
 
-   ;; company
-   `(company-tooltip-common-selection     ((,class (:foreground ,black1 :background ,purple2))))
-   `(company-tooltip-selection            ((,class (:background ,purple2 :foreground ,white1))))
-   `(company-scrollbar-bg                 ((,class (:background ,bg2))))
-   `(company-scrollbar-fg                 ((,class (:background ,red1))))
-   `(company-tooltip                      ((,class (:background ,grey2))))
-   `(company-tooltip-search               ((,class (:background ,red2 :foreground ,black1))))
-   `(company-tooltip-search-selection     ((,class (:background ,red1 :foreground ,yellow2))))
-   `(company-tooltip-annotation           ((,class (:foreground ,red3))))
-   `(company-tooltip-annotation-selection ((,class (:foreground ,red3))))
-   `(company-tooltip-common               ((,class (:foreground ,black1 :background ,grey2))))
-   `(company-preview-common               ((,class (:foreground ,grey2))))
-   `(company-preview                      ((,class (:foreground ,grey2))))
-   `(company-tooltip-mouse                ((,class (:background ,blue2))))
-   `(company-echo-common                  ((,class (:background ,blue1 :foreground ,black1))))
-   `(company-template-field               ((,class (:inherit yas-field-highlight-face))))
-
-   ;; `(web-mode-builtin-face ((,class (:inherit ,font-lock-builtin-face))))
-   ;; `(web-mode-comment-face ((,class (:inherit ,font-lock-comment-face))))
-   ;; `(web-mode-constant-face ((,class (:inherit ,font-lock-constant-face))))
-   ;; `(web-mode-keyword-face ((,class (:foreground ,keyword))))
-   ;; `(web-mode-doctype-face ((,class (:inherit ,font-lock-comment-face))))
-   ;; `(web-mode-function-name-face ((,class (:inherit ,font-lock-function-name-face))))
-   ;; `(web-mode-string-face ((,class (:foreground ,str))))
-   ;; `(web-mode-type-face ((,class (:inherit ,font-lock-type-face))))
-   ;; `(web-mode-html-attr-name-face ((,class (:foreground ,func))))
-   ;; `(web-mode-html-attr-value-face ((,class (:foreground ,keyword))))
-   ;; `(web-mode-warning-face ((,class (:inherit ,font-lock-warning-face))))
-   `(web-mode-html-tag-face ((,class ())))))
+   ;; company me
+   ;; `(company-tooltip-common-selection     ((,class (:background ,red3 :foreground ,yellow1 :bold t))))
+   `(company-tooltip-common-selection     ((,class (:background ,blue3 :foreground ,red2 :bold t))))
+   `(company-tooltip-selection            ((,class (:background ,blue3 :foreground ,fg :bold t))))
+   `(company-scrollbar-bg                 ((,class (:background ,grey2))))
+   `(company-scrollbar-fg                 ((,class (:background ,red3))))
+   `(company-tooltip                      ((,class (:background ,grey1 :foreground ,fg ))))
+   `(company-tooltip-search               ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-tooltip-search-selection     ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-tooltip-annotation           ((,class (:background ,grey1 :foreground ,aqua1 :bold t))))
+   `(company-tooltip-annotation-selection ((,class (:background ,blue3 :foreground ,aqua1 :bold t))))
+   `(company-tooltip-common               ((,class (:foreground ,red2))))
+   `(company-preview-common               ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-preview                      ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-tooltip-mouse                ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-echo-common                  ((,class (:background ,grey1 :foreground ,red3))))
+   `(company-template-field               ((,class (:inherit yas-field-highlight-face))))))
+   ;; `(company-tooltip-common-selection     ((,class (:background ,purple2 :foreground ,black1 :bold t))))
+   ;; `(company-tooltip-selection            ((,class (:background ,purple2 :foreground ,black1 :bold t))))
+   ;; `(company-scrollbar-bg                 ((,class (:background ,bg2))))
+   ;; `(company-scrollbar-fg                 ((,class (:background ,blue2))))
+   ;; `(company-tooltip                      ((,class (:background ,grey2))))
+   ;; `(company-tooltip-search               ((,class (:background ,red2 :foreground ,black1))))
+   ;; `(company-tooltip-search-selection     ((,class (:background ,red3 :foreground ,yellow2))))
+   ;; `(company-tooltip-annotation           ((,class (:foreground ,blue3 :bold t))))
+   ;; `(company-tooltip-annotation-selection ((,class (:foreground ,blue3 :bold t))))
+   ;; `(company-tooltip-common               ((,class (:foreground ,black1 :background ,grey2))))
+   ;; `(company-preview-common               ((,class (:foreground ,grey2))))
+   ;; `(company-preview                      ((,class (:foreground ,grey2))))
+   ;; `(company-tooltip-mouse                ((,class (:background ,blue2))))
+   ;; `(company-echo-common                  ((,class (:background ,blue1 :foreground ,black1))))
+   ;; `(company-template-field               ((,class (:inherit yas-field-highlight-face))))))
 
 
 ;;;###autoload
@@ -844,4 +678,3 @@
 ;; End:
 
 ;;; morning-star-theme.el ends here
-(set-frame-font "Fantasque Sans Mono 13")
