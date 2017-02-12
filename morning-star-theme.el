@@ -450,6 +450,12 @@
    `(helm-source-header               ((,class (:background ,aqua2  :foreground ,black2 :underline t))))
    `(helm-visible-mark                ((,class (:background ,blue3  :foreground ,fg     :bold t))))
 
+   ;;Helm swoop
+   `(helm-swoop-line-number-face       ((,class (:inherit linum))))
+   `(helm-swoop-target-line-face       ((,class (:inherit hl-line))))
+   `(helm-swoop-target-word-face       ((,class (:foreground ,yellow2 :background ,red3))))
+   `(helm-swoop-target-line-block-face ((,class (:foreground ,red3 :backround ,green1)))) ;; TODO
+
    ;; Magit
    `(magit-bisect-bad                  ((,class (:height 2.0 :foreground ,red1    :background ,red3)))) ;; TODO
    `(magit-bisect-good                 ((,class (:height 2.0 :foreground ,red1    :background ,green2)))) ;; TODO
