@@ -42,7 +42,7 @@
       (red2    "#bb6666")
       (red3    "#ab3737")
       (green1  "#66aa66")
-      (green2  "#44aa44")
+      (green2  "#559955")
       (aqua1   "#55a9a9")
       (aqua2   "#1e7f7f")
       (purple1 "#997799")
@@ -201,6 +201,13 @@
    `(rainbow-delimiters-depth-8-face    ((,class :foreground ,aqua1)))
    `(rainbow-delimiters-mismatched-face ((,class :foreground ,black1)))
    `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1)))
+
+   ;; Smerge
+   `(smerge-markers           ((,class (:foreground ,black1 :background ,purple2 :bold t))))
+   `(smerge-upper             ((,class (:foreground ,green1))))
+   `(smerge-refined-added     ((,class (:foreground ,bg2 :background ,green2))))
+   `(smerge-lower             ((,class (:foreground ,red1))))
+   `(smerge-refined-removed   ((,class (:foreground ,bg2 :background ,red2))))
 
    ;; Smart-Parens
    `(sp-pair-overlay-face    ((,class (:background ,black1))))
@@ -474,7 +481,7 @@
    `(magit-diff-added-highlight        ((,class (:background ,bg2   :inherit magit-diff-added))))
    `(magit-diff-base                   ((,class (:foreground ,red3  :background ,aqua2))))  ;; TODO
    `(magit-diff-base-highlight         ((,class (:foreground ,red3  :background ,green2)))) ;; TODO
-   `(magit-diff-conflict-heading       ((,class (:foreground ,red3  :background ,blue2))))  ;; TODO
+   `(magit-diff-conflict-heading       ((,class (:foreground ,black1 :background ,purple2 :bold t))))
    `(magit-diff-context                ((,class (:foreground ,fg))))
    `(magit-diff-context-highlight      ((,class (:background ,bg2))))
    `(magit-diff-file-heading           ((,class (:foreground ,fg))))
@@ -484,12 +491,12 @@
    `(magit-diff-hunk-heading-highlight ((,class (:background ,bg2   :inherit magit-diff-hunk-heading))))
    `(magit-diff-lines-boundary         ((,class (:background ,yellow2))))
    `(magit-diff-lines-heading          ((,class (nil))))
-   `(magit-diff-our                    ((,class (:foreground ,blue2   :background ,black2))))
-   `(magit-diff-our-highlight          ((,class (:foreground ,yellow2 :background ,black2))))
+   `(magit-diff-our                    ((,class (:foreground ,orange2))))
+   `(magit-diff-our-highlight          ((,class (:foreground ,orange2 :background ,bg2))))
    `(magit-diff-removed                ((,class (:foreground ,red1))))
    `(magit-diff-removed-highlight      ((,class (:background ,bg2     :inherit magit-diff-removed))))
-   `(magit-diff-their                  ((,class (:foreground ,green2  :background ,black2))))
-   `(magit-diff-their-highlight        ((,class (:foreground ,green1  :background ,black2))))
+   `(magit-diff-their                  ((,class (:foreground ,brown1))))
+   `(magit-diff-their-highlight        ((,class (:foreground ,brown1  :background ,bg2))))
    `(magit-whitespace-warning-face     ((,class (:foreground ,red1))))
    `(magit-diffstat-added              ((,class (:foreground ,green1))))
    `(magit-diffstat-removed            ((,class (:foreground ,red1))))
@@ -532,8 +539,8 @@
    `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
 
    ;; Magit Popup
-   `(magit-popup-argument          ((,class (:foreground ,aqua1   :bold t))))
-   `(magit-popup-disabled-argument ((,class (:foreground ,grey1   :bold t))))
+   `(magit-popup-argument          ((,class (:foreground ,aqua1))))
+   `(magit-popup-disabled-argument ((,class (:foreground ,grey1))))
    `(magit-popup-heading           ((,class (:foreground ,purple1 :bold t))))
    `(magit-popup-key               ((,class (:foreground ,blue1   :bold t))))
    `(magit-popup-option-value      ((,class (:foreground ,aqua2   :bold t))))
@@ -632,7 +639,7 @@
    `(org-date                      ((,class (:foreground ,brown2 :bold t))))
    `(org-date-selected             ((,class (:foreground ,black1 :background ,purple2 :bold t :box ,black1))))
    `(org-default                   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-done                      ((,class (:background ,green2 :foreground ,black1 :bold t :box nil :underline ,black1 :overline ,black1))))
+   `(org-done                      ((,class (:background ,green1 :foreground ,black1 :bold t :box nil :underline ,black1 :overline ,black1))))
    `(org-document-info             ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-document-info-keyword     ((,class (:foreground ,purple2 :bold t :height 1.4))))
    `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
