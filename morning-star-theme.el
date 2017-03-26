@@ -592,8 +592,8 @@
    `(compilation-column-number ((,class (:foreground ,green1))))
 
    ;; company
-   `(company-tooltip-common-selection     ((,class (:background ,bg2 :foreground ,red2 :bold t))))
-   `(company-tooltip-selection            ((,class (:background ,bg2 :foreground ,fg :bold t))))
+   `(company-tooltip-common-selection     ((,class (:background ,bg2 :foreground ,red1))))
+   `(company-tooltip-selection            ((,class (:background ,bg2 :foreground ,fg))))
    `(company-scrollbar-bg                 ((,class (:background ,grey1))))
    `(company-scrollbar-fg                 ((,class (:background ,red3))))
    `(company-tooltip                      ((,class (:background ,grey2 :foreground ,fg ))))
@@ -601,7 +601,7 @@
    `(company-tooltip-search-selection     ((,class (:background ,fg    :foreground ,red3))))
    `(company-tooltip-annotation           ((,class (:background ,grey2 :foreground ,aqua1 :bold t))))
    `(company-tooltip-annotation-selection ((,class (:background ,bg2   :foreground ,aqua1 :bold t))))
-   `(company-tooltip-common               ((,class (:foreground ,red2))))
+   `(company-tooltip-common               ((,class (:foreground ,red1))))
    `(company-preview-common               ((,class (:foreground ,grey1  :background ,grey3))))
    `(company-preview                      ((,class (:background ,fg     :foreground ,red3))))
    `(company-tooltip-mouse                ((,class (:inherit company-tooltip-sele))))
