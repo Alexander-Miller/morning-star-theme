@@ -703,6 +703,10 @@
    `(erc-direct-msg-face     ((,class (:foreground ,aqua1))))
    `(erc-prompt-face         ((,class (:foreground ,black2 :background ,blue1 :box t :bold t))))
 
+   ;; ERT
+   `(ert-test-result-expected   ((,class (:background ,green2 :foreground ,black2))))
+   `(ert-test-result-unexpected ((,class (:background ,red3 :foreground ,black2))))
+
    ))
 
 ;;;###autoload
