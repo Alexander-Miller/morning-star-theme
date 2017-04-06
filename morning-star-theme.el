@@ -246,9 +246,9 @@
    `(diredp-symlink                ((,class (:inherit    dired-symlink))))
    `(diredp-ignored-file-name      ((,class (:foreground ,grey1))))
    `(diredp-compressed-file-suffix ((,class (:foreground ,purple1))))
-   `(diredp-deletion-file-name     ((,class (:foreground ,black1 :background ,red3 :bold t))))
+   `(diredp-deletion-file-name     ((,class (:foreground ,red1  :bold t))))
    `(diredp-deletion               ((,class (:inherit    diredp-deletion-file-name))))
-   `(diredp-flag-mark-line         ((,class (:foreground ,black1 :background ,blue2 :bold t))))
+   `(diredp-flag-mark-line         ((,class (:foreground ,fg  :bold t))))
    `(diredp-flag-mark              ((,class (:inherit    diredp-flag-mark-line))))
    `(diredp-mode-line-marked       ((,class (:foreground ,purple1 :bold t))))
    `(diredp-mode-line-flagged      ((,class (:foreground ,red1    :bold t))))
@@ -455,7 +455,7 @@
    `(helm-selection-line              ((,class (:background ,grey3))))
    `(helm-separator                   ((,class (:foreground ,green1 :bold t))))
    `(helm-source-header               ((,class (:background ,aqua2  :foreground ,black2 :underline t))))
-   `(helm-visible-mark                ((,class (:background ,blue3  :foreground ,fg     :bold t))))
+   `(helm-visible-mark                ((,class (:foreground ,fg     :bold t))))
 
    ;;Helm swoop
    `(helm-swoop-line-number-face       ((,class (:inherit linum))))
