@@ -679,7 +679,7 @@
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-scheduled                 ((,class (:foreground ,blue1))))
    `(org-scheduled-previously      ((,class (:foreground ,brown2))))
-   `(org-scheduled-today           ((,class (:foreground ,fg))))
+   `(org-scheduled-today           ((,class (:foreground ,brown1))))
    `(org-sexp-date                 ((,class (:inherit org-date))))
    `(org-special-keyword           ((,class (:foreground ,purple2 :underline t :bold t))))
    `(org-table                     ((,class (:foreground ,brown1 :background ,bg2))))
