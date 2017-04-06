@@ -55,7 +55,7 @@
       (brown2  "#9f8b6f")
       (blue1   "#5588bb")
       (blue2   "#4477aa")
-      (blue3   "#111166"))
+      (blue3   "#333366"))
 
   (custom-theme-set-faces
    'morning-star
@@ -160,8 +160,8 @@
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
 
    ;; Vimish
-   `(vimish-fold-fringe     ((,class (:foreground ,blue2))))
-   `(vimish-fold-overlay    ((,class (:foreground ,black1 :background ,grey1 :box (:color ,black2) :underline nil :bold nil))))
+   `(vimish-fold-fringe     ((,class (:foreground ,blue1))))
+   `(vimish-fold-overlay    ((,class (:foreground ,fg :background ,blue3 :box (:color ,black2) :underline nil :bold nil))))
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
    ;; Which Key
