@@ -131,7 +131,7 @@
    `(anzu-replace-to        ((,class (:foreground ,black1  :background ,blue1))))
 
    ;; Evil
-   `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,yellow2 :background ,red3))))
+   `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,black1 :background ,red1))))
    `(evil-ex-substitute-matches                   ((,class (:inherit anzu-replace-highlight))))
    `(evil-ex-substitute-replacement               ((,class (:inherit anzu-replace-to))))
 
