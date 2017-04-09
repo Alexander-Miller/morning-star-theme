@@ -615,8 +615,8 @@
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :height 1.2 :box ,black2))))
-   `(org-agenda-date-today         ((,class (:inherit org-agenda-date :foreground ,blue3 :bold t))))
-   `(org-agenda-date-weekend       ((,class (:background ,grey1 :foreground ,black1 :height 1.2 :box ,black2))))
+   `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :height 1.2 :box ,black2))))
+   `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :height 1.2 :box ,black2 :bold t))))
    `(org-agenda-diary              ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-dimmed-todo-face   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-done               ((,class (:foreground ,green1))))
