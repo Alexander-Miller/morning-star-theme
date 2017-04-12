@@ -44,7 +44,7 @@
       (green1  "#66aa66")
       (green2  "#559955")
       (aqua1   "#55a9a9")
-      (aqua2   "#1e7f7f")
+      (aqua2   "#1e8f8f")
       (purple1 "#997799")
       (purple2 "#886688")
       (yellow1 "#f0c674")
