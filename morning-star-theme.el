@@ -719,6 +719,13 @@
    `(ert-test-result-expected   ((,class (:background ,green2 :foreground ,black2))))
    `(ert-test-result-unexpected ((,class (:background ,red3 :foreground ,black2))))
 
+   ;; Messages
+   `(message-header-name    ((,class (:foreground ,green1 :bold t))))
+   `(message-header-other   ((,class (:foreground ,blue1))))
+   `(message-header-to      ((,class (:foreground ,orange1))))
+   `(message-header-subject ((,class (:foreground ,yellow1))))
+   `(message-separator      ((,class (:foreground ,grey1))))
+
    ))
 
 ;;;###autoload
