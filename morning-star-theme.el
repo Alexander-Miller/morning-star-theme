@@ -704,6 +704,10 @@
    `(org-verbatim                  ((,class (:foreground ,green2 :bold t :italic t))))
    `(org-warning                   ((,class (:foreground ,yellow2))))
 
+   ;; Comint
+   `(comint-highlight-prompt ((,class (:foreground ,purple2 :bold t))))
+   `(comint-highlight-input  ((,class (:foreground ,blue1))))
+
    ;; ERC
    `(erc-timestamp-face      ((,class (:foreground ,brown2 :bold t))))
    `(erc-nick-default-face   ((,class (:foreground ,purple1))))
