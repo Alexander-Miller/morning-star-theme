@@ -408,6 +408,17 @@
    `(whitespace-tab              ((,class (:foreground ,grey1))))
    `(whitespace-trailing         ((,class (:foreground ,grey1))))
 
+   ;; info manual
+   `(info-title-1            ((,class (:foreground ,purple1 :bold t :height 2.0))))
+   `(info-title-2            ((,class (:foreground ,purple1 :bold t :height 1.75))))
+   `(info-title-3            ((,class (:foreground ,purple1 :bold t :height 1.5))))
+   `(info-title-4            ((,class (:foreground ,purple1 :bold t :height 1.25))))
+   `(info-header-node        ((,class (:foreground ,red1    :bold t :underline t))))
+   `(info-menu-header        ((,class (:foreground ,purple1 :bold t))))
+   `(info-menu-star          ((,class (:foreground ,green2  :bold t))))
+   `(info-quoted-name        ((,class (:foreground ,blue1   :bold t))))
+   `(info-double-quoted-name ((,class (:foreground ,green1))))
+   `(info-xref               ((,class (:foreground ,aqua1 :underline t :bold t))))
 
    ;; Helm
    `(helm-action                      ((,class (:foreground ,red1))))
