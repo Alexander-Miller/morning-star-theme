@@ -395,18 +395,19 @@
    `(term-color-white   ((,class (:foreground ,fg))))
 
    ;; Whitespace
-   `(whitespace-big-indent       ((,class (:foreground ,grey2))))
-   `(whitespace-empty            ((,class (:background ,grey2))))
-   `(whitespace-trailing         ((,class (:foreground ,grey2))))
-   `(whitespace-hspace           ((,class (:background ,grey2))))
-   `(whitespace-indentation      ((,class (:background ,grey2))))
-   `(whitespace-line             ((,class (:foreground ,grey2))))
-   `(whitespace-newline          ((,class (:foreground ,grey2))))
-   `(whitespace-space            ((,class (:foreground ,grey2))))
-   `(whitespace-space-after-tab  ((,class (:foreground ,grey2))))
-   `(whitespace-space-before-tab ((,class (:foreground ,grey2))))
-   `(whitespace-tab              ((,class (:foreground ,grey2))))
-   `(whitespace-trailing         ((,class (:foreground ,grey2))))
+   `(whitespace-big-indent       ((,class (:foreground ,grey1))))
+   `(whitespace-empty            ((,class (:background ,grey1))))
+   `(whitespace-trailing         ((,class (:foreground ,grey1))))
+   `(whitespace-hspace           ((,class (:background ,grey1))))
+   `(whitespace-indentation      ((,class (:background ,grey1))))
+   `(whitespace-line             ((,class (:foreground ,grey1))))
+   `(whitespace-newline          ((,class (:foreground ,grey1))))
+   `(whitespace-space            ((,class (:foreground ,grey1))))
+   `(whitespace-space-after-tab  ((,class (:foreground ,grey1))))
+   `(whitespace-space-before-tab ((,class (:foreground ,grey1))))
+   `(whitespace-tab              ((,class (:foreground ,grey1))))
+   `(whitespace-trailing         ((,class (:foreground ,grey1))))
+
 
    ;; Helm
    `(helm-action                      ((,class (:foreground ,red1))))
