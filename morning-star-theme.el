@@ -576,7 +576,7 @@
    ;; Git Rebase
    `(git-rebase-description   ((,class (:foreground ,fg))))
    `(git-rebase-hash          ((,class (:foreground ,orange1))))
-   `(git-rebase-killed-action ((,class (:foreground ,grey2 :strike-through t))))
+   `(git-rebase-killed-action ((,class (:foreground ,grey1 :strike-through t))))
 
    ;; Git gutter
    `(git-gutter:added                 ((,class (:foreground ,green1))))
