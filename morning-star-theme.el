@@ -204,9 +204,9 @@
 
    ;; Smerge
    `(smerge-markers           ((,class (:foreground ,black1 :background ,purple2 :bold t))))
-   `(smerge-upper             ((,class (:foreground ,green1))))
+   `(smerge-upper             ((,class (:foreground ,blue1))))
    `(smerge-refined-added     ((,class (:foreground ,bg2 :background ,green2))))
-   `(smerge-lower             ((,class (:foreground ,red1))))
+   `(smerge-lower             ((,class (:foreground ,orange1))))
    `(smerge-refined-removed   ((,class (:foreground ,bg2 :background ,red2))))
 
    ;; Smart-Parens
