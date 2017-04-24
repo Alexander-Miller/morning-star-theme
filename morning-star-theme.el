@@ -159,6 +159,18 @@
    `(custom-state               ((,class (:foreground ,green2))))
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
 
+   ;; Spacemacs states
+   `(spacemacs-transient-state-title-face ((,class (:foreground ,black2 :background ,green2 :bold t :box (:color ,bg2 :line-width 2)))))
+   `(spacemacs-micro-state-header-face    ((,class (:inherit spacemacs-transient-state-title-face))))
+   `(spacemacs-micro-state-binding-face   ((,class (:foreground ,blue2  :bold t))))
+
+   ;; Hydra
+   `(hydra-face-red      ((,class (:foreground ,red2    :bold t))))
+   `(hydra-face-blue     ((,class (:foreground ,blue2   :bold t))))
+   `(hydra-face-pink     ((,class (:foreground ,purple1 :bold t))))
+   `(hydra-face-teal     ((,class (:foreground ,green1  :bold t))))
+   `(hydra-face-amaranth ((,class (:foreground ,aqua1   :bold t))))
+
    ;; Vimish
    `(vimish-fold-fringe     ((,class (:foreground ,blue1))))
    `(vimish-fold-overlay    ((,class (:foreground ,fg :background ,blue3 :box (:color ,black2) :underline nil :bold nil))))
