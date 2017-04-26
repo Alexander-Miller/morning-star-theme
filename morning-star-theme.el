@@ -653,7 +653,7 @@
    `(org-block                     ((,class (:background ,bg))))
    `(org-block-begin-line          ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
    `(org-block-end-line            ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
-   `(org-checkbox                  ((,class (:background ,bg2  :foreground ,red3 :box (:color ,grey3 :style released-button) :bold t))))
+   `(org-checkbox                  ((,class (:background ,bg2 :foreground ,red3  :bold t))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box ,black1 :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box ,black1 :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
