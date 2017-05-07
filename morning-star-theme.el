@@ -550,7 +550,7 @@
    `(magit-section-heading-selection   ((,class (:foreground ,green1  :background ,black2))))
    `(magit-section-highlight           ((,class (:background ,bg2))))
    `(magit-section-secondary-heading   ((,class (:foreground ,purple1))))
-   `(magit-sequence-done               ((,class (:foreground ,grey2))))
+   `(magit-sequence-done               ((,class (:foreground ,grey1))))
    `(magit-sequence-drop               ((,class (:foreground ,orange1 :bold t))))
    `(magit-sequence-head               ((,class (:foreground ,purple1 :bold t))))
    `(magit-sequence-onto               ((,class (:foreground ,purple1 :bold t))))
