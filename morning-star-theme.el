@@ -637,7 +637,7 @@
    `(org-agenda-calendar-sexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-agenda-current-time       ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-agenda-current-time       ((,class (:foregroudn ,brown1 :bold t))))
    `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :height 1.2 :box ,black2))))
    `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :height 1.2 :box ,black2))))
    `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :height 1.2 :box ,black2 :bold t))))
@@ -668,7 +668,7 @@
    `(org-document-info-keyword     ((,class (:foreground ,purple2 :bold t :height 1.4))))
    `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-drawer                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-ellipsis                  ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-ellipsis                  ((,class (:foreground ,grey1 :bold t))))
    `(org-footnote                  ((,class (:foreground ,grey1 :bold t))))
    `(org-formula                   ((,class (:foreground ,green1 :background ,bg2))))
    `(org-habit-alert-face          ((,class (:background ,yellow1 :foreground ,black1 :box ,black2))))
@@ -702,7 +702,7 @@
    `(org-property-value            ((,class (:foreground ,brown2 :bold t))))
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-scheduled                 ((,class (:foreground ,blue1))))
-   `(org-scheduled-previously      ((,class (:foreground ,brown2))))
+   `(org-scheduled-previously      ((,class (:foreground ,purple1))))
    `(org-scheduled-today           ((,class (:foreground ,brown1))))
    `(org-sexp-date                 ((,class (:inherit org-date))))
    `(org-special-keyword           ((,class (:foreground ,purple2 :underline t :bold t))))
@@ -710,11 +710,12 @@
    `(org-tag                       ((,class (:foreground ,grey1))))
    `(org-tag-group                 ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-target                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-time-grid                 ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-time-grid                 ((,class (:foreground ,brown1))))
+   `(org-agenda-current-time       ((,class (:foreground ,brown1 :background ,bg2 :bold t))))
    `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box nil  :underline ,black1 :overline ,black1))))
    `(org-upcoming-deadline         ((,class (:foreground ,orange1))))
    `(org-verbatim                  ((,class (:foreground ,green2 :bold t :italic t))))
-   `(org-warning                   ((,class (:foreground ,yellow2))))
+   `(org-warning                   ((,class (:foreground ,yellow1 :bold t))))
 
    ;; Comint
    `(comint-highlight-prompt ((,class (:foreground ,purple2 :bold t))))
