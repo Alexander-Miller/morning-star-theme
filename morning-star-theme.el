@@ -668,7 +668,7 @@
    `(org-document-info-keyword     ((,class (:foreground ,purple2 :bold t :height 1.4))))
    `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-drawer                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-ellipsis                  ((,class (:foreground ,grey1 :bold t))))
+   `(org-ellipsis                  ((,class (:foreground ,grey1 :bold t :box nil :underline nil :overline nil))))
    `(org-footnote                  ((,class (:foreground ,grey1 :bold t))))
    `(org-formula                   ((,class (:foreground ,green1 :background ,bg2))))
    `(org-habit-alert-face          ((,class (:background ,yellow1 :foreground ,black1 :box ,black2))))
