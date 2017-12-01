@@ -112,7 +112,7 @@
    `(hl-line                    ((,class (:background ,grey2))))
    `(highlight-indentation-face ((,class (:background ,grey2))))
    `(header-line                ((,class (:background ,bg))))
-   `(fringe                     ((,class (:background ,black1))))
+   `(fringe                     ((,class (:background ,bg))))
    `(cursor                     ((,class (:background ,red1))))
    `(minibuffer-prompt          ((,class (:foreground ,purple1))))
    `(vertical-border            ((,class (:foreground ,black2))))
@@ -158,6 +158,24 @@
    `(custom-group-tag-1         ((,class (:foreground ,aqua1   :bold t :underline t   :height 1.5))))
    `(custom-state               ((,class (:foreground ,green2))))
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
+
+   ;; Ediff
+   `(ediff-current-diff-A        ((,class (:foreground ,black2 :background ,purple2))))
+   `(ediff-current-diff-B        ((,class (:foreground ,black2 :background ,purple2))))
+   `(ediff-current-diff-C        ((,class (:foreground ,aqua1 :background ,bg2))));;TODO
+   `(ediff-current-diff-Ancestor ((,class (:foreground ,brown1  :background ,bg2))));;TODO
+   `(ediff-even-diff-A           ((,class (:foreground ,black2 :background ,blue1))))
+   `(ediff-even-diff-B           ((,class (:foreground ,black2 :background ,blue1))))
+   `(ediff-even-diff-C           ((,class (:foreground ,aqua1   :background ,red3))));;TODO
+   `(ediff-even-diff-Ancestor    ((,class (:foreground ,brown1  :background ,red3))));;TODO
+   `(ediff-fine-diff-A           ((,class (:foreground ,yellow1 :background ,red3 :bold t))))
+   `(ediff-fine-diff-B           ((,class (:foreground ,yellow1 :background ,red3 :bold t))))
+   `(ediff-fine-diff-C           ((,class (:foreground ,aqua1   :background ,purple1))));;TODO
+   `(ediff-fine-diff-Ancestor    ((,class (:foreground ,brown1  :background ,purple1))));;TODO
+   `(ediff-odd-diff-A            ((,class (:foreground ,black2 :background ,blue2))))
+   `(ediff-odd-diff-B            ((,class (:foreground ,black2 :background ,blue2))))
+   `(ediff-odd-diff-C            ((,class (:foreground ,aqua1   :background ,aqua2))));;TODO
+   `(ediff-odd-diff-Ancestor     ((,class (:foreground ,brown1  :background ,aqua2))));;TODO
 
    ;; Spacemacs states
    `(spacemacs-transient-state-title-face ((,class (:foreground ,black2 :background ,green2 :bold t :box (:color ,bg2 :line-width 2)))))
@@ -657,7 +675,7 @@
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box ,black1 :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box ,black1 :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-code                      ((,class (:foreground ,red2 :bold t))))
+   `(org-code                      ((,class (:foreground ,purple1 :bold t))))
    `(org-column                    ((,class ())))
    `(org-column-title              ((,class (:foreground ,purple1 :background ,bg2 :bold t :underline t))))
    `(org-date                      ((,class (:foreground ,brown2 :bold t))))
