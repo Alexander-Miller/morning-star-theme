@@ -135,6 +135,24 @@
    `(evil-ex-substitute-matches                   ((,class (:inherit anzu-replace-highlight))))
    `(evil-ex-substitute-replacement               ((,class (:inherit anzu-replace-to))))
 
+   ;; Evil Goggles
+   `(evil-goggles-default-face               ((,class (:foreground ,black1  :background ,blue2   :bold t))))
+   `(evil-goggles-delete-face                ((,class (:foreground ,black1  :background ,red3    :bold t))))
+   `(evil-goggles-indent-face                ((,class (:foreground ,black1  :background ,orange2 :bold t))))
+   `(evil-goggles-yank-face                  ((,class (:foreground ,black1  :background ,blue1   :bold t))))
+   `(evil-goggles-join-face                  ((,class (:foreground ,red2    :background ,bg2     :bold t))));; TODO
+   `(evil-goggles-fill-and-move-face         ((,class (:foreground ,red2    :background ,bg2     :bold t))));; TODO
+   `(evil-goggles-paste-face                 ((,class (:foreground ,black1  :background ,green1  :bold t))))
+   `(evil-goggles-shift-face                 ((,class (:foreground ,black1  :background ,aqua1   :bold t))))
+   `(evil-goggles-surround-face              ((,class (:foreground ,black1  :background ,purple1 :bold t))))
+   `(evil-goggles-commentary-face            ((,class (:foreground ,grey3   :background ,grey1   :bold t))))
+   `(evil-goggles-nerd-commenter-face        ((,class (:foreground ,grey3   :background ,grey1   :bold t))))
+   `(evil-goggles-replace-with-register-face ((,class (:foreground ,red2    :background ,bg2     :bold t))));; TODO
+   `(evil-goggles-set-marker-face            ((,class (:foreground ,black1  :background ,aqua2   :bold t))))
+   `(evil-goggles-undo-redo-add-face         ((,class (:foreground ,black1  :background ,green1  :bold t))))
+   `(evil-goggles-undo-redo-remove-face      ((,class (:foreground ,black1  :background ,red3    :bold t))))
+   `(evil-goggles-undo-redo-change-face      ((,class (:foreground ,black1  :background ,blue1   :bold t))))
+
    ;; Ido
    `(ido-first-match           ((,class (:foreground ,green1))))
    `(ido-incomplete-regexp     ((,class (:inherit error))))
