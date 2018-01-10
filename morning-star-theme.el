@@ -104,7 +104,7 @@
    `(lazy-highlight             ((,class (:background ,red1   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua1)))))
    `(link-visited               ((,class (:foreground ,aqua2  :underline  (:color ,aqua2)))))
-   `(button                     ((,class (:foreground ,blue1  :background ,bg :bold t :box (:line-width 2 :color ,black2 :style released-button)))))
+   `(button                     ((,class (:foreground ,blue1  :background ,bg :bold t :box (:line-width -1 :color ,black2 :style released-button)))))
    `(custom-button              ((,class (:inherit    button))))
    `(linum                      ((,class (:background ,bg     :foreground ,grey1 :bold nil :box nil :overline nil :underline nil :italic nil))))
    `(region                     ((,class (:background ,black1 :foreground ,fg))))
@@ -673,7 +673,7 @@
    `(org-agenda-calendar-sexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-agenda-current-time       ((,class (:foregroudn ,brown1 :bold t))))
+   `(org-agenda-current-time       ((,class (:foreground ,brown1 :bold t))))
    `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :height 1.2 :box ,black2))))
    `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :height 1.2 :box ,black2))))
    `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :height 1.2 :box ,black2 :bold t))))
@@ -699,7 +699,7 @@
    `(org-date                      ((,class (:foreground ,brown2 :bold t))))
    `(org-date-selected             ((,class (:foreground ,black1 :background ,purple2 :bold t :box ,black1))))
    `(org-default                   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-done                      ((,class (:background ,green1 :foreground ,black1 :bold t :box nil :underline ,black1 :overline ,black1))))
+   `(org-done                      ((,class (:background ,green1 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
    `(org-document-info             ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-document-info-keyword     ((,class (:foreground ,purple2 :bold t :height 1.4))))
    `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
@@ -748,7 +748,7 @@
    `(org-target                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-time-grid                 ((,class (:foreground ,brown1))))
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :background ,bg2 :bold t))))
-   `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box nil  :underline ,black1 :overline ,black1))))
+   `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
    `(org-upcoming-deadline         ((,class (:foreground ,orange1))))
    `(org-verbatim                  ((,class (:foreground ,green2 :bold t :italic t))))
    `(org-warning                   ((,class (:foreground ,yellow1 :bold t))))
