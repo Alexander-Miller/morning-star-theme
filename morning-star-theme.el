@@ -83,10 +83,10 @@
    `(mode-line-highlight        ((,class (:box (:color ,black2) :underline t))))
    `(mode-line-emphasis         ((,class (:box (:color ,black2) :bolt t))))
    `(mode-line-inactive         ((,class (:box (:color ,black2) :background ,bg2     :foreground ,green1))))
-   `(mode-line-buffer-id        ((,class (:box (:color ,black2) :foreground ,orange1 :bold nil))))
-   `(powerline-active1          ((,class (:box (:color ,black2) :background ,grey2   :foreground ,purple1))))
+   `(powerline-active1          ((,class (:box (:color ,black2) :background ,bg2     :foreground ,purple1))))
    `(powerline-active2          ((,class (:box (:color ,black2) :background ,bg2     :foreground ,black1))))
-   `(powerline-inactive1        ((,class (:box (:color ,black2) :background ,grey2   :foreground ,purple1))))
+   `(mode-line-buffer-id        ((,class (:box (:color ,black2) :foreground ,orange1 :bold t))))
+   `(powerline-inactive1        ((,class (:box (:color ,black2) :background ,bg2     :foreground ,purple1))))
    `(powerline-inactive2        ((,class (:box (:color ,black2) :background ,bg2     :foreground ,purple1))))
    `(spaceline-evil-normal      ((,class (:box (:color ,black2) :background ,red3    :foreground ,black1))))
    `(spaceline-evil-insert      ((,class (:box (:color ,black2) :background ,green2  :foreground ,black1))))
@@ -521,7 +521,7 @@
    `(helm-swoop-line-number-face       ((,class (:inherit linum))))
    `(helm-swoop-target-line-face       ((,class (:inherit hl-line))))
    `(helm-swoop-target-word-face       ((,class (:foreground ,yellow2 :background ,red3))))
-   `(helm-swoop-target-line-block-face ((,class (:foreground ,red3 :backround ,green1)))) ;; TODO
+   `(helm-swoop-target-line-block-face ((,class (:foreground ,red3 :background ,green1)))) ;; TODO
 
    ;; Magit
    `(magit-bisect-bad                  ((,class (:height 2.0 :foreground ,red1    :background ,red3)))) ;; TODO
