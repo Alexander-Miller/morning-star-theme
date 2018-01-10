@@ -786,7 +786,8 @@
    `(message-header-subject ((,class (:foreground ,yellow1))))
    `(message-separator      ((,class (:foreground ,grey1))))
 
-   ))
+   ;; Eros
+   `(eros-result-overlay-face ((,class (:background ,bg :foreground ,brown1 :box (:line-width -1 :color ,black1)))))))
 
 ;;;###autoload
 (when load-file-name
