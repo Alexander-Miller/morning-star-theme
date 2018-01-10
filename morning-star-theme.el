@@ -153,6 +153,13 @@
    `(evil-goggles-undo-redo-remove-face      ((,class (:foreground ,black1  :background ,red3    :bold t))))
    `(evil-goggles-undo-redo-change-face      ((,class (:foreground ,black1  :background ,blue1   :bold t))))
 
+   ;; Spacemacs specifica
+   `(spacemacs-normal-face  ((,class (:foreground ,black1 :background ,red3))))
+   `(spacemacs-visual-face  ((,class (:foreground ,black1 :background ,purple2))))
+   `(spacemacs-insert-face  ((,class (:foreground ,black1 :background ,green1))))
+   `(spacemacs-motion-face  ((,class (:foreground ,black1 :background ,brown1))))
+   `(spacemacs-emacs-face   ((,class (:foreground ,black1 :background ,aqua2))))
+
    ;; Ido
    `(ido-first-match           ((,class (:foreground ,green1))))
    `(ido-incomplete-regexp     ((,class (:inherit error))))
