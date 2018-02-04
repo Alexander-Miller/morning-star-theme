@@ -172,9 +172,9 @@
    `(ido-vertical-only-match   ((,class (:inherit ido-only-match))))
 
    ;; Group Customization
-   `(custom-button              ((,class (:foreground ,black2  :background ,blue1 :box (:line-width 2 :color ,black1 :style released-button)))))
+   `(custom-button              ((,class (:foreground ,black2  :background ,blue1 :box (:line-width -1 :color ,black1 :style released-button)))))
    `(custom-button-mouse        ((,class (:background ,blue1   :inherit custom-button))))
-   `(custom-button-pressed      ((,class (:foreground ,black1  :background ,blue1 :box (:line-width 2 :color ,black1 :style pressed-button)))))
+   `(custom-button-pressed      ((,class (:foreground ,black1  :background ,blue1 :box (:line-width -1 :color ,black1 :style pressed-button)))))
    `(custom-comment             ((,class (:inherit    font-lock-comment-face))))
    `(custom-comment-tag         ((,class (:inherit    font-lock-comment-face))))
    `(custom-documentation       ((,class (:foreground ,fg))))
@@ -203,7 +203,7 @@
    `(ediff-odd-diff-Ancestor     ((,class (:foreground ,brown1  :background ,aqua2))));;TODO
 
    ;; Spacemacs states
-   `(spacemacs-transient-state-title-face ((,class (:foreground ,black2 :background ,green2 :bold t :box (:color ,bg2 :line-width 2)))))
+   `(spacemacs-transient-state-title-face ((,class (:foreground ,black2 :background ,green2 :bold t :box (:color ,bg2 :line-width -1)))))
    `(spacemacs-micro-state-header-face    ((,class (:inherit spacemacs-transient-state-title-face))))
    `(spacemacs-micro-state-binding-face   ((,class (:foreground ,blue2  :bold t))))
 
@@ -216,7 +216,7 @@
 
    ;; Vimish
    `(vimish-fold-fringe     ((,class (:foreground ,blue1))))
-   `(vimish-fold-overlay    ((,class (:foreground ,fg :background ,blue3 :box (:color ,black2) :underline nil :bold nil))))
+   `(vimish-fold-overlay    ((,class (:foreground ,fg :background ,blue3 :box (:color ,black2 :line-width -1) :underline nil :bold nil))))
    `(vimish-fold-mouse-face ((,class (:inherit vimish-fold-overlay))))
 
    ;; Which Key
@@ -258,6 +258,7 @@
    `(rainbow-delimiters-unmatched-face  ((,class :foreground ,black1)))
 
    ;; Smerge
+   `(smerge-mine              ((,class (:foreground ,black1 :background ,blue1 :bold t))))
    `(smerge-markers           ((,class (:foreground ,black1 :background ,purple2 :bold t))))
    `(smerge-upper             ((,class (:foreground ,blue1))))
    `(smerge-refined-added     ((,class (:foreground ,bg2 :background ,green2))))
@@ -677,7 +678,7 @@
 
    ;; Org-Mode
    `(org-agenda-calendar-event     ((,class (:foreground ,blue1))))
-   `(org-agenda-calendar-sexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-agenda-calendar-sexp      ((,class (:foreground ,blue1))))
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :bold t))))
