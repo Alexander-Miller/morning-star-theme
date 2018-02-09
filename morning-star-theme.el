@@ -780,6 +780,10 @@
    `(ert-test-result-expected   ((,class (:background ,green2 :foreground ,black2))))
    `(ert-test-result-unexpected ((,class (:background ,red3 :foreground ,black2))))
 
+   ;; edebug-x
+   `(hi-edebug-x-stop       ((,class (:background ,blue1 :foreground ,black2))))
+   `(hi-edebug-x-debug-line ((,class (:background ,green1 :foreground ,black2))))
+
    ;; Messages
    `(message-header-name    ((,class (:foreground ,green1 :bold t))))
    `(message-header-other   ((,class (:foreground ,blue1))))
