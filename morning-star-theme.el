@@ -510,7 +510,7 @@
    `(helm-history-deleted             ((,class (:height 2.0 :background ,fg :foreground ,red1)))) ;; TODO
    `(helm-history-remote              ((,class (:height 2.0 :background ,fg :foreground ,green1)))) ;; TODO
    `(helm-header                      ((,class (:foreground ,grey2))))
-   `(helm-header-line-left-margin     ((,class (:height 2.0 :background ,fg :foreground ,black2)))) ;; TODO
+   `(helm-header-line-left-margin     ((,class (:foreground ,purple2 :bold t))))
    `(helm-lisp-completion-info        ((,class (:height 2.0 :background ,fg :foreground ,purple2)))) ;; TODO
    `(helm-lisp-show-completion        ((,class (:height 2.0 :background ,fg :foreground ,blue2)))) ;; TODO
    `(helm-match                       ((,class (:foreground ,yellow2 :background ,red3))))
