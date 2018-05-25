@@ -276,7 +276,7 @@
    ;; Paradox
    `(paradox-name-face            ((,class (:foreground ,green1))))
    `(paradox-homepage-button-face ((,class (:foreground ,blue1   :bold t))))
-   `(paradox-archive-face         ((,class (:foreground ,brown1  :box ,bg))))
+   `(paradox-archive-face         ((,class (:foreground ,brown1  :box (:color ,bg :line-width -1)))))
    `(paradox-star-face            ((,class (:foreground ,purple2 :bold t))))
 
    ;; Man Pages
@@ -286,9 +286,9 @@
 
    ;; Dired
    `(dired-header                  ((,class (:foreground ,purple1 :underline t         :height 1.2))))
-   `(dired-marked                  ((,class (:foreground ,black2  :background ,purple1 :box t))))
-   `(dired-flagged                 ((,class (:foreground ,fg      :background ,red3    :box ,black2))))
-   `(dired-ignored                 ((,class (:foreground ,black2  :background ,grey2   :box ,black2))))
+   `(dired-marked                  ((,class (:foreground ,black2  :background ,purple1 :box (:line-width -1)))))
+   `(dired-flagged                 ((,class (:foreground ,fg      :background ,red3    :box (:color ,black2 :line-with -1)))))
+   `(dired-ignored                 ((,class (:foreground ,black2  :background ,grey2   :box (:color ,black2 :line-with -1)))))
    `(dired-symlink                 ((,class (:foreground ,aqua1))))
    `(dired-directory               ((,class (:foreground ,blue1))))
    `(dired-perm-write              ((,class (:foreground ,red1))))
@@ -346,7 +346,7 @@
    `(markdown-bold-face             ((,class (:foreground ,orange1 :bold t))))
    `(markdown-comment-face          ((,class (:inherit    font-lock-comment-face))))
    `(markdown-footnote-face         ((,class (:foreground ,red3    :bold t))))
-   `(markdown-gfm-checkbox-face     ((,class (:foreground ,red1    :background ,bg2 :box (:color ,grey1 :style released-button) :bold t))))
+   `(markdown-gfm-checkbox-face     ((,class (:foreground ,red1    :background ,bg2 :box (:color ,grey1 :style released-button :line-width -1) :bold t))))
    `(markdown-header-delimiter-face ((,class (:foreground ,blue1   :bold t))))
    `(markdown-header-rule-face      ((,class (:foreground ,blue1   :bold t))))
    `(markdown-header-face           ((,class (:foreground ,purple1 :height 1.3))))
@@ -505,7 +505,7 @@
    `(helm-ff-symlink                  ((,class (:foreground ,aqua1))))
    `(helm-grep-cmd-line               ((,class (:foreground ,aqua1))))
    `(helm-grep-file                   ((,class (:foreground ,blue1))))
-   `(helm-grep-finish                 ((,class (:foreground ,yellow2 :background ,bg2 :box (:color ,black2) :bold t))))
+   `(helm-grep-finish                 ((,class (:foreground ,yellow2 :background ,bg2 :box (:color ,black2 :line-width -1) :bold t))))
    `(helm-grep-lineno                 ((,class (:foreground ,green1))))
    `(helm-grep-match                  ((,class (:foreground ,yellow2 :background ,red3))))
    `(helm-history-deleted             ((,class (:height 2.0 :background ,fg :foreground ,red1)))) ;; TODO
@@ -683,9 +683,9 @@
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :bold t))))
-   `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :height 1.2 :box ,black2))))
-   `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :height 1.2 :box ,black2))))
-   `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :height 1.2 :box ,black2 :bold t))))
+   `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :box (:color ,black2 :line-with -1)))))
+   `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :box (:color ,black2 :line-with -1)))))
+   `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :box (:color ,black2 :line-with -1) :bold t))))
    `(org-agenda-diary              ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-dimmed-todo-face   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-done               ((,class (:foreground ,green1))))
@@ -693,37 +693,37 @@
    `(org-agenda-filter-regexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-filter-tags        ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-restriction-lock   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t :height 1.4))))
+   `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t))))
    `(org-archived                  ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-block                     ((,class (:background ,bg))))
    `(org-block-begin-line          ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
    `(org-block-end-line            ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
    `(org-checkbox                  ((,class (:background ,bg2 :foreground ,red3  :bold t))))
-   `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box ,black1 :bold t))))
-   `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box ,black1 :bold t))))
+   `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
+   `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-code                      ((,class (:foreground ,purple1 :bold t))))
    `(org-column                    ((,class ())))
    `(org-column-title              ((,class (:foreground ,purple1 :background ,bg2 :bold t :underline t))))
    `(org-date                      ((,class (:foreground ,brown2 :bold t))))
-   `(org-date-selected             ((,class (:foreground ,black1 :background ,purple2 :bold t :box ,black1))))
+   `(org-date-selected             ((,class (:foreground ,black1 :background ,purple2 :bold t :box (:color ,black1 :line-with -1)))))
    `(org-default                   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-done                      ((,class (:background ,green1 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
+   `(org-done                      ((,class (:background ,green1 :foreground ,black1 :bold t :box (:color ,black2 :line-width -1)))))
    `(org-document-info             ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-document-info-keyword     ((,class (:foreground ,purple2 :bold t :height 1.4))))
    `(org-document-title            ((,class (:foreground ,red2    :bold t :height 1.4))))
    `(org-drawer                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-ellipsis                  ((,class (:foreground ,grey1 :bold t :box nil :underline nil :overline nil))))
-   `(org-footnote                  ((,class (:foreground ,grey1 :bold t))))
+   `(org-footnote                  ((,class (:foreground ,grey1 :background ,grey3 :bold t))))
    `(org-formula                   ((,class (:foreground ,green1 :background ,bg2))))
-   `(org-habit-alert-face          ((,class (:background ,yellow1 :foreground ,black1 :box ,black2))))
-   `(org-habit-alert-future-face   ((,class (:background ,yellow2 :foreground ,black1 :box ,black2))))
-   `(org-habit-clear-face          ((,class (:background ,blue2   :foreground ,black1 :box ,black2))))
-   `(org-habit-clear-future-face   ((,class (:background ,blue1   :foreground ,black2 :box ,black2))))
-   `(org-habit-overdue-face        ((,class (:background ,red3    :foreground ,black1 :box ,black2))))
-   `(org-habit-overdue-future-face ((,class (:background ,red1    :foreground ,black1 :box ,black2))))
-   `(org-habit-ready-face          ((,class (:background ,green1  :foreground ,black2 :box ,black2))))
-   `(org-habit-ready-future-face   ((,class (:background ,green2  :foreground ,black2 :box ,black2))))
+   `(org-habit-alert-face          ((,class (:background ,yellow1 :foreground ,black1 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-alert-future-face   ((,class (:background ,yellow2 :foreground ,black1 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-clear-face          ((,class (:background ,blue2   :foreground ,black1 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-clear-future-face   ((,class (:background ,blue1   :foreground ,black2 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-overdue-face        ((,class (:background ,red3    :foreground ,black1 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-overdue-future-face ((,class (:background ,red1    :foreground ,black1 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-ready-face          ((,class (:background ,green1  :foreground ,black2 :box (:color ,black2 :line-with -1)))))
+   `(org-habit-ready-future-face   ((,class (:background ,green2  :foreground ,black2 :box (:color ,black2 :line-with -1)))))
    `(org-headline-done             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-hide                      ((,class (:foreground ,bg))))
    `(org-indent                    ((,class (:foreground ,bg))))
@@ -743,7 +743,7 @@
    `(org-meta-line                 ((,class (:foreground ,purple2   :bold t))))
    `(org-mode-line-clock           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-mode-line-clock-overrun   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :box nil :underline ,black1 :overline ,black1))))
+   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :undeline t :overline t))))
    `(org-property-value            ((,class (:foreground ,brown2 :bold t))))
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-scheduled                 ((,class (:foreground ,blue1))))
