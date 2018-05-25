@@ -101,6 +101,7 @@
    ;; Standard UI Items
    `(show-paren-match           ((,class (:underline ,aqua2 :bold t))))
    `(isearch                    ((,class (:background ,red3   :foreground ,yellow2))))
+   `(internal-border            ((,class (:background ,black2))))
    `(lazy-highlight             ((,class (:background ,red1   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua1)))))
    `(link-visited               ((,class (:foreground ,aqua2  :underline  (:color ,aqua2)))))
