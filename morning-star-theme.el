@@ -767,12 +767,14 @@
    `(comint-highlight-input  ((,class (:foreground ,blue1))))
 
    ;; Ledger
-   `(ledger-font-xact-highlight-face  ((,class (:background ,grey3))))
-   `(ledger-font-posting-account-face ((,class (:foreground ,blue1))))
-   `(ledger-font-posting-amount-face  ((,class (:foreground ,brown1))))
-   `(ledger-font-posting-date-face    ((,class (:foreground ,purple1 :bold t))))
-   `(ledger-font-payee-uncleared-face ((,class (:foreground ,red2 :bold t))))
-   `(ledger-font-payee-cleared-face   ((,class (:foreground ,green2 :bold t))))
+   `(ledger-font-xact-highlight-face    ((,class (:background ,grey3))))
+   `(ledger-font-posting-account-face   ((,class (:foreground ,blue1))))
+   `(ledger-font-posting-amount-face    ((,class (:foreground ,brown1))))
+   `(ledger-font-posting-date-face      ((,class (:foreground ,purple1 :bold t))))
+   `(ledger-font-payee-uncleared-face   ((,class (:foreground ,red2 :bold t))))
+   `(ledger-font-payee-cleared-face     ((,class (:foreground ,green2 :bold t))))
+   `(ledger-font-include-directive-face ((,class (:foreground ,green1))))
+   `(ledger-occur-xact-face             ((,class (:background ,grey1 :foreground ,bg))))
 
    ;; ERC
    `(erc-timestamp-face      ((,class (:foreground ,brown2 :bold t))))
