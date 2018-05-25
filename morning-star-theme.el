@@ -800,7 +800,12 @@
    `(message-separator      ((,class (:foreground ,grey1))))
 
    ;; Eros
-   `(eros-result-overlay-face ((,class (:background ,bg :foreground ,brown1 :box (:line-width -1 :color ,black1)))))))
+   `(eros-result-overlay-face ((,class (:background ,bg :foreground ,brown1 :box (:line-width -1 :color ,black1)))))
+
+
+   (custom-theme-set-variables
+    'morning-star
+    `(ansi-color-names-vector [,black1 ,red2 ,green1 ,yellow1 ,blue1 ,purple1 ,aqua1 ,fg]))))
 
 ;;;###autoload
 (when load-file-name
