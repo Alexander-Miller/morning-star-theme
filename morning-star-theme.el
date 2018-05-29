@@ -774,7 +774,9 @@
    `(ledger-font-payee-uncleared-face   ((,class (:foreground ,red2 :bold t))))
    `(ledger-font-payee-cleared-face     ((,class (:foreground ,green2 :bold t))))
    `(ledger-font-include-directive-face ((,class (:foreground ,green1))))
+   `(ledger-font-account-directive-face ((,class (:foreground ,purple1 :bold t))))
    `(ledger-occur-xact-face             ((,class (:background ,grey1 :foreground ,bg))))
+   `(ledger-font-auto-xact-face         ((,class (:foreground ,aqua1))))
 
    ;; ERC
    `(erc-timestamp-face      ((,class (:foreground ,brown2 :bold t))))
