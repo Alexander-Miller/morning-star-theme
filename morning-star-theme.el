@@ -238,12 +238,12 @@
    `(flycheck-fringe-warning           ((,class (:foreground ,yellow2))))
    `(flycheck-fringe-error             ((,class (:foreground ,red1))))
    `(flycheck-error-list-info          ((,class (:foreground ,green2))))
-   `(flycheck-error-list-warning       ((,class (:foreground ,yellow2))))
-   `(flycheck-error-list-error         ((,class (:foreground ,red1))))
+   `(flycheck-error-list-warning       ((,class (:foreground ,yellow1 :bold t))))
+   `(flycheck-error-list-error         ((,class (:foreground ,red1 :bold t))))
    `(flycheck-error-list-id            ((,class (:foreground ,yellow1))))
    `(flycheck-error-list-checker-name  ((,class (:foreground ,brown1))))
-   `(flycheck-error-list-column-number ((,class (:foreground ,aqua1))))
-   `(flycheck-error-list-line-number   ((,class (:foreground ,aqua1))))
+   `(flycheck-error-list-column-number ((,class (:foreground ,green2 :bold t))))
+   `(flycheck-error-list-line-number   ((,class (:foreground ,green2 :bold t))))
    `(flycheck-error-list-highlight     ((,class (:background ,grey3))))
 
    ;; Rainbow delimiters
