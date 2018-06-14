@@ -807,6 +807,21 @@
    ;; Eros
    `(eros-result-overlay-face ((,class (:background ,bg :foreground ,brown1 :box (:line-width -1 :color ,black1)))))
 
+   ;; mu4e
+   `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
+   `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
+   `(mu4e-header-face                     ((,class (:foreground ,brown1))))
+   `(mu4e-title-face                      ((,class (:foreground ,purple1 :bold t :height 1.1))))
+   `(mu4e-header-key-face                 ((,class (:foreground ,purple1 :bold t))))
+   `(mu4e-header-marks-face               ((,class (:foreground ,purple2 :bold t))))
+   `(mu4e-header-title-face               ((,class (:foreground ,yellow1 :background ,red3))))
+   `(mu4e-header-value-face               ((,class (:foreground ,brown1))))
+   `(mu4e-header-highlight-face           ((,class (:background ,grey3))))
+   `(mu4e-special-header-value-face       ((,class (:foreground ,aqua1))))
+   `(mu4e-contact-face                    ((,class (:foreground ,green1))))
+   `(mu4e-highlight-face                  ((,class (:foreground ,green1 :bold t))))
+   `(mu4e-maildirs-extension-maildir-face ((,class (:foreground ,brown1))))
+
 
    (custom-theme-set-variables
     'morning-star
