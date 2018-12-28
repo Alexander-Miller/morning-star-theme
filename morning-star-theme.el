@@ -809,6 +809,12 @@
    ;; Eros
    `(eros-result-overlay-face ((,class (:background ,bg :foreground ,brown1 :box (:line-width -1 :color ,black1)))))
 
+   ;; elfeed
+   `(elfeed-search-feed-face          ((,class (:foreground ,brown1))))
+   `(elfeed-search-tag-face           ((,class (:foreground ,green1))))
+   `(elfeed-search-unread-title-face  ((,class (:foreground ,purple1 :bold t))))
+   `(elfeed-search-title-face         ((,class (:foreground ,blue1))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
