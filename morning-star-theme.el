@@ -697,9 +697,9 @@
    `(org-agenda-restriction-lock   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t))))
    `(org-archived                  ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-block                     ((,class (:background ,bg))))
-   `(org-block-begin-line          ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
-   `(org-block-end-line            ((,class (:background ,bg2 :foreground ,grey1 :bold t))))
+   `(org-block                     ((,class (:background ,bg2))))
+   `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
+   `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
    `(org-checkbox                  ((,class (:background ,bg2 :foreground ,red3  :bold t))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
