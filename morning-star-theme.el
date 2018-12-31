@@ -696,7 +696,7 @@
    `(org-agenda-filter-tags        ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-restriction-lock   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t))))
-   `(org-archived                  ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-archived                  ((,class (:foreground ,grey1 :bold t))))
    `(org-block                     ((,class (:background ,bg2))))
    `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
    `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
