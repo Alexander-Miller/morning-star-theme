@@ -700,9 +700,9 @@
    `(org-block                     ((,class (:background ,bg2))))
    `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
    `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
-   `(org-checkbox                  ((,class (:background ,bg2 :foreground ,red3  :bold t))))
-   `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
-   `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-with -1) :bold t))))
+   `(org-checkbox                  ((,class (:background ,black1 :foreground ,brown2  :bold t :box (:color ,brown2 :line-width -1)))))
+   `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
+   `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-code                      ((,class (:foreground ,purple1 :bold t))))
    `(org-column                    ((,class ())))
