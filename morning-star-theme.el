@@ -700,7 +700,7 @@
    `(org-block                     ((,class (:background ,bg2))))
    `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
    `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
-   `(org-checkbox                  ((,class (:background ,black1 :foreground ,brown2  :bold t :box (:color ,brown2 :line-width -1)))))
+   `(org-checkbox                  ((,class (:background ,bg2 :foreground ,brown2  :bold t :box (:color ,brown2 :line-width -1)))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
    `(org-clock-overlay             ((,class (:foreground ,bg :background ,red3)))) ;; TODO
@@ -812,7 +812,7 @@
    ;; elfeed
    `(elfeed-search-feed-face          ((,class (:foreground ,brown1))))
    `(elfeed-search-tag-face           ((,class (:foreground ,green1))))
-   `(elfeed-search-unread-title-face  ((,class (:foreground ,purple1 :bold t))))
+   `(elfeed-search-unread-title-face  ((,class (:bold t))))
    `(elfeed-search-title-face         ((,class (:foreground ,blue1))))
 
    ;; mu4e
