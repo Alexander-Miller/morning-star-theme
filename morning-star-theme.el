@@ -534,6 +534,10 @@
    `(helm-swoop-target-word-face       ((,class (:foreground ,yellow2 :background ,red3))))
    `(helm-swoop-target-line-block-face ((,class (:foreground ,red3 :background ,green1)))) ;; TODO
 
+   ;;Helm xref
+   `(helm-xref-file-name   ((,class (:foreground ,purple1))))
+   `(helm-xref-line-number ((,class (:foreground ,green1 :bold t))))
+
    ;; Magit
    `(magit-bisect-bad                  ((,class (:height 2.0 :foreground ,red1    :background ,red3)))) ;; TODO
    `(magit-bisect-good                 ((,class (:height 2.0 :foreground ,red1    :background ,green2)))) ;; TODO
