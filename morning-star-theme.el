@@ -819,6 +819,10 @@
    `(elfeed-search-unread-title-face  ((,class (:bold t))))
    `(elfeed-search-title-face         ((,class (:foreground ,blue1))))
 
+   ;; LSP
+   `(lsp-face-highlight-read  ((,class (:background ,blue2 :foreground ,black2))))
+   `(lsp-face-highlight-write ((,class (:background ,orange2  :foreground ,black2))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
