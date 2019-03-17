@@ -684,14 +684,14 @@
    `(company-template-field               ((,class (:inherit yas-field-highlight-face))))
 
    ;; Org-Mode
-   `(org-agenda-calendar-event     ((,class (:foreground ,blue1))))
-   `(org-agenda-calendar-sexp      ((,class (:foreground ,blue1))))
+   `(org-agenda-calendar-event     ((,class (:foreground ,aqua2 :bold t))))
+   `(org-agenda-calendar-sexp      ((,class (:foreground ,aqua2 :bold t))))
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :bold t))))
-   `(org-agenda-date               ((,class (:background ,brown2 :foreground ,black2 :box (:color ,black2 :line-with -1)))))
-   `(org-agenda-date-weekend       ((,class (:background ,grey1  :foreground ,black2 :box (:color ,black2 :line-with -1)))))
-   `(org-agenda-date-today         ((,class (:background ,blue3  :foreground ,brown2 :box (:color ,black2 :line-with -1) :bold t))))
+   `(org-agenda-date               ((,class (:foreground ,brown1 :bold t))))
+   `(org-agenda-date-weekend       ((,class (:foreground ,brown2 :bold t))))
+   `(org-agenda-date-today         ((,class (:foreground ,red3 :bold t :italic t :height 1.5))))
    `(org-agenda-diary              ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-dimmed-todo-face   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-done               ((,class (:foreground ,green1))))
@@ -752,9 +752,9 @@
    `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :undeline t :overline t))))
    `(org-property-value            ((,class (:foreground ,brown2 :bold t))))
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-scheduled                 ((,class (:foreground ,blue1))))
+   `(org-scheduled                 ((,class (:foreground ,green1))))
    `(org-scheduled-previously      ((,class (:foreground ,purple1))))
-   `(org-scheduled-today           ((,class (:foreground ,brown1))))
+   `(org-scheduled-today           ((,class (:foreground ,blue1))))
    `(org-sexp-date                 ((,class (:inherit org-date))))
    `(org-special-keyword           ((,class (:foreground ,purple2 :underline t :bold t))))
    `(org-table                     ((,class (:foreground ,brown1 :background ,bg2))))
