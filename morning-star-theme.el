@@ -693,7 +693,7 @@
    `(org-agenda-date-weekend       ((,class (:foreground ,brown2 :bold t))))
    `(org-agenda-date-today         ((,class (:foreground ,red3 :bold t :italic t :height 1.5))))
    `(org-agenda-diary              ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-agenda-dimmed-todo-face   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-agenda-dimmed-todo-face   ((,class (:foreground ,grey1))))
    `(org-agenda-done               ((,class (:foreground ,green1))))
    `(org-agenda-filter-category    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-filter-regexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
@@ -749,7 +749,7 @@
    `(org-meta-line                 ((,class (:foreground ,purple2   :bold t))))
    `(org-mode-line-clock           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-mode-line-clock-overrun   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :undeline t :overline t))))
+   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :underline t :overline t))))
    `(org-property-value            ((,class (:foreground ,brown2 :bold t))))
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-scheduled                 ((,class (:foreground ,green1))))
@@ -762,6 +762,7 @@
    `(org-tag-group                 ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-target                    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-time-grid                 ((,class (:foreground ,brown1))))
+   `(org-upcoming-distant-deadline ((,class (:foreground ,yellow1))))
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :background ,bg2 :bold t))))
    `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
    `(org-upcoming-deadline         ((,class (:foreground ,orange1))))
@@ -818,6 +819,10 @@
    `(elfeed-search-tag-face           ((,class (:foreground ,green1))))
    `(elfeed-search-unread-title-face  ((,class (:bold t))))
    `(elfeed-search-title-face         ((,class (:foreground ,blue1))))
+   `(elfeed-log-date-face             ((,class (:foreground ,brown1))))
+   `(elfeed-log-info-level-face       ((,class (:foreground ,green1))))
+   `(elfeed-log-warn-level-face       ((,class (:foreground ,yellow1))))
+   `(elfeed-log-error-level-face      ((,class (:foreground ,red2))))
 
    ;; LSP
    `(lsp-face-highlight-read  ((,class (:background ,blue2 :foreground ,black2))))
