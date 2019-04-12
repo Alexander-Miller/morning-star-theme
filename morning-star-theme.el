@@ -597,6 +597,7 @@
    `(magit-refname                     ((,class (:height 2.0 :foreground ,purple2 :background ,black1)))) ;; TODO
    `(magit-refname-stash               ((,class (:height 2.0 :foreground ,red1    :background ,black1)))) ;; TODO
    `(magit-refname-wip                 ((,class (:height 2.0 :foreground ,red1    :background ,black1)))) ;; TODO
+   `(magit-refname-pullreq             ((,class (:foreground ,orange2 :bold t))))
    `(magit-section-heading             ((,class (:foreground ,purple1 :underline t :height 1.2))))
    `(magit-section-heading-selection   ((,class (:foreground ,green1  :background ,black2))))
    `(magit-section-highlight           ((,class (:background ,bg2))))
