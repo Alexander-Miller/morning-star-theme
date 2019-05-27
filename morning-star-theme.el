@@ -685,22 +685,22 @@
    `(company-template-field               ((,class (:inherit yas-field-highlight-face))))
 
    ;; Org-Mode
-   `(org-agenda-calendar-event     ((,class (:foreground ,aqua2 :bold t))))
-   `(org-agenda-calendar-sexp      ((,class (:foreground ,aqua2 :bold t))))
+   `(org-agenda-calendar-event     ((,class (:foreground ,blue2 :bold t))))
+   `(org-agenda-calendar-sexp      ((,class (:foreground ,blue2 :bold t))))
    `(org-agenda-clocking           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-column-dateline    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :bold t))))
    `(org-agenda-date               ((,class (:foreground ,brown1 :bold t))))
    `(org-agenda-date-weekend       ((,class (:foreground ,brown2 :bold t))))
    `(org-agenda-date-today         ((,class (:foreground ,red3 :bold t :italic t :height 1.5))))
-   `(org-agenda-diary              ((,class (:foreground ,bg :background ,red3)))) ;; TODO
+   `(org-agenda-diary              ((,class (:foreground ,red2 :bold t))))
    `(org-agenda-dimmed-todo-face   ((,class (:foreground ,grey1))))
    `(org-agenda-done               ((,class (:foreground ,green1))))
    `(org-agenda-filter-category    ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-filter-regexp      ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-filter-tags        ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-agenda-restriction-lock   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :underline t))))
+   `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :height 1.3))))
    `(org-archived                  ((,class (:foreground ,grey1 :bold t))))
    `(org-block                     ((,class (:background ,bg2))))
    `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
@@ -750,12 +750,12 @@
    `(org-meta-line                 ((,class (:foreground ,purple2   :bold t))))
    `(org-mode-line-clock           ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-mode-line-clock-overrun   ((,class (:foreground ,bg :background ,red3)))) ;; TODO
-   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :underline t :overline t))))
+   `(org-priority                  ((,class (:background ,purple1 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
    `(org-property-value            ((,class (:foreground ,brown2 :bold t))))
    `(org-quote                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-scheduled                 ((,class (:foreground ,green1))))
    `(org-scheduled-previously      ((,class (:foreground ,purple1))))
-   `(org-scheduled-today           ((,class (:foreground ,blue1))))
+   `(org-scheduled-today           ((,class (:foreground ,aqua1))))
    `(org-sexp-date                 ((,class (:inherit org-date))))
    `(org-special-keyword           ((,class (:foreground ,purple2 :underline t :bold t))))
    `(org-table                     ((,class (:foreground ,brown1 :background ,bg2))))
@@ -766,9 +766,9 @@
    `(org-upcoming-distant-deadline ((,class (:foreground ,yellow1))))
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :background ,bg2 :bold t))))
    `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
-   `(org-upcoming-deadline         ((,class (:foreground ,orange1))))
+   `(org-upcoming-deadline         ((,class (:foreground ,orange2))))
    `(org-verbatim                  ((,class (:foreground ,green2 :bold t :italic t))))
-   `(org-warning                   ((,class (:foreground ,yellow1 :bold t))))
+   `(org-warning                   ((,class (:foreground ,yellow2 :bold t))))
 
    ;; Comint
    `(comint-highlight-prompt ((,class (:foreground ,purple2 :bold t))))
