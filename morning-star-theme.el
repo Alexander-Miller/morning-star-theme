@@ -829,6 +829,19 @@
    `(lsp-face-highlight-read  ((,class (:background ,blue2 :foreground ,black2))))
    `(lsp-face-highlight-write ((,class (:background ,orange2  :foreground ,black2))))
 
+
+   ;; notmuch
+   `(notmuch-search-date  ((,class (:foreground ,green1))))
+   `(notmuch-search-count ((,class (:foreground ,aqua1))))
+   `(notmuch-search-matching-authors ((,class (:foreground ,blue1))))
+   `(notmuch-search-subject ((,class (:foreground ,brown1))))
+
+   ;; gnus
+   `(gnus-header-name    ((,class (:foreground ,purple1 :bold t))))
+   `(gnus-header-content ((,class (:foreground ,brown1))))
+   `(gnus-header-subject ((,class (:foreground ,green1))))
+   `(gnus-button         ((,class (:foreground ,aqua2))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
