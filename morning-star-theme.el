@@ -622,7 +622,7 @@
    `(magit-popup-option-value      ((,class (:foreground ,aqua2   :bold t))))
 
    ;; Git
-   `(git-commit-note                 ((,class (:foreground ,brown1))))
+   `(git-commit-keyword              ((,class (:background ,blue1 :foreground ,black1 :bold t :box (:line-width -1)))))
    `(git-commit-comment-action       ((,class (:foreground ,orange1))))
    `(git-commit-comment-branch       ((,class (:foreground ,blue1 :bold t))))
    `(git-commit-comment-detached     ((,class (:foreground ,aqua1))))
