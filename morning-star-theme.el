@@ -128,6 +128,13 @@
    `(match                      ((,class (:background ,red3 :foreground ,fg))))
    `(tooltip                    ((,class (:background ,bg2  :foreground ,brown1))))
 
+   ;; Tabs
+   `(tab-line                   ((,class (:background ,black1 :foreground ,fg :box (:line-width 3 :color ,black1) :overline ,black1))))
+   `(tab-line-tab               ((,class (:background ,black1 :foreground ,fg :box (:line-width 3 :color ,black1) :overline ,black1))))
+   `(tab-line-tab-current       ((,class (:background ,bg2    :foreground ,fg :box (:line-width 3 :color ,bg2)    :overline ,blue1))))
+   `(tab-line-tab-inactive      ((,class (:background ,black1 :foreground ,fg :box (:line-width 3 :color ,black1) :overline ,black1))))
+   `(tab-line-highlight         ((,class (:background ,bg     :foreground ,fg :box (:line-width 3 :color ,bg)     :overline ,blue1))))
+
    ;; Anzu
    `(anzu-mode-line         ((,class (:foreground ,yellow2 :background ,bg2))))
    `(anzu-replace-highlight ((,class (:foreground ,yellow2 :background ,red3))))
