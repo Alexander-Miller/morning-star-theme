@@ -114,7 +114,7 @@
    `(highlight                  ((,class (:background ,black1 :foreground ,fg))))
    `(hl-line                    ((,class (:background ,grey2))))
    `(highlight-indentation-face ((,class (:background ,grey2))))
-   `(header-line                ((,class (:background ,bg))))
+   `(header-line                ((,class (:box (:color ,black2) :background ,black1))))
    `(fringe                     ((,class (:background ,bg))))
    `(cursor                     ((,class (:background ,red1))))
    `(minibuffer-prompt          ((,class (:foreground ,purple1))))
