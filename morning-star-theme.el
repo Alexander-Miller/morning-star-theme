@@ -529,10 +529,10 @@
    `(helm-M-x-key                     ((,class (:foreground ,yellow1 :bold t))))
    `(helm-prefarg                     ((,class (:foreground ,aqua1   :bold t))))
    `(helm-resume-need-update          ((,class (:height 2.0 :background ,fg :foreground ,aqua2)))) ;; TODO
-   `(helm-selection                   ((,class (:background ,black1))))
+   `(helm-selection                   ((,class (:background ,black1 :extend t))))
    `(helm-selection-line              ((,class (:background ,grey3))))
    `(helm-separator                   ((,class (:foreground ,green1 :bold t))))
-   `(helm-source-header               ((,class (:background ,aqua2  :foreground ,black2 :underline t))))
+   `(helm-source-header               ((,class (:background ,aqua2  :foreground ,black2 :underline t :extend t))))
    `(helm-visible-mark                ((,class (:foreground ,fg     :bold t))))
 
    ;;Helm swoop
@@ -710,9 +710,9 @@
    `(org-agenda-structure          ((,class (:foreground ,purple1 :bold t :height 1.5))))
    `(org-super-agenda-header       ((,class (:foreground ,green2 :bold t :height 1.3))))
    `(org-archived                  ((,class (:foreground ,grey1 :bold t))))
-   `(org-block                     ((,class (:background ,bg2))))
-   `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
-   `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t))))
+   `(org-block                     ((,class (:background ,bg2 :extend t))))
+   `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t :extend t))))
+   `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t :extend t))))
    `(org-checkbox                  ((,class (:background ,bg2 :foreground ,brown2  :bold t :box (:color ,brown2 :line-width -1)))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
