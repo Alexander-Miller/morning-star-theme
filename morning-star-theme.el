@@ -628,6 +628,11 @@
    `(magit-popup-key               ((,class (:foreground ,blue1   :bold t))))
    `(magit-popup-option-value      ((,class (:foreground ,aqua2   :bold t))))
 
+   ;; Diff
+   `(diff-refine-added   ((,class (:background ,green2 :foreground ,black1 :bold t))))
+   `(diff-refine-removed ((,class (:background ,red3   :foreground ,black1 :bold t))))
+   `(diff-refine-changed ((,class (:background ,blue2  :foreground ,black1 :bold t))))
+
    ;; Git
    `(git-commit-keyword              ((,class (:foreground ,brown2 :bold t))))
    `(git-commit-comment-action       ((,class (:foreground ,orange1))))
