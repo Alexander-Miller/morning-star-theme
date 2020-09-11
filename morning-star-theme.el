@@ -625,9 +625,9 @@
    `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
 
    ;; Diff
-   `(diff-refine-added   ((,class (:background ,green2 :foreground ,black1 :bold t))))
-   `(diff-refine-removed ((,class (:background ,red3   :foreground ,black1 :bold t))))
-   `(diff-refine-changed ((,class (:background ,blue2  :foreground ,black1 :bold t))))
+   `(diff-refine-added   ((,class (:foreground ,green2 :background ,black1 :bold t))))
+   `(diff-refine-removed ((,class (:foreground ,red2   :background ,black1 :bold t))))
+   `(diff-refine-changed ((,class (:foreground ,blue1  :background ,black1 :bold t))))
 
    ;; Git
    `(git-commit-keyword              ((,class (:foreground ,brown2 :bold t))))
