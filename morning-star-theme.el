@@ -212,6 +212,9 @@
    `(ediff-odd-diff-C            ((,class (:foreground ,aqua1   :background ,aqua2))));;TODO
    `(ediff-odd-diff-Ancestor     ((,class (:foreground ,brown1  :background ,aqua2))));;TODO
 
+   ;; Macrostep
+   `(macrostep-expansion-highlight-face ((,class (:inherit region))))
+
    ;; Spacemacs states
    `(spacemacs-transient-state-title-face ((,class (:foreground ,black2 :background ,green2 :bold t :box (:color ,bg2 :line-width -1)))))
    `(spacemacs-micro-state-header-face    ((,class (:inherit spacemacs-transient-state-title-face))))
