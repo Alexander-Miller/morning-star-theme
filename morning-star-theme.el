@@ -621,13 +621,6 @@
    `(magit-signature-untrusted         ((,class (:foreground ,red1    :italic t :underline (:style wave)))))
    `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
 
-   ;; Magit Popup
-   `(magit-popup-argument          ((,class (:foreground ,aqua1))))
-   `(magit-popup-disabled-argument ((,class (:foreground ,grey1))))
-   `(magit-popup-heading           ((,class (:foreground ,purple1 :bold t))))
-   `(magit-popup-key               ((,class (:foreground ,blue1   :bold t))))
-   `(magit-popup-option-value      ((,class (:foreground ,aqua2   :bold t))))
-
    ;; Diff
    `(diff-refine-added   ((,class (:background ,green2 :foreground ,black1 :bold t))))
    `(diff-refine-removed ((,class (:background ,red3   :foreground ,black1 :bold t))))
