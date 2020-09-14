@@ -140,6 +140,11 @@
    `(anzu-replace-highlight ((,class (:foreground ,yellow2 :background ,red3))))
    `(anzu-replace-to        ((,class (:foreground ,black1  :background ,blue1))))
 
+   ;; Xref
+   `(xref-file-header ((,class (:foreground ,brown1))))
+   `(xref-line-number ((,class (:foreground ,green1))))
+   `(xref-match       ((,class (:background ,black1))))
+
    ;; Evil
    `(evil-search-highlight-persist-highlight-face ((,class (:foreground ,black1 :background ,red1))))
    `(evil-ex-substitute-matches                   ((,class (:inherit anzu-replace-highlight))))
