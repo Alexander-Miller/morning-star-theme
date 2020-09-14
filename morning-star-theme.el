@@ -664,6 +664,24 @@
    `(git-gutter-fr+deleted            ((,class (:inherit    git-gutter:deleted))))
    `(git-gutter-fr+modified           ((,class (:inherit    git-gutter:modified))))
 
+   ;; Transient
+   `(transient-heading           ((,class (:foreground ,purple1 :bold t))))
+   `(transient-key               ((,class (:foreground ,blue1   :bold t))))
+   `(transient-value             ((,class (:foreground ,aqua1   :bold t))))
+   `(transient-argument          ((,class (:foreground ,orange1 :bold t))))
+   `(transient-unreachable-key   ((,class (:foreground ,grey1   :bold t))))
+   `(transient-unreachable       ((,class (:foreground ,grey1))))
+   `(transient-active-infix      ((,class (:foreground ,green2  :bold t))))
+
+   `(transient-inacitve-argument ((,class (:foreground ,brown1  :background ,black2))))
+   `(transient-inacitve-value    ((,class (:foreground ,orange1  :background ,black2))))
+   `(transient-disabled-suffix   ((,class (:foreground ,purple1 :background ,black2))))
+   `(transient-enabled-suffix    ((,class (:foreground ,red3    :background ,black2))))
+   `(transient-inapt-suffix      ((,class (:foreground ,aqua1 :background ,black2))))
+   `(transient-mismatched-key    ((,class (:foreground ,blue2 :background ,black2))))
+   `(transient-nonstandard-key   ((,class (:foreground ,brown2 :background ,black2))))
+   `(transient-separator         ((,class (:foreground ,orange2 :background ,black2))))
+
    ;; Diff hl
    `(diff-hl-change ((,class (:background ,blue2  :foreground ,black1))))
    `(diff-hl-delete ((,class (:background ,red1   :foreground ,black1))))
