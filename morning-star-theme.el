@@ -41,8 +41,10 @@
       (red1    "#f2777a")
       (red2    "#bb6666")
       (red3    "#ab3737")
+      (red4    "#221111")
       (green1  "#66aa66")
       (green2  "#559955")
+      (green3  "#112211")
       (aqua1   "#55a9a9")
       (aqua2   "#1e8f8f")
       (purple1 "#997799")
@@ -630,8 +632,8 @@
    `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
 
    ;; Diff
-   `(diff-refine-added   ((,class (:foreground ,green2 :background ,black1 :bold t))))
-   `(diff-refine-removed ((,class (:foreground ,red2   :background ,black1 :bold t))))
+   `(diff-refine-added   ((,class (:foreground ,green2 :background ,green3 :bold t))))
+   `(diff-refine-removed ((,class (:foreground ,red2   :background ,red4   :bold t))))
    `(diff-refine-changed ((,class (:foreground ,blue1  :background ,black1 :bold t))))
 
    ;; Git
