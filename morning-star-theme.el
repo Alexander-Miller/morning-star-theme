@@ -249,6 +249,10 @@
    `(which-key-highlighted-command-face   ((,class (:foreground ,red1 :bold t))))
    `(which-key-local-map-description-face ((,class (:foreground ,blue1))))
 
+   ;; Flyspell
+   `(flyspell-incorrect ((,class (:underline (:color ,red3 :style wave)))))
+   `(flyspell-duplicate ((,class (:underline (:color ,orange2 :style wave)))))
+
    ;; Flycheck
    `(flycheck-info                     ((,class (:underline  ,green2))))
    `(flycheck-warning                  ((,class (:underline  ,yellow2))))
