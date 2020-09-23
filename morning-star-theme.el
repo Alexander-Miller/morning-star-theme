@@ -877,6 +877,13 @@
    `(gnus-header-subject ((,class (:foreground ,green1))))
    `(gnus-button         ((,class (:foreground ,aqua2))))
 
+   ;; frog-menu
+   `(frog-menu-prompt-face              ((,class (:foreground ,green1 :bold t))))
+   `(frog-menu-candidates-face          ((,class (:foreground ,fg))))
+   `(frog-menu-actions-face             ((,class (:foreground ,purple1))))
+   `(frog-menu-action-keybinding-face   ((,class (:foreground ,blue1 :bold t))))
+   `(frog-menu-posframe-background-face ((,class (:background ,bg))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
