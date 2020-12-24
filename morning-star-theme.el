@@ -353,7 +353,8 @@
    `(neo-root-dir-face   ((,class (:foreground ,purple1 :bold t :underline t))))
 
    ;; treemacs
-   `(treemacs-root-face   ((,class (:foreground ,purple2 :bold t :underline t :overline t :height 1.2))))
+   `(treemacs-root-face       ((,class (:foreground ,purple2 :bold t :underline t :overline t :height 1.2))))
+   `(treemacs-help-title-face ((,class (:inherit font-lock-doc-face))))
 
    ;; Rust & Racer
    `(cargo-process--standard-face ((,class (:foreground ,blue1))))
