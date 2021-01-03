@@ -527,6 +527,7 @@
    `(helm-ff-invalid-symlink          ((,class (:foreground ,aqua1   :underline (:style wave :color ,red1)))))
    `(helm-ff-prefix                   ((,class (:foreground ,purple1))))
    `(helm-ff-symlink                  ((,class (:foreground ,aqua1))))
+   `(helm-ff-file-extension           ((,class (:foreground ,green1))))
    `(helm-grep-cmd-line               ((,class (:foreground ,aqua1))))
    `(helm-grep-file                   ((,class (:foreground ,blue1))))
    `(helm-grep-finish                 ((,class (:foreground ,yellow2 :background ,bg2 :box (:color ,black2 :line-width -1) :bold t))))
