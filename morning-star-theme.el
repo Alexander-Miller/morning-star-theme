@@ -906,6 +906,23 @@
    `(frog-menu-action-keybinding-face   ((,class (:foreground ,blue1 :bold t))))
    `(frog-menu-posframe-background-face ((,class (:background ,bg))))
 
+   ;; markup
+   `(markup-meta-hide-face              ((,class (:foreground ,grey1   :bold t))))
+   `(markup-meta-face                   ((,class (:foreground ,orange1 :bold t))))
+   `(markup-secondary-text-face         ((,class (:foreground ,brown2  :bold t))))
+   `(markup-list-face                   ((,class (:foreground ,green2  :bold t))))
+   `(markup-strong-face                 ((,class (:foreground ,red2    :bold t))))
+   `(markup-code-face                   ((,class (:foreground ,aqua1   :bold t))))
+   `(markup-emphasis-face               ((,class (:foreground ,yellow1 :italic t))))
+   `(markup-typewriter-face             ((,class (:background ,aqua2   :foreground ,black1 :bold t))))
+   `(markup-verbatim-face               ((,class (:background ,aqua2   :foreground ,black1 :bold t))))
+   `(markup-title-0-face                ((,class (:foreground ,purple1 :underline t :height 1.2))))
+   `(markup-title-1-face                ((,class (:foreground ,purple1 :underline t :height 1.15))))
+   `(markup-title-2-face                ((,class (:foreground ,purple1 :underline t :height 1.1))))
+   `(markup-title-3-face                ((,class (:foreground ,purple1 :underline t :height 1.05))))
+   `(markup-title-4-face                ((,class (:foreground ,purple1 :underline t))))
+   `(markup-title-5-face                ((,class (:foreground ,purple1 :underline t))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
