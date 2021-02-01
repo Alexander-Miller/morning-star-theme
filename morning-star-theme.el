@@ -911,6 +911,7 @@
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
    `(mu4e-header-face                     ((,class (:foreground ,brown1))))
    `(mu4e-title-face                      ((,class (:foreground ,purple1 :bold t :height 1.1))))
+   `(mu4e-trashed-face                    ((,class (:foreground ,grey1))))
    `(mu4e-header-key-face                 ((,class (:foreground ,brown1))))
    `(mu4e-header-title-face               ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-header-marks-face               ((,class (:foreground ,purple2 :bold t))))
