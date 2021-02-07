@@ -714,7 +714,7 @@
 
    ;; company
    `(company-tooltip-common-selection     ((,class (:background ,bg2 :foreground ,red1))))
-   `(company-tooltip-selection            ((,class (:background ,bg2 :foreground ,fg))))
+   `(company-tooltip-selection            ((,class (:background ,bg2 :foreground ,fg :extend t))))
    `(company-scrollbar-bg                 ((,class (:background ,grey1))))
    `(company-scrollbar-fg                 ((,class (:background ,red3))))
    `(company-tooltip                      ((,class (:background ,grey2 :foreground ,fg ))))
