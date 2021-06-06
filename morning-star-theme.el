@@ -928,6 +928,24 @@
    `(markup-title-4-face                ((,class (:foreground ,purple1 :underline t))))
    `(markup-title-5-face                ((,class (:foreground ,purple1 :underline t))))
 
+   ;; selectrum
+   `(selectrum-current-candidate ((,class (:background ,black1 :extend t))))
+
+   ;; orderless
+   `(orderless-match-face-0 ((,class (:background ,red3   :foreground ,yellow2))))
+   `(orderless-match-face-1 ((,class (:background ,green2 :foreground ,black2))))
+   `(orderless-match-face-2 ((,class (:background ,blue2  :foreground ,black2))))
+   `(orderless-match-face-3 ((,class (:background ,brown2 :foreground ,black2))))
+
+   ;; marginalia
+   `(marginalia-documentation ((,class (:inherit font-lock-doc-face))))
+   `(marginalia-key           ((,class (:foreground ,purple1))))
+   `(marginalia-number        ((,class (:background ,blue2 :foreground ,red3 :bold t))))
+   `(marginalia-size          ((,class (:foreground ,purple1))))
+   `(marginalia-mode          ((,class (:foreground ,orange2 :bold t))))
+   `(marginalia-version       ((,class (:background ,blue2 :foreground ,red3 :bold t))))
+   `(marginalia-ligher        ((,class (:foreground ,green3))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
