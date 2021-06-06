@@ -108,8 +108,7 @@
    `(lazy-highlight             ((,class (:background ,red1   :foreground ,black1))))
    `(link                       ((,class (:foreground ,aqua1  :underline  (:color ,aqua1)))))
    `(link-visited               ((,class (:foreground ,aqua2  :underline  (:color ,aqua2)))))
-   `(button                     ((,class (:foreground ,blue1  :background ,bg :bold t :box (:line-width -1 :color ,black2 :style released-button)))))
-   `(custom-button              ((,class (:inherit    button))))
+   `(button                     ((,class (:background ,bg2  :foreground ,blue1 :box (:color ,grey3 :line-width 2 :style released-button) :bold t))))
    `(linum                      ((,class (:background ,bg :foreground ,grey1  :bold nil :box nil :overline nil :underline nil :italic nil))))
    `(line-number                ((,class (:background ,bg :foreground ,grey1  :bold t))))
    `(line-number-current-line   ((,class (:background ,bg :foreground ,green1 :bold t))))
@@ -132,6 +131,9 @@
    `(tooltip                    ((,class (:background ,bg2  :foreground ,brown1))))
    `(help-key-binding           ((,class (:foreground ,orange2 :bold t))))
    `(variable-pitch             ((,class (:family "Iosevka Aile"))))
+
+   ;; Widgets
+   `(widget-field ((,class (:foreground ,brown1 :background ,grey3 :bold t :box (:line-width -1 :color ,grey1)))))
 
    ;; Tabs
    `(tab-line                   ((,class (:background ,black1 :foreground ,fg :box (:line-width 3 :color ,black1) :overline ,black1))))
@@ -192,14 +194,14 @@
    `(ido-vertical-only-match   ((,class (:inherit ido-only-match))))
 
    ;; Group Customization
-   `(custom-button              ((,class (:foreground ,black2  :background ,blue1 :box (:line-width -1 :color ,black1 :style released-button)))))
+   `(custom-button              ((,class (:inherit button))))
    `(custom-button-mouse        ((,class (:background ,blue1   :inherit custom-button))))
    `(custom-button-pressed      ((,class (:foreground ,black1  :background ,blue1 :box (:line-width -1 :color ,black1 :style pressed-button)))))
    `(custom-comment             ((,class (:inherit    font-lock-comment-face))))
    `(custom-comment-tag         ((,class (:inherit    font-lock-comment-face))))
    `(custom-documentation       ((,class (:foreground ,fg))))
    `(custom-group-subtitle      ((,class (:foreground ,purple1 :bold t :underline t))))
-   `(custom-group-tag           ((,class (:foreground ,aqua1   :bold t :underline nil :height 1.25))))
+   `(custom-group-tag           ((,class (:foreground ,purple1 :bold t :underline nil :height 1.25))))
    `(custom-group-tag-1         ((,class (:foreground ,aqua1   :bold t :underline t   :height 1.5))))
    `(custom-state               ((,class (:foreground ,green2))))
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
