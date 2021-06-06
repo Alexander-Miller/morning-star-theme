@@ -575,9 +575,10 @@
    `(magit-blame-heading               ((,class (:background ,bg2   :bold t))))
    `(magit-blame-name                  ((,class (:background ,bg2   :foreground ,blue2   :bold t))))
    `(magit-blame-summary               ((,class (:background ,bg2   :foreground ,brown1 :bold t))))
-   `(magit-branch-current              ((,class (:background ,bg    :foreground ,blue2   :bold t))))
-   `(magit-branch-local                ((,class (:background ,bg    :foreground ,orange1 :bold t))))
-   `(magit-branch-remote               ((,class (:background ,bg    :foreground ,green1  :bold t))))
+   `(magit-branch-current              ((,class (:foreground ,blue2   :bold t))))
+   `(magit-branch-remote-head          ((,class (:foreground ,purple2 :bold t))))
+   `(magit-branch-remote               ((,class (:foreground ,aqua1   :bold t))))
+   `(magit-branch-local                ((,class (:foreground ,brown2  :bold t))))
    `(magit-cherry-equivalent           ((,class (:foreground ,blue1))))
    `(magit-cherry-unmatched            ((,class (:foreground ,red1))))
    `(magit-diff-added                  ((,class (:foreground ,green1))))
@@ -640,7 +641,7 @@
    `(magit-signature-bad               ((,class (:foreground ,yellow1 :italic t :underline (:style wave)))))
    `(magit-signature-good              ((,class (:foreground ,green1  :italic t :underline t))))
    `(magit-signature-untrusted         ((,class (:foreground ,red1    :italic t :underline (:style wave)))))
-   `(magit-tag                         ((,class (:foreground ,aqua1   :bold t))))
+   `(magit-tag                         ((,class (:foreground ,yellow1 :bold t))))
 
    ;; Diff
    `(diff-refine-added   ((,class (:foreground ,green2 :background ,green3 :bold t))))
