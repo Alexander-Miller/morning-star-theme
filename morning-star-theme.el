@@ -117,13 +117,13 @@
    `(hl-line                    ((,class (:background ,grey2))))
    `(highlight-indentation-face ((,class (:background ,grey2))))
    `(header-line                ((,class (:box (:color ,black2) :background ,black1))))
-   `(fringe                     ((,class (:background ,bg))))
+   `(fringe                     ((,class (:background ,bg2))))
    `(cursor                     ((,class (:background ,red1))))
    `(minibuffer-prompt          ((,class (:foreground ,purple1))))
    `(vertical-border            ((,class (:foreground ,black2))))
    `(error                      ((,class (:foreground ,red3))))
    `(success                    ((,class (:foreground ,green1))))
-   `(warning                    ((,class (:foreground ,yellow2))))
+   `(warning                    ((,class (:foreground ,yellow2 :bold t :underline ,red3))))
    `(eval-sexp-fu-flash         ((,class (:background ,green1 :foreground ,black1))))
    `(eval-sexp-fu-flash-error   ((,class (:background ,red3   :foreground ,fg))))
    `(secondary-selection        ((,class (nil))))
@@ -358,7 +358,7 @@
    `(neo-root-dir-face   ((,class (:foreground ,purple1 :bold t :underline t))))
 
    ;; treemacs
-   `(treemacs-root-face       ((,class (:foreground ,purple2 :bold t :underline t :overline t :height 1.2))))
+   `(treemacs-root-face       ((,class (:foreground ,purple2 :bold t :underline t :overline t :height 1.0))))
    `(treemacs-help-title-face ((,class (:inherit font-lock-doc-face))))
 
    ;; Rust & Racer
@@ -733,6 +733,7 @@
    `(company-tooltip-mouse                ((,class (:inherit company-tooltip-sele))))
    `(company-echo-common                  ((,class (:background ,fg     :foreground ,red3))))
    `(company-template-field               ((,class (:inherit yas-field-highlight-face))))
+   `(company-posframe-quickhelp           ((,class (:background ,grey2  :foreground ,fg))))
 
    ;; Org-Mode
    `(org-agenda-calendar-event     ((,class (:foreground ,blue2 :bold t))))
@@ -754,8 +755,8 @@
    `(org-super-agenda-header       ((,class (:foreground ,green2 :bold t :height 1.3))))
    `(org-archived                  ((,class (:foreground ,grey1 :bold t))))
    `(org-block                     ((,class (:background ,bg2 :extend t))))
-   `(org-block-begin-line          ((,class (:background ,brown2 :foreground ,bg2 :bold t :extend t))))
-   `(org-block-end-line            ((,class (:background ,brown2 :foreground ,bg2 :bold t :extend t))))
+   `(org-block-begin-line          ((,class (:background ,bg2 :foreground ,grey1 :bold t :extend t))))
+   `(org-block-end-line            ((,class (:background ,bg2 :foreground ,grey1 :bold t :extend t))))
    `(org-checkbox                  ((,class (:background ,bg2 :foreground ,brown2  :bold t :box (:color ,brown2 :line-width -1)))))
    `(org-checkbox-statistics-done  ((,class (:background ,green1 :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
    `(org-checkbox-statistics-todo  ((,class (:background ,red2   :foreground ,black1 :box (:color ,black1 :line-width -1) :bold t))))
@@ -795,7 +796,7 @@
    `(org-level-6                   ((,class (:foreground ,orange1))))
    `(org-level-7                   ((,class (:foreground ,green1))))
    `(org-level-8                   ((,class (:foreground ,yellow1))))
-   `(org-link                      ((,class (:foreground ,aqua2 :bold t :underline t))))
+   `(org-link                      ((,class (:foreground ,aqua1 :bold t :underline t))))
    `(org-list-dt                   ((,class (:foreground ,purple1 :bold t))))
    `(org-macro                     ((,class (:foreground ,bg :background ,red3)))) ;; TODO
    `(org-meta-line                 ((,class (:foreground ,purple2   :bold t))))
@@ -946,6 +947,13 @@
    `(marginalia-version       ((,class (:background ,blue2 :foreground ,red3 :bold t))))
    `(marginalia-ligher        ((,class (:foreground ,green3))))
 
+   ;; epkg
+   `(epkg-help-name ((,class (:foreground ,purple1 :bold t :height 1.3))))
+   `(epkg-help-slot ((,class (:foreground ,blue1   :bold t))))
+
+   ;; mu4e
+   `(consult-preview-match ((,class (:background ,red3 :foreground ,yellow1))))
+
    ;; mu4e
    `(mu4e-unread-face                     ((,class (:foreground ,blue1 :bold t))))
    `(mu4e-replied-face                    ((,class (:foreground ,green1 :bold t))))
@@ -962,6 +970,12 @@
    `(mu4e-highlight-face                  ((,class (:foreground ,green1 :bold t))))
    `(mu4e-maildirs-extension-maildir-face ((,class (:foreground ,brown1))))
 
+   `(ansi-color-blue    ((,class (:foreground ,blue1))))
+   `(ansi-color-green   ((,class (:foreground ,green1))))
+   `(ansi-color-magenta ((,class (:foreground ,purple1))))
+   `(ansi-color-red     ((,class (:foreground ,red1))))
+   `(ansi-color-cyan    ((,class (:foreground ,aqua1))))
+   `(ansi-color-yellow  ((,class (:foreground ,yellow1))))
 
    (custom-theme-set-variables
     'morning-star
