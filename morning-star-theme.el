@@ -129,6 +129,7 @@
    `(secondary-selection        ((,class (nil))))
    `(match                      ((,class (:background ,red3 :foreground ,fg))))
    `(tooltip                    ((,class (:background ,bg2  :foreground ,brown1))))
+   `(bookmark-face              ((,class (:foreground ,orange2))))
    `(help-key-binding           ((,class (:foreground ,orange2 :bold t))))
    `(variable-pitch             ((,class (:family "Iosevka Aile"))))
 
