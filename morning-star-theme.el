@@ -1,6 +1,6 @@
 ;;; morning-star-theme.el --- Emacs 24 theme with a dark background.
 
-;; Copyright (C) 2016, Alexander Miller
+;; Copyright (C) 2023, Alexander Miller
 
 ;; Author: Alexander Miller
 ;;
@@ -820,7 +820,7 @@
    `(org-agenda-current-time       ((,class (:foreground ,brown1 :background ,bg2 :bold t))))
    `(org-todo                      ((,class (:background ,red2 :foreground ,black1 :bold t :box (:line-width -1 :color ,black2)))))
    `(org-upcoming-deadline         ((,class (:foreground ,orange2))))
-   `(org-verbatim                  ((,class (:foreground ,green2 :bold t :italic t))))
+   `(org-verbatim                  ((,class (:foreground ,red2 :bold t))))
    `(org-warning                   ((,class (:foreground ,yellow2 :bold t))))
 
    ;; Comint
