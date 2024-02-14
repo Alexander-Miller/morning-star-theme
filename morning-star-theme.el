@@ -1,6 +1,6 @@
 ;;; morning-star-theme.el --- Emacs 24 theme with a dark background.
 
-;; Copyright (C) 2023, Alexander Miller
+;; Copyright (C) 2024, Alexander Miller
 
 ;; Author: Alexander Miller
 ;;
@@ -687,6 +687,8 @@
    ;; Transient
    `(transient-heading           ((,class (:foreground ,purple1 :bold t))))
    `(transient-key               ((,class (:foreground ,blue1   :bold t))))
+   `(transient-key-exit          ((,class (:foreground ,red1    :bold t))))
+   `(transient-key-stay          ((,class (:foreground ,blue1  :bold t))))
    `(transient-value             ((,class (:foreground ,aqua1   :bold t))))
    `(transient-argument          ((,class (:foreground ,orange1 :bold t))))
    `(transient-unreachable-key   ((,class (:foreground ,grey1   :bold t))))
