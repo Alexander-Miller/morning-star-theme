@@ -57,7 +57,7 @@
       (brown2  "#9f8b6f")
       (blue1   "#5588bb")
       (blue2   "#4477aa")
-      (blue3   "#333366"))
+      (blue3   "#334499"))
 
   (custom-theme-set-faces
    'morning-star
@@ -208,22 +208,22 @@
    `(custom-variable-tag        ((,class (:foreground ,purple1 :bold t :underline t))))
 
    ;; Ediff
-   `(ediff-current-diff-A        ((,class (:foreground ,black2 :background ,purple2))))
-   `(ediff-current-diff-B        ((,class (:foreground ,black2 :background ,purple2))))
-   `(ediff-current-diff-C        ((,class (:foreground ,aqua1 :background ,bg2))));;TODO
-   `(ediff-current-diff-Ancestor ((,class (:foreground ,brown1  :background ,bg2))));;TODO
-   `(ediff-even-diff-A           ((,class (:foreground ,black2 :background ,blue1))))
-   `(ediff-even-diff-B           ((,class (:foreground ,black2 :background ,blue1))))
-   `(ediff-even-diff-C           ((,class (:foreground ,aqua1   :background ,red3))));;TODO
-   `(ediff-even-diff-Ancestor    ((,class (:foreground ,brown1  :background ,red3))));;TODO
-   `(ediff-fine-diff-A           ((,class (:foreground ,yellow1 :background ,red3 :bold t))))
-   `(ediff-fine-diff-B           ((,class (:foreground ,yellow1 :background ,red3 :bold t))))
-   `(ediff-fine-diff-C           ((,class (:foreground ,aqua1   :background ,purple1))));;TODO
-   `(ediff-fine-diff-Ancestor    ((,class (:foreground ,brown1  :background ,purple1))));;TODO
-   `(ediff-odd-diff-A            ((,class (:foreground ,black2 :background ,blue2))))
-   `(ediff-odd-diff-B            ((,class (:foreground ,black2 :background ,blue2))))
-   `(ediff-odd-diff-C            ((,class (:foreground ,aqua1   :background ,aqua2))));;TODO
-   `(ediff-odd-diff-Ancestor     ((,class (:foreground ,brown1  :background ,aqua2))));;TODO
+   `(ediff-current-diff-A        ((,class (:background ,blue1  :foreground ,black2))))
+   `(ediff-current-diff-B        ((,class (:background ,blue1  :foreground ,black2))))
+   `(ediff-current-diff-C        ((,class (:background ,blue1  :foreground ,black2))))
+   `(ediff-fine-diff-A           ((,class (:background ,green2 :foreground ,black2))))
+   `(ediff-fine-diff-B           ((,class (:background ,red3   :foreground ,black2))))
+   `(ediff-fine-diff-C           ((,class (:background ,brown2 :foreground ,black2))))
+   `(ediff-even-diff-A           ((,class (:background ,black1))))
+   `(ediff-even-diff-B           ((,class (:background ,black1))))
+   `(ediff-even-diff-C           ((,class (:background ,black1))))
+   `(ediff-odd-diff-A            ((,class (:background ,black1))))
+   `(ediff-odd-diff-B            ((,class (:background ,black1))))
+   `(ediff-odd-diff-C            ((,class (:background ,black1))))
+   `(ediff-current-diff-Ancestor ((,class (:background ,red2))))    ;; TODO
+   `(ediff-even-diff-Ancestor    ((,class (:background ,green2))))  ;; TODO
+   `(ediff-fine-diff-Ancestor    ((,class (:background ,blue2))))   ;; TODO
+   `(ediff-odd-diff-Ancestor     ((,class (:background ,yellow2)))) ;; TODO
 
    ;; Macrostep
    `(macrostep-expansion-highlight-face ((,class (:inherit region))))
